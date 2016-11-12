@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeHeadView" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="qyh-0c-uCn"/>
+                <outlet property="descriptionLable" destination="AMb-ah-P3u" id="zuV-8P-F4a"/>
+                <outlet property="headImage" destination="f7q-lr-zsN" id="4XW-1Q-CCI"/>
+                <outlet property="nameLable" destination="8Hg-nb-SQV" id="gpp-uT-FVi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="f7q-lr-zsN">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1oq-vG-Dfs"/>
+                        <constraint firstAttribute="width" constant="64" id="ZWF-LS-fkE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张小龙" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hg-nb-SQV">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8年社交平台经验" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMb-ah-P3u">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T7-If-gY5">
+                    <state key="normal" backgroundImage="edit"/>
+                    <connections>
+                        <action selector="editAction:" destination="-1" eventType="touchUpInside" id="u5U-Qt-E3y"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f7q-lr-zsN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="0H6-2h-lHc"/>
+                <constraint firstAttribute="trailing" secondItem="0T7-If-gY5" secondAttribute="trailing" constant="16" id="1Ih-sP-mMg"/>
+                <constraint firstItem="AMb-ah-P3u" firstAttribute="top" secondItem="8Hg-nb-SQV" secondAttribute="bottom" constant="8" id="LrN-Ui-E8L"/>
+                <constraint firstItem="f7q-lr-zsN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WbK-E4-eWt"/>
+                <constraint firstItem="8Hg-nb-SQV" firstAttribute="top" secondItem="f7q-lr-zsN" secondAttribute="bottom" constant="8" id="Z9s-4v-Zm7"/>
+                <constraint firstItem="0T7-If-gY5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="Zjl-la-8Qf"/>
+                <constraint firstItem="AMb-ah-P3u" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cKd-CC-TaV"/>
+                <constraint firstItem="8Hg-nb-SQV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uPX-1S-L9g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="User" width="48" height="48"/>
+        <image name="edit" width="24" height="24"/>
+    </resources>
+</document>

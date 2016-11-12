@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EexpectationsJobView" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="qYS-fD-CGo" id="yJS-7t-Epv"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="52l-4u-k1Y"/>
+                <outlet property="titleLabel" destination="vtG-vl-3Tw" id="Sxb-uc-cZx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-G1-oND"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人力资源经理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-vl-3Tw">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全职/深圳/10K～15K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYS-fD-CGo">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qYS-fD-CGo" firstAttribute="top" secondItem="vtG-vl-3Tw" secondAttribute="bottom" constant="8" id="AWI-WN-hpH"/>
+                <constraint firstItem="vtG-vl-3Tw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="VuR-dR-Ba2"/>
+                <constraint firstItem="qYS-fD-CGo" firstAttribute="leading" secondItem="vtG-vl-3Tw" secondAttribute="leading" id="iCf-Ui-O0G"/>
+                <constraint firstAttribute="trailing" secondItem="bWa-G1-oND" secondAttribute="trailing" constant="16" id="sM4-yL-U3F"/>
+                <constraint firstItem="vtG-vl-3Tw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="t3O-as-RX7"/>
+                <constraint firstItem="bWa-G1-oND" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="yX7-qw-dUF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit" width="24" height="24"/>
+    </resources>
+</document>

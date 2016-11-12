@@ -9,10 +9,29 @@
 /* Begin PBXBuildFile section */
 		20599EBE9EBFD1F1E6C28AED /* Pods_AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */; };
 		DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28878C7C09964910918009 /* Pods_RecruitManner.framework */; };
+		E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */; };
+		E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */; };
+		E00E50351DD734910087A8B6 /* ResumeAddSkillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50341DD734910087A8B6 /* ResumeAddSkillView.xib */; };
+		E00E50371DD73DBC0087A8B6 /* ShowUpMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50361DD73DBC0087A8B6 /* ShowUpMoreView.swift */; };
+		E00E50391DD73DD90087A8B6 /* ShowUpMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */; };
 		E02119241DD4367E0051A0E3 /* AlamofireObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; };
 		E02119281DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E021192E1DD4370F0051A0E3 /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021192D1DD4370F0051A0E3 /* AlamofireObjectMapper.swift */; };
+		E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02E63431DD6CE4A00A496C5 /* develop.storyboard */; };
+		E02E634F1DD6CF7900A496C5 /* CustomViews.h in Headers */ = {isa = PBXBuildFile; fileRef = E02E634D1DD6CF7900A496C5 /* CustomViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E02E63521DD6CF7900A496C5 /* CustomViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02E634B1DD6CF7900A496C5 /* CustomViews.framework */; };
+		E02E63531DD6CF7900A496C5 /* CustomViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02E634B1DD6CF7900A496C5 /* CustomViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E02E63581DD6D00700A496C5 /* MeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63571DD6D00700A496C5 /* MeHeadView.swift */; };
+		E02E635A1DD6D08100A496C5 /* MeHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63591DD6D08100A496C5 /* MeHeadView.xib */; };
+		E02E635C1DD6E2FF00A496C5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E02E635B1DD6E2FF00A496C5 /* Media.xcassets */; };
+		E02E635E1DD7067100A496C5 /* HeadPortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E635D1DD7067100A496C5 /* HeadPortraitView.swift */; };
+		E02E63601DD706AA00A496C5 /* BasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E635F1DD706AA00A496C5 /* BasicInfoView.swift */; };
+		E02E63621DD7071600A496C5 /* OccupationalHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63611DD7071600A496C5 /* OccupationalHistoryView.swift */; };
+		E02E63641DD7079E00A496C5 /* EexpectationsJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63631DD7079E00A496C5 /* EexpectationsJobView.swift */; };
+		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
+		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
+		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
 		E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */; };
 		E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631C1DD18A7E006EF708 /* ViewController.swift */; };
 		E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E1631E1DD18A7E006EF708 /* Main.storyboard */; };
@@ -29,6 +48,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E021191F1DD4367E0051A0E3;
 			remoteInfo = AlamofireObjectMapper;
+		};
+		E02E63501DD6CF7900A496C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0E1630F1DD18A7D006EF708 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E02E634A1DD6CF7900A496C5;
+			remoteInfo = CustomViews;
 		};
 		E0E1632C1DD18A7E006EF708 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -53,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E02E63531DD6CF7900A496C5 /* CustomViews.framework in Embed Frameworks */,
 				E02119281DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -66,10 +93,29 @@
 		7041C3C843D3B5BD3A82DAD6 /* Pods-RecruitManner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.debug.xcconfig"; sourceTree = "<group>"; };
 		827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.debug.xcconfig"; sourceTree = "<group>"; };
+		E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OccupationalHistoryView.xib; sourceTree = "<group>"; };
+		E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EexpectationsJobView.xib; sourceTree = "<group>"; };
+		E00E50341DD734910087A8B6 /* ResumeAddSkillView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeAddSkillView.xib; sourceTree = "<group>"; };
+		E00E50361DD73DBC0087A8B6 /* ShowUpMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUpMoreView.swift; sourceTree = "<group>"; };
+		E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowUpMoreView.xib; sourceTree = "<group>"; };
 		E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireObjectMapper.h; sourceTree = "<group>"; };
 		E02119231DD4367E0051A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E021192D1DD4370F0051A0E3 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireObjectMapper.swift; sourceTree = "<group>"; };
+		E02E63441DD6CE4A00A496C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/develop.storyboard; sourceTree = "<group>"; };
+		E02E634B1DD6CF7900A496C5 /* CustomViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02E634D1DD6CF7900A496C5 /* CustomViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViews.h; sourceTree = "<group>"; };
+		E02E634E1DD6CF7900A496C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02E63571DD6D00700A496C5 /* MeHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeHeadView.swift; sourceTree = "<group>"; };
+		E02E63591DD6D08100A496C5 /* MeHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeHeadView.xib; sourceTree = "<group>"; };
+		E02E635B1DD6E2FF00A496C5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		E02E635D1DD7067100A496C5 /* HeadPortraitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadPortraitView.swift; sourceTree = "<group>"; };
+		E02E635F1DD706AA00A496C5 /* BasicInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicInfoView.swift; sourceTree = "<group>"; };
+		E02E63611DD7071600A496C5 /* OccupationalHistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupationalHistoryView.swift; sourceTree = "<group>"; };
+		E02E63631DD7079E00A496C5 /* EexpectationsJobView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EexpectationsJobView.swift; sourceTree = "<group>"; };
+		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
+		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
+		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
 		E0E163171DD18A7E006EF708 /* RecruitManner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecruitManner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E1631C1DD18A7E006EF708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,10 +141,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02E63471DD6CF7900A496C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0E163141DD18A7D006EF708 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02E63521DD6CF7900A496C5 /* CustomViews.framework in Frameworks */,
 				DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */,
 				E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
@@ -151,6 +205,30 @@
 			path = AlamofireObjectMapper;
 			sourceTree = "<group>";
 		};
+		E02E634C1DD6CF7900A496C5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E02E634D1DD6CF7900A496C5 /* CustomViews.h */,
+				E02E634E1DD6CF7900A496C5 /* Info.plist */,
+				E02E63571DD6D00700A496C5 /* MeHeadView.swift */,
+				E02E63591DD6D08100A496C5 /* MeHeadView.xib */,
+				E02E635B1DD6E2FF00A496C5 /* Media.xcassets */,
+				E02E635D1DD7067100A496C5 /* HeadPortraitView.swift */,
+				E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */,
+				E02E635F1DD706AA00A496C5 /* BasicInfoView.swift */,
+				E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */,
+				E02E63611DD7071600A496C5 /* OccupationalHistoryView.swift */,
+				E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */,
+				E02E63631DD7079E00A496C5 /* EexpectationsJobView.swift */,
+				E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */,
+				E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */,
+				E00E50341DD734910087A8B6 /* ResumeAddSkillView.xib */,
+				E00E50361DD73DBC0087A8B6 /* ShowUpMoreView.swift */,
+				E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		E0E1630E1DD18A7D006EF708 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +236,7 @@
 				E0E1632E1DD18A7E006EF708 /* RecruitMannerTests */,
 				E0E163391DD18A7E006EF708 /* RecruitMannerUITests */,
 				E02119211DD4367E0051A0E3 /* AlamofireObjectMapper */,
+				E02E634C1DD6CF7900A496C5 /* CustomViews */,
 				E0E163181DD18A7E006EF708 /* Products */,
 				7AC283CADB40C2461508243F /* Pods */,
 				48065A55071F652FBCCBAE6C /* Frameworks */,
@@ -171,6 +250,7 @@
 				E0E1632B1DD18A7E006EF708 /* RecruitMannerTests.xctest */,
 				E0E163361DD18A7E006EF708 /* RecruitMannerUITests.xctest */,
 				E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */,
+				E02E634B1DD6CF7900A496C5 /* CustomViews.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +264,7 @@
 				E0E163211DD18A7E006EF708 /* Assets.xcassets */,
 				E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */,
 				E0E163261DD18A7E006EF708 /* Info.plist */,
+				E02E63431DD6CE4A00A496C5 /* develop.storyboard */,
 			);
 			path = RecruitManner;
 			sourceTree = "<group>";
@@ -217,6 +298,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02E63481DD6CF7900A496C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02E634F1DD6CF7900A496C5 /* CustomViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +329,24 @@
 			productReference = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E02E634A1DD6CF7900A496C5 /* CustomViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02E63541DD6CF7900A496C5 /* Build configuration list for PBXNativeTarget "CustomViews" */;
+			buildPhases = (
+				E02E63461DD6CF7900A496C5 /* Sources */,
+				E02E63471DD6CF7900A496C5 /* Frameworks */,
+				E02E63481DD6CF7900A496C5 /* Headers */,
+				E02E63491DD6CF7900A496C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomViews;
+			productName = CustomViews;
+			productReference = E02E634B1DD6CF7900A496C5 /* CustomViews.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		E0E163161DD18A7D006EF708 /* RecruitManner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E1633F1DD18A7E006EF708 /* Build configuration list for PBXNativeTarget "RecruitManner" */;
@@ -256,6 +363,7 @@
 			);
 			dependencies = (
 				E02119261DD4367E0051A0E3 /* PBXTargetDependency */,
+				E02E63511DD6CF7900A496C5 /* PBXTargetDependency */,
 			);
 			name = RecruitManner;
 			productName = RecruitManner;
@@ -313,6 +421,11 @@
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
+					E02E634A1DD6CF7900A496C5 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -346,6 +459,7 @@
 				E0E1632A1DD18A7E006EF708 /* RecruitMannerTests */,
 				E0E163351DD18A7E006EF708 /* RecruitMannerUITests */,
 				E021191F1DD4367E0051A0E3 /* AlamofireObjectMapper */,
+				E02E634A1DD6CF7900A496C5 /* CustomViews */,
 			);
 		};
 /* End PBXProject section */
@@ -358,10 +472,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02E63491DD6CF7900A496C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02E635C1DD6E2FF00A496C5 /* Media.xcassets in Resources */,
+				E00E50351DD734910087A8B6 /* ResumeAddSkillView.xib in Resources */,
+				E02E635A1DD6D08100A496C5 /* MeHeadView.xib in Resources */,
+				E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */,
+				E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */,
+				E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */,
+				E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */,
+				E00E50391DD73DD90087A8B6 /* ShowUpMoreView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0E163151DD18A7D006EF708 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
@@ -471,6 +601,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E02E63461DD6CF7900A496C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E02E63581DD6D00700A496C5 /* MeHeadView.swift in Sources */,
+				E02E635E1DD7067100A496C5 /* HeadPortraitView.swift in Sources */,
+				E00E50371DD73DBC0087A8B6 /* ShowUpMoreView.swift in Sources */,
+				E02E63601DD706AA00A496C5 /* BasicInfoView.swift in Sources */,
+				E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */,
+				E02E63621DD7071600A496C5 /* OccupationalHistoryView.swift in Sources */,
+				E02E63641DD7079E00A496C5 /* EexpectationsJobView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E0E163131DD18A7D006EF708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +648,11 @@
 			target = E021191F1DD4367E0051A0E3 /* AlamofireObjectMapper */;
 			targetProxy = E02119251DD4367E0051A0E3 /* PBXContainerItemProxy */;
 		};
+		E02E63511DD6CF7900A496C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E02E634A1DD6CF7900A496C5 /* CustomViews */;
+			targetProxy = E02E63501DD6CF7900A496C5 /* PBXContainerItemProxy */;
+		};
 		E0E1632D1DD18A7E006EF708 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E0E163161DD18A7D006EF708 /* RecruitManner */;
@@ -517,6 +666,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E02E63431DD6CE4A00A496C5 /* develop.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E02E63441DD6CE4A00A496C5 /* Base */,
+			);
+			name = develop.storyboard;
+			sourceTree = "<group>";
+		};
 		E0E1631E1DD18A7E006EF708 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -575,6 +732,51 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.AlamofireObjectMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E02E63551DD6CF7900A496C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.CustomViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E02E63561DD6CF7900A496C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.CustomViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -770,6 +972,16 @@
 				E021192A1DD4367E0051A0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02E63541DD6CF7900A496C5 /* Build configuration list for PBXNativeTarget "CustomViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E02E63551DD6CF7900A496C5 /* Debug */,
+				E02E63561DD6CF7900A496C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0E163121DD18A7D006EF708 /* Build configuration list for PBXProject "RecruitManner" */ = {
 			isa = XCConfigurationList;

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OccupationalHistoryView" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLabel" destination="ac7-da-5o9" id="iNx-Kh-xYf"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="EdH-3d-fr2"/>
+                <outlet property="dateLabel" destination="b4J-RJ-gs4" id="oKa-lJ-RvO"/>
+                <outlet property="titleLabel" destination="Psp-iX-xo6" id="I15-tU-tIN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-T4-gsX"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball_circle_go_green" translatesAutoresizingMaskIntoConstraints="NO" id="LkA-ZV-w6Y"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013.08 - 2104.09" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4J-RJ-gs4">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市力天保利科技有限公司／人力资源经理" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psp-iX-xo6">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作内容：这是一家IT互联网工商，公司主营手机应用APP，Wi-Fi路由器，游戏平台及电商平台几" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-da-5o9">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="pW2-b4-Mgb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b4J-RJ-gs4" firstAttribute="leading" secondItem="LkA-ZV-w6Y" secondAttribute="trailing" constant="8" id="5g5-oW-s3z"/>
+                <constraint firstItem="LkA-ZV-w6Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="BUe-Xm-q60"/>
+                <constraint firstAttribute="trailing" secondItem="SsN-T4-gsX" secondAttribute="trailing" constant="16" id="IIE-RM-SeA"/>
+                <constraint firstItem="SsN-T4-gsX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="PaR-BF-Bbi"/>
+                <constraint firstItem="b4J-RJ-gs4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="RSY-nO-c58"/>
+                <constraint firstItem="ac7-da-5o9" firstAttribute="leading" secondItem="Psp-iX-xo6" secondAttribute="leading" id="Thz-Lr-tVB"/>
+                <constraint firstItem="LkA-ZV-w6Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="UcN-6i-Qqf"/>
+                <constraint firstItem="Psp-iX-xo6" firstAttribute="leading" secondItem="b4J-RJ-gs4" secondAttribute="leading" id="ZEz-YA-xb0"/>
+                <constraint firstItem="Psp-iX-xo6" firstAttribute="top" secondItem="b4J-RJ-gs4" secondAttribute="bottom" constant="8" id="avl-Jk-cJw"/>
+                <constraint firstItem="ac7-da-5o9" firstAttribute="top" secondItem="Psp-iX-xo6" secondAttribute="bottom" constant="8" id="lqT-rB-88o"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ball_circle_go_green" width="8" height="8"/>
+        <image name="edit" width="24" height="24"/>
+    </resources>
+</document>

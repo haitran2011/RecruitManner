@@ -177,7 +177,7 @@
                     <navigationItem key="navigationItem" id="Eu2-mB-re6">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="OYb-ir-ofY">
-                            <rect key="frame" x="12" y="6" width="390" height="33"/>
+                            <rect key="frame" x="8" y="6" width="359" height="33"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i1-Wc-h4s">

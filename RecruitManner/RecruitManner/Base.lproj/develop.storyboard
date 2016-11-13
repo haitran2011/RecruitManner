@@ -190,9 +190,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ClY-va-WMX" firstAttribute="top" secondItem="sMW-lf-TAx" secondAttribute="bottom" id="13C-9c-Ubb"/>
                             <constraint firstItem="0HK-EK-RRU" firstAttribute="top" secondItem="ClY-va-WMX" secondAttribute="bottom" constant="38" id="3u1-3b-lic"/>
                             <constraint firstItem="ClY-va-WMX" firstAttribute="leading" secondItem="Cyd-LR-YkF" secondAttribute="leading" id="447-9v-bwc"/>
                             <constraint firstItem="0HK-EK-RRU" firstAttribute="leading" secondItem="Cyd-LR-YkF" secondAttribute="leading" id="9RU-j4-gei"/>
@@ -205,6 +204,7 @@
                             <constraint firstAttribute="trailing" secondItem="XfY-7S-zgG" secondAttribute="trailing" id="ZC3-EM-gHm"/>
                             <constraint firstItem="hi5-Lt-rdY" firstAttribute="top" secondItem="ECV-6I-L5a" secondAttribute="bottom" constant="2" id="aBu-PN-mjk"/>
                             <constraint firstItem="r0V-bC-0Uk" firstAttribute="leading" secondItem="Cyd-LR-YkF" secondAttribute="leading" id="eIX-Sx-icw"/>
+                            <constraint firstItem="ClY-va-WMX" firstAttribute="top" secondItem="sMW-lf-TAx" secondAttribute="bottom" id="egC-ka-bZx"/>
                             <constraint firstAttribute="trailing" secondItem="ECV-6I-L5a" secondAttribute="trailing" id="hhA-ex-nbs"/>
                             <constraint firstAttribute="trailing" secondItem="hi5-Lt-rdY" secondAttribute="trailing" id="iUW-CT-5gT"/>
                             <constraint firstAttribute="trailing" secondItem="r0V-bC-0Uk" secondAttribute="trailing" id="p0D-AS-vvF"/>
@@ -356,14 +356,14 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="epd-y9-Or7" firstAttribute="top" secondItem="2ug-0q-dKL" secondAttribute="bottom" constant="8" id="0uW-Jy-uRl"/>
                             <constraint firstItem="c93-r2-f5v" firstAttribute="leading" secondItem="Qy8-jk-cdY" secondAttribute="leading" id="2QC-jV-Fni"/>
                             <constraint firstItem="2ug-0q-dKL" firstAttribute="leading" secondItem="Qy8-jk-cdY" secondAttribute="leading" id="50Y-KB-M8z"/>
                             <constraint firstItem="iVV-iM-X7A" firstAttribute="leading" secondItem="Qy8-jk-cdY" secondAttribute="leading" id="5Rd-ub-1VA"/>
-                            <constraint firstItem="epd-y9-Or7" firstAttribute="top" secondItem="2ug-0q-dKL" secondAttribute="bottom" constant="8" id="9eE-he-cFa"/>
+                            <constraint firstItem="c93-r2-f5v" firstAttribute="top" secondItem="6cy-23-52B" secondAttribute="bottom" constant="8" id="J5U-3e-bKz"/>
                             <constraint firstAttribute="trailing" secondItem="c93-r2-f5v" secondAttribute="trailing" id="O2t-kG-sfj"/>
-                            <constraint firstItem="c93-r2-f5v" firstAttribute="top" secondItem="6cy-23-52B" secondAttribute="bottom" constant="8" id="PNC-oB-j6k"/>
                             <constraint firstAttribute="trailing" secondItem="iVV-iM-X7A" secondAttribute="trailing" id="e1m-0u-Wbx"/>
                             <constraint firstAttribute="trailing" secondItem="2ug-0q-dKL" secondAttribute="trailing" id="gqV-hk-sOC"/>
                             <constraint firstItem="iVV-iM-X7A" firstAttribute="top" secondItem="c93-r2-f5v" secondAttribute="bottom" constant="2" id="vdh-BL-weB"/>
@@ -549,6 +549,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="S6I-Ox-bFm" secondAttribute="trailing" id="cAq-bb-HEK"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="3AS-Fh-eVL" kind="show" id="VG7-DX-Day"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -572,6 +575,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUa-K9-Dcp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-11108.695652173914" y="-2390.217391304348"/>
+        </scene>
+        <!--基本信息-->
+        <scene sceneID="fXC-fH-T9O">
+            <objects>
+                <viewController title="基本信息" id="3AS-Fh-eVL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qs9-eI-a5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="0VZ-eS-yAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LU8-Cr-Tgk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-7c-VhR">
+                                <frame key="frameInset" minY="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本信息" id="XLs-L9-SVk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jAP-MA-6dS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYr-qp-rIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10132" y="-2391.4542728635683"/>
         </scene>
         <!--消息-->
         <scene sceneID="ASC-mi-QEG">

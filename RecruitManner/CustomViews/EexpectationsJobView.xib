@@ -20,7 +20,7 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="bWa-G1-oND"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人力资源经理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-vl-3Tw">
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -36,7 +36,7 @@
                 <constraint firstItem="vtG-vl-3Tw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="VuR-dR-Ba2"/>
                 <constraint firstItem="qYS-fD-CGo" firstAttribute="leading" secondItem="vtG-vl-3Tw" secondAttribute="leading" id="iCf-Ui-O0G"/>
                 <constraint firstAttribute="trailing" secondItem="bWa-G1-oND" secondAttribute="trailing" constant="16" id="sM4-yL-U3F"/>
-                <constraint firstItem="vtG-vl-3Tw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="t3O-as-RX7"/>
+                <constraint firstItem="vtG-vl-3Tw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="t3O-as-RX7"/>
                 <constraint firstItem="bWa-G1-oND" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="yX7-qw-dUF"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

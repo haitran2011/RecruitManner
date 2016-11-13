@@ -14,6 +14,13 @@
 		E00E50351DD734910087A8B6 /* ResumeAddSkillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50341DD734910087A8B6 /* ResumeAddSkillView.xib */; };
 		E00E50371DD73DBC0087A8B6 /* ShowUpMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50361DD73DBC0087A8B6 /* ShowUpMoreView.swift */; };
 		E00E50391DD73DD90087A8B6 /* ShowUpMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */; };
+		E00E50461DD82BE80087A8B6 /* OnlineResumeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E503F1DD82BE80087A8B6 /* OnlineResumeConfigurator.swift */; };
+		E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50401DD82BE80087A8B6 /* OnlineResumeInteractor.swift */; };
+		E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50411DD82BE80087A8B6 /* OnlineResumeModels.swift */; };
+		E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50421DD82BE80087A8B6 /* OnlineResumePresenter.swift */; };
+		E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */; };
+		E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */; };
+		E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */; };
 		E02119241DD4367E0051A0E3 /* AlamofireObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; };
 		E02119281DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -98,6 +105,13 @@
 		E00E50341DD734910087A8B6 /* ResumeAddSkillView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeAddSkillView.xib; sourceTree = "<group>"; };
 		E00E50361DD73DBC0087A8B6 /* ShowUpMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowUpMoreView.swift; sourceTree = "<group>"; };
 		E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowUpMoreView.xib; sourceTree = "<group>"; };
+		E00E503F1DD82BE80087A8B6 /* OnlineResumeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeConfigurator.swift; path = Scenes/Me/OnlineResume/OnlineResumeConfigurator.swift; sourceTree = "<group>"; };
+		E00E50401DD82BE80087A8B6 /* OnlineResumeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeInteractor.swift; path = Scenes/Me/OnlineResume/OnlineResumeInteractor.swift; sourceTree = "<group>"; };
+		E00E50411DD82BE80087A8B6 /* OnlineResumeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeModels.swift; path = Scenes/Me/OnlineResume/OnlineResumeModels.swift; sourceTree = "<group>"; };
+		E00E50421DD82BE80087A8B6 /* OnlineResumePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumePresenter.swift; path = Scenes/Me/OnlineResume/OnlineResumePresenter.swift; sourceTree = "<group>"; };
+		E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeRouter.swift; path = Scenes/Me/OnlineResume/OnlineResumeRouter.swift; sourceTree = "<group>"; };
+		E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeViewController.swift; path = Scenes/Me/OnlineResume/OnlineResumeViewController.swift; sourceTree = "<group>"; };
+		E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeWorker.swift; path = Scenes/Me/OnlineResume/OnlineResumeWorker.swift; sourceTree = "<group>"; };
 		E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireObjectMapper.h; sourceTree = "<group>"; };
 		E02119231DD4367E0051A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,6 +209,57 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E00E503A1DD82A570087A8B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E00E503B1DD82A630087A8B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		E00E503C1DD82A700087A8B6 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		E00E503D1DD82A7C0087A8B6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E00E503E1DD82B120087A8B6 /* Me */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E00E503E1DD82B120087A8B6 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				E00E504D1DD837520087A8B6 /* OnlineResume */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		E00E504D1DD837520087A8B6 /* OnlineResume */ = {
+			isa = PBXGroup;
+			children = (
+				E00E503F1DD82BE80087A8B6 /* OnlineResumeConfigurator.swift */,
+				E00E50401DD82BE80087A8B6 /* OnlineResumeInteractor.swift */,
+				E00E50411DD82BE80087A8B6 /* OnlineResumeModels.swift */,
+				E00E50421DD82BE80087A8B6 /* OnlineResumePresenter.swift */,
+				E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */,
+				E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */,
+				E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */,
+			);
+			name = OnlineResume;
+			sourceTree = "<group>";
+		};
 		E02119211DD4367E0051A0E3 /* AlamofireObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +323,10 @@
 		E0E163191DD18A7E006EF708 /* RecruitManner */ = {
 			isa = PBXGroup;
 			children = (
+				E00E503A1DD82A570087A8B6 /* Models */,
+				E00E503B1DD82A630087A8B6 /* Services */,
+				E00E503C1DD82A700087A8B6 /* Workers */,
+				E00E503D1DD82A7C0087A8B6 /* Scenes */,
 				E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */,
 				E0E1631C1DD18A7E006EF708 /* ViewController.swift */,
 				E0E1631E1DD18A7E006EF708 /* Main.storyboard */,
@@ -619,6 +688,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */,
+				E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */,
+				E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */,
+				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
+				E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */,
+				E00E50461DD82BE80087A8B6 /* OnlineResumeConfigurator.swift in Sources */,
+				E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */,
 				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 			);

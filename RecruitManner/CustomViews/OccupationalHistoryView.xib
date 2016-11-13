@@ -20,22 +20,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edit" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-T4-gsX"/>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball_circle_go_green" translatesAutoresizingMaskIntoConstraints="NO" id="LkA-ZV-w6Y"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball_circle_go_green" translatesAutoresizingMaskIntoConstraints="NO" id="LkA-ZV-w6Y">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="8LK-zj-ufd"/>
+                        <constraint firstAttribute="height" constant="8" id="ZgV-j2-iHo"/>
+                    </constraints>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013.08 - 2104.09" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4J-RJ-gs4">
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="深圳市力天保利科技有限公司／人力资源经理" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psp-iX-xo6">
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作内容：这是一家IT互联网工商，公司主营手机应用APP，Wi-Fi路由器，游戏平台及电商平台几" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-da-5o9">
-                    <constraints>
-                        <constraint firstAttribute="width" constant="286" id="pW2-b4-Mgb"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -44,14 +46,16 @@
             <constraints>
                 <constraint firstItem="b4J-RJ-gs4" firstAttribute="leading" secondItem="LkA-ZV-w6Y" secondAttribute="trailing" constant="8" id="5g5-oW-s3z"/>
                 <constraint firstItem="LkA-ZV-w6Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="BUe-Xm-q60"/>
+                <constraint firstItem="ac7-da-5o9" firstAttribute="leading" secondItem="b4J-RJ-gs4" secondAttribute="leading" id="FGS-J7-Znf"/>
                 <constraint firstAttribute="trailing" secondItem="SsN-T4-gsX" secondAttribute="trailing" constant="16" id="IIE-RM-SeA"/>
+                <constraint firstAttribute="trailing" secondItem="Psp-iX-xo6" secondAttribute="trailing" constant="16" id="LzT-3B-ood"/>
+                <constraint firstItem="Psp-iX-xo6" firstAttribute="top" secondItem="SsN-T4-gsX" secondAttribute="bottom" constant="8" id="Np6-tu-7FU"/>
                 <constraint firstItem="SsN-T4-gsX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="PaR-BF-Bbi"/>
                 <constraint firstItem="b4J-RJ-gs4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="RSY-nO-c58"/>
-                <constraint firstItem="ac7-da-5o9" firstAttribute="leading" secondItem="Psp-iX-xo6" secondAttribute="leading" id="Thz-Lr-tVB"/>
+                <constraint firstAttribute="trailing" secondItem="ac7-da-5o9" secondAttribute="trailing" constant="16" id="UTS-EC-tpu"/>
                 <constraint firstItem="LkA-ZV-w6Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="UcN-6i-Qqf"/>
-                <constraint firstItem="Psp-iX-xo6" firstAttribute="leading" secondItem="b4J-RJ-gs4" secondAttribute="leading" id="ZEz-YA-xb0"/>
-                <constraint firstItem="Psp-iX-xo6" firstAttribute="top" secondItem="b4J-RJ-gs4" secondAttribute="bottom" constant="8" id="avl-Jk-cJw"/>
-                <constraint firstItem="ac7-da-5o9" firstAttribute="top" secondItem="Psp-iX-xo6" secondAttribute="bottom" constant="8" id="lqT-rB-88o"/>
+                <constraint firstItem="Psp-iX-xo6" firstAttribute="leading" secondItem="b4J-RJ-gs4" secondAttribute="leading" id="dEA-H5-lxY"/>
+                <constraint firstItem="ac7-da-5o9" firstAttribute="top" secondItem="Psp-iX-xo6" secondAttribute="bottom" constant="8" id="mBM-Px-J21"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		20599EBE9EBFD1F1E6C28AED /* Pods_AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */; };
+		4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */; };
+		4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */; };
+		4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */; };
+		4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */; };
+		4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */; };
+		4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */; };
 		DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28878C7C09964910918009 /* Pods_RecruitManner.framework */; };
 		E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */; };
 		E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */; };
@@ -104,6 +110,12 @@
 /* Begin PBXFileReference section */
 		183557662E4E4A8F4E53FCF1 /* Pods-RecruitManner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.release.xcconfig"; sourceTree = "<group>"; };
 		2B3A6EBB2FF7DB9211401120 /* Pods-AlamofireObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.release.xcconfig"; sourceTree = "<group>"; };
+		4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCell.swift; path = Views/JobTableViewCell.swift; sourceTree = "<group>"; };
+		4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = ViewControllers/HomePageViewController.swift; sourceTree = "<group>"; };
+		4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobDetailTableViewController.swift; path = ViewControllers/JobDetailTableViewController.swift; sourceTree = "<group>"; };
+		4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCellHeader.swift; path = Views/JobTableViewCellHeader.swift; sourceTree = "<group>"; };
+		4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobTableViewCellHeader.xib; path = Views/JobTableViewCellHeader.xib; sourceTree = "<group>"; };
+		4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobCellView.xib; path = Views/JobCellView.xib; sourceTree = "<group>"; };
 		7041C3C843D3B5BD3A82DAD6 /* Pods-RecruitManner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.debug.xcconfig"; sourceTree = "<group>"; };
 		827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +222,26 @@
 				827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B9B7A8B1DD5C02200AA2763 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */,
+				4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */,
+				4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */,
+				4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4B9B7A961DD5D94700AA2763 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */,
+				4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		7AC283CADB40C2461508243F /* Pods */ = {
@@ -356,6 +388,8 @@
 				E00E503B1DD82A630087A8B6 /* Services */,
 				E00E503C1DD82A700087A8B6 /* Workers */,
 				E00E503D1DD82A7C0087A8B6 /* Scenes */,
+				4B9B7A961DD5D94700AA2763 /* ViewControllers */,
+				4B9B7A8B1DD5C02200AA2763 /* Views */,
 				E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */,
 				E0E1631C1DD18A7E006EF708 /* ViewController.swift */,
 				E0E1631E1DD18A7E006EF708 /* Main.storyboard */,
@@ -511,7 +545,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jiang Duan";
 				TargetAttributes = {
 					E021191F1DD4367E0051A0E3 = {
@@ -590,8 +624,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */,
+				4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
+				4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +765,11 @@
 				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
 				E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */,
 				E00E50571DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift in Sources */,
+				4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */,
+				4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */,
+				4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */,
 				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
+				4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
 				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
@@ -915,6 +955,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -965,6 +1006,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

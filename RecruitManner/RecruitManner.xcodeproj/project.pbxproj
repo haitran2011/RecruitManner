@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		20599EBE9EBFD1F1E6C28AED /* Pods_AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */; };
-		4B9B7A8A1DD59B0400AA2763 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B7A881DD59B0400AA2763 /* Company.storyboard */; };
 		4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */; };
-		4B9B7A911DD5C0DF00AA2763 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B7A8F1DD5C0DF00AA2763 /* JobTableViewCell.xib */; };
 		4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */; };
+		4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */; };
+		4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */; };
+		4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */; };
+		4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */; };
 		DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28878C7C09964910918009 /* Pods_RecruitManner.framework */; };
 		E02119241DD4367E0051A0E3 /* AlamofireObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; };
@@ -67,10 +69,12 @@
 /* Begin PBXFileReference section */
 		183557662E4E4A8F4E53FCF1 /* Pods-RecruitManner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.release.xcconfig"; sourceTree = "<group>"; };
 		2B3A6EBB2FF7DB9211401120 /* Pods-AlamofireObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.release.xcconfig"; sourceTree = "<group>"; };
-		4B9B7A891DD59B0400AA2763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Company.storyboard; sourceTree = "<group>"; };
 		4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCell.swift; path = Views/JobTableViewCell.swift; sourceTree = "<group>"; };
-		4B9B7A8F1DD5C0DF00AA2763 /* JobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobTableViewCell.xib; path = Views/JobTableViewCell.xib; sourceTree = "<group>"; };
 		4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = ViewControllers/HomePageViewController.swift; sourceTree = "<group>"; };
+		4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobDetailTableViewController.swift; path = ViewControllers/JobDetailTableViewController.swift; sourceTree = "<group>"; };
+		4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCellHeader.swift; path = Views/JobTableViewCellHeader.swift; sourceTree = "<group>"; };
+		4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobTableViewCellHeader.xib; path = Views/JobTableViewCellHeader.xib; sourceTree = "<group>"; };
+		4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobCellView.xib; path = Views/JobCellView.xib; sourceTree = "<group>"; };
 		7041C3C843D3B5BD3A82DAD6 /* Pods-RecruitManner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.debug.xcconfig"; sourceTree = "<group>"; };
 		827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,8 +145,10 @@
 		4B9B7A8B1DD5C02200AA2763 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */,
 				4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */,
-				4B9B7A8F1DD5C0DF00AA2763 /* JobTableViewCell.xib */,
+				4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */,
+				4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */,
+				4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -211,7 +218,6 @@
 				E0E163211DD18A7E006EF708 /* Assets.xcassets */,
 				E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */,
 				E0E163261DD18A7E006EF708 /* Info.plist */,
-				4B9B7A881DD59B0400AA2763 /* Company.storyboard */,
 			);
 			path = RecruitManner;
 			sourceTree = "<group>";
@@ -333,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Jiang Duan";
 				TargetAttributes = {
 					E021191F1DD4367E0051A0E3 = {
@@ -390,10 +396,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B9B7A8A1DD59B0400AA2763 /* Company.storyboard in Resources */,
-				4B9B7A911DD5C0DF00AA2763 /* JobTableViewCell.xib in Resources */,
+				4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
+				4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,8 +512,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */,
+				4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */,
 				4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */,
 				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
+				4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,14 +557,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B9B7A881DD59B0400AA2763 /* Company.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B9B7A891DD59B0400AA2763 /* Base */,
-			);
-			name = Company.storyboard;
-			sourceTree = "<group>";
-		};
 		E0E1631E1DD18A7E006EF708 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -641,6 +641,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -691,6 +692,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

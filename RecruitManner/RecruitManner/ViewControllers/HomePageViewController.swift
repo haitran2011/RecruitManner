@@ -18,13 +18,10 @@ class HomePageViewController: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let nib = UINib(nibName: "JobTableViewCell", bundle:Bundle.main)
-        
-        self.tableView.register(nib, forCellReuseIdentifier: "RecruitCellIdentifier")
-//        self.tableView.contentInset.top += 20
-        self.tableHeadView = SDCycleScrollView(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:128))
-        self.tableHeadView.backgroundColor = UIColor.red
-        self.tableView.tableHeaderView = tableHeadView
+
+//        self.tableHeadView = SDCycleScrollView(frame: CGRect(x:0, y:0, width:self.tableView.frame.width, height:128))
+//        self.tableHeadView.backgroundColor = UIColor.red
+//        self.tableView.tableHeaderView = tableHeadView
     }
 
     override func didReceiveMemoryWarning() {

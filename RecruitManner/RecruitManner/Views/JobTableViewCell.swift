@@ -8,9 +8,11 @@
 
 import UIKit
 
-//@IBDesignable
-class JobTableViewCell: UITableViewCell {
+@IBDesignable
+class JobTableViewCell: UIView {
 
+    @IBOutlet var contentView: UIView!
+    
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subTitle: UILabel!
@@ -20,21 +22,26 @@ class JobTableViewCell: UITableViewCell {
     @IBOutlet weak var number: UILabel!
     @IBOutlet weak var dateLable: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-        //initalFromXib()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initalFromXib()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initalFromXib()
     }
     
     func initalFromXib() {
-        Bundle.main.loadNibNamed("JobTableViewCell", owner: nil, options: nil)
         
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: "JobCellView", bundle: bundle)
+        contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        contentView.frame = bounds
+        addSubview(contentView)
     }
+    
+    
     
 }

@@ -34,6 +34,9 @@ target :RecruitManner do
     # 单选框
     pod 'RadioButton'
     
+    # 避免键盘遮挡下方输入框
+    pod 'TPKeyboardAvoiding'
+    
 end
 
 target :AlamofireObjectMapper do

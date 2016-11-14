@@ -37,6 +37,7 @@ PODS:
   - ShareSDK2/UI/iPhoneAppRecommend (2.12.5)
   - ShareSDK2/UI/iPhoneDefault (2.12.5)
   - ShareSDK2/UI/iPhoneSimple (2.12.5)
+  - TPKeyboardAvoiding (1.3)
 
 DEPENDENCIES:
   - Alamofire (from `../github/Alamofire`)
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - ShareSDK2/Connection/TencentWeibo (~> 2.12.5)
   - ShareSDK2/Connection/WeChat (~> 2.12.5)
   - ShareSDK2/UI (~> 2.12.5)
+  - TPKeyboardAvoiding
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -66,7 +68,8 @@ SPEC CHECKSUMS:
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK2: c076a9ea57d9d87650130b8071f2bcf0f169cb94
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
 
-PODFILE CHECKSUM: c685e1a4e188f4fd02dc71ecdaf01c39a7766bd2
+PODFILE CHECKSUM: 767c0d2b5453b2cf1647c6e0632747b331b5962e
 
 COCOAPODS: 1.1.1

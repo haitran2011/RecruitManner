@@ -69,7 +69,7 @@ class OnlineResumeViewController: UIViewController, OnlineResumeViewControllerIn
 
 fileprivate let ConstCellAddHeadPortraitIdentifier = 0
 fileprivate let ConstCellBasicInfoIdentifier = 1
-fileprivate let CellOccupationalHistoryIdentifier = 2
+fileprivate let ConstCellOccupationalHistoryIdentifier = 2
 fileprivate let ConstCellEducationHistoryIdentifier = 3
 fileprivate let ConstCellEexpectationsJobIdentifier = 4
 fileprivate let ConstCellAddSkillIdentifier = 5
@@ -104,7 +104,7 @@ extension OnlineResumeViewController: UITableViewDataSource, UITableViewDelegate
             return 66
         case ConstCellBasicInfoIdentifier:
             return 240
-        case CellOccupationalHistoryIdentifier, ConstCellEducationHistoryIdentifier:
+        case ConstCellOccupationalHistoryIdentifier, ConstCellEducationHistoryIdentifier:
             return 106
         case ConstCellEexpectationsJobIdentifier:
             return 66
@@ -124,7 +124,7 @@ extension OnlineResumeViewController: UITableViewDataSource, UITableViewDelegate
             return "基本信息（必填）"
         }
         
-        if section == CellOccupationalHistoryIdentifier {
+        if section == ConstCellOccupationalHistoryIdentifier {
             return "工作经历（必填）"
         }
         
@@ -158,7 +158,7 @@ extension OnlineResumeViewController: UITableViewDataSource, UITableViewDelegate
             return cellBasicInfoView(tableView, cellForRowAt: indexPath)
         }
         
-        if indexPath.section == CellOccupationalHistoryIdentifier {
+        if indexPath.section == ConstCellOccupationalHistoryIdentifier {
             return cellOccupationalHistoryView(tableView, cellForRowAt: indexPath)
         }
         

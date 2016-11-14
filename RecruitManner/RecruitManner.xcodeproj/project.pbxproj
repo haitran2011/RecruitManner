@@ -21,6 +21,13 @@
 		E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */; };
 		E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */; };
 		E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */; };
+		E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E504F1DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift */; };
+		E00E50571DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50501DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift */; };
+		E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50511DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift */; };
+		E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50521DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift */; };
+		E00E505A1DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50531DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift */; };
+		E00E505B1DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50541DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift */; };
+		E00E505C1DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E50551DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift */; };
 		E02119241DD4367E0051A0E3 /* AlamofireObjectMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; };
 		E02119281DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -112,6 +119,13 @@
 		E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeRouter.swift; path = Scenes/Me/OnlineResume/OnlineResumeRouter.swift; sourceTree = "<group>"; };
 		E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeViewController.swift; path = Scenes/Me/OnlineResume/OnlineResumeViewController.swift; sourceTree = "<group>"; };
 		E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnlineResumeWorker.swift; path = Scenes/Me/OnlineResume/OnlineResumeWorker.swift; sourceTree = "<group>"; };
+		E00E504F1DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListConfigurator.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListConfigurator.swift; sourceTree = "<group>"; };
+		E00E50501DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListInteractor.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListInteractor.swift; sourceTree = "<group>"; };
+		E00E50511DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListModels.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListModels.swift; sourceTree = "<group>"; };
+		E00E50521DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListPresenter.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListPresenter.swift; sourceTree = "<group>"; };
+		E00E50531DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListRouter.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListRouter.swift; sourceTree = "<group>"; };
+		E00E50541DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListViewController.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListViewController.swift; sourceTree = "<group>"; };
+		E00E50551DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OccupationalHistoryListWorker.swift; path = Scenes/Me/OccupationalHistoryList/OccupationalHistoryListWorker.swift; sourceTree = "<group>"; };
 		E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireObjectMapper.h; sourceTree = "<group>"; };
 		E02119231DD4367E0051A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -241,6 +255,7 @@
 		E00E503E1DD82B120087A8B6 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				E00E504E1DD9AE6E0087A8B6 /* Occupational History List */,
 				E00E504D1DD837520087A8B6 /* OnlineResume */,
 			);
 			name = Me;
@@ -258,6 +273,20 @@
 				E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */,
 			);
 			name = OnlineResume;
+			sourceTree = "<group>";
+		};
+		E00E504E1DD9AE6E0087A8B6 /* Occupational History List */ = {
+			isa = PBXGroup;
+			children = (
+				E00E504F1DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift */,
+				E00E50501DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift */,
+				E00E50511DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift */,
+				E00E50521DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift */,
+				E00E50531DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift */,
+				E00E50541DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift */,
+				E00E50551DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift */,
+			);
+			name = "Occupational History List";
 			sourceTree = "<group>";
 		};
 		E02119211DD4367E0051A0E3 /* AlamofireObjectMapper */ = {
@@ -689,14 +718,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */,
+				E00E505A1DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift in Sources */,
 				E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */,
 				E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */,
 				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
 				E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */,
 				E00E50461DD82BE80087A8B6 /* OnlineResumeConfigurator.swift in Sources */,
+				E00E505B1DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift in Sources */,
+				E00E505C1DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift in Sources */,
+				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
 				E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */,
+				E00E50571DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift in Sources */,
 				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
+				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
+				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

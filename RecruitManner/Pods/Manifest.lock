@@ -3,6 +3,7 @@ PODS:
   - MJRefresh (3.1.12)
   - MOBFoundation (2.2.3)
   - ObjectMapper (2.2.1)
+  - RadioButton (1.0)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - MJRefresh
   - MOBFoundation (~> 2.2.3)
   - ObjectMapper (~> 2.2.1)
+  - RadioButton
   - SDCycleScrollView
   - ShareSDK2 (~> 2.12.5)
   - ShareSDK2/Connection/QQ (~> 2.12.5)
@@ -60,10 +62,11 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   MOBFoundation: 2bc5cd7011a2db75cf2b3ceacb7f4227eec88f3e
   ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
+  RadioButton: 7ef053baf6ff0e7f9e777016c28e9ba4e330edba
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK2: c076a9ea57d9d87650130b8071f2bcf0f169cb94
 
-PODFILE CHECKSUM: 0745bbeece2b11d684731f3ff12fef2b323c5ede
+PODFILE CHECKSUM: c685e1a4e188f4fd02dc71ecdaf01c39a7766bd2
 
 COCOAPODS: 1.1.1

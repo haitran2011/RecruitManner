@@ -31,6 +31,9 @@ target :RecruitManner do
     # 下拉刷新
     pod 'MJRefresh'
     
+    # 单选框
+    pod 'RadioButton'
+    
 end
 
 target :AlamofireObjectMapper do

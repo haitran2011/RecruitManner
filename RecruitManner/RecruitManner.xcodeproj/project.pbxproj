@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		20599EBE9EBFD1F1E6C28AED /* Pods_AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */; };
-		4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */; };
-		4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */; };
-		4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */; };
-		4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */; };
-		4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */; };
-		4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */; };
+		4BBBCAD81DD9D8CB0047EAD5 /* JobCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD31DD9D8CB0047EAD5 /* JobCellView.xib */; };
+		4BBBCAD91DD9D8CB0047EAD5 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD41DD9D8CB0047EAD5 /* JobTableViewCell.swift */; };
+		4BBBCADA1DD9D8CB0047EAD5 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD51DD9D8CB0047EAD5 /* JobTableViewCell.xib */; };
+		4BBBCADB1DD9D8CB0047EAD5 /* JobTableViewCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD61DD9D8CB0047EAD5 /* JobTableViewCellHeader.swift */; };
+		4BBBCADC1DD9D8CB0047EAD5 /* JobTableViewCellHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBCAD71DD9D8CB0047EAD5 /* JobTableViewCellHeader.xib */; };
+		4BBBCAE01DD9D9230047EAD5 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCADE1DD9D9230047EAD5 /* HomePageViewController.swift */; };
+		4BBBCAE11DD9D9230047EAD5 /* JobDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBCADF1DD9D9230047EAD5 /* JobDetailTableViewController.swift */; };
 		DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28878C7C09964910918009 /* Pods_RecruitManner.framework */; };
 		E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */; };
 		E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */; };
@@ -83,7 +84,6 @@
 		E0D8EE4C1DE2E501003827F8 /* PayAttentionCompanysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE451DE2E501003827F8 /* PayAttentionCompanysViewController.swift */; };
 		E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE461DE2E501003827F8 /* PayAttentionCompanysWorker.swift */; };
 		E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */; };
-		E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631C1DD18A7E006EF708 /* ViewController.swift */; };
 		E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E1631E1DD18A7E006EF708 /* Main.storyboard */; };
 		E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E163211DD18A7E006EF708 /* Assets.xcassets */; };
 		E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */; };
@@ -147,12 +147,13 @@
 /* Begin PBXFileReference section */
 		183557662E4E4A8F4E53FCF1 /* Pods-RecruitManner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.release.xcconfig"; sourceTree = "<group>"; };
 		2B3A6EBB2FF7DB9211401120 /* Pods-AlamofireObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.release.xcconfig"; sourceTree = "<group>"; };
-		4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCell.swift; path = Views/JobTableViewCell.swift; sourceTree = "<group>"; };
-		4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = ViewControllers/HomePageViewController.swift; sourceTree = "<group>"; };
-		4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobDetailTableViewController.swift; path = ViewControllers/JobDetailTableViewController.swift; sourceTree = "<group>"; };
-		4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobTableViewCellHeader.swift; path = Views/JobTableViewCellHeader.swift; sourceTree = "<group>"; };
-		4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobTableViewCellHeader.xib; path = Views/JobTableViewCellHeader.xib; sourceTree = "<group>"; };
-		4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobCellView.xib; path = Views/JobCellView.xib; sourceTree = "<group>"; };
+		4BBBCAD31DD9D8CB0047EAD5 /* JobCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCellView.xib; sourceTree = "<group>"; };
+		4BBBCAD41DD9D8CB0047EAD5 /* JobTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		4BBBCAD51DD9D8CB0047EAD5 /* JobTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		4BBBCAD61DD9D8CB0047EAD5 /* JobTableViewCellHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTableViewCellHeader.swift; sourceTree = "<group>"; };
+		4BBBCAD71DD9D8CB0047EAD5 /* JobTableViewCellHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobTableViewCellHeader.xib; sourceTree = "<group>"; };
+		4BBBCADE1DD9D9230047EAD5 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Scenes/Home/HomePageViewController.swift; sourceTree = "<group>"; };
+		4BBBCADF1DD9D9230047EAD5 /* JobDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobDetailTableViewController.swift; path = Scenes/Home/JobDetailTableViewController.swift; sourceTree = "<group>"; };
 		7041C3C843D3B5BD3A82DAD6 /* Pods-RecruitManner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.debug.xcconfig"; sourceTree = "<group>"; };
 		827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -225,7 +226,6 @@
 		E0D8EE461DE2E501003827F8 /* PayAttentionCompanysWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysWorker.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysWorker.swift; sourceTree = "<group>"; };
 		E0E163171DD18A7E006EF708 /* RecruitManner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecruitManner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0E1631C1DD18A7E006EF708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0E1631F1DD18A7E006EF708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0E163211DD18A7E006EF708 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0E163241DD18A7E006EF708 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -300,24 +300,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4B9B7A8B1DD5C02200AA2763 /* Views */ = {
+		4BBBCADD1DD9D8DC0047EAD5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4BBBCAD11DD9C31B0047EAD5 /* JobCellView.xib */,
-				4B9B7A8E1DD5C0DF00AA2763 /* JobTableViewCell.swift */,
-				4BBBCAC71DD95A3A0047EAD5 /* JobTableViewCellHeader.swift */,
-				4BBBCAC81DD95A3A0047EAD5 /* JobTableViewCellHeader.xib */,
+				4BBBCADE1DD9D9230047EAD5 /* HomePageViewController.swift */,
+				4BBBCADF1DD9D9230047EAD5 /* JobDetailTableViewController.swift */,
 			);
-			name = Views;
+			name = Home;
 			sourceTree = "<group>";
 		};
-		4B9B7A961DD5D94700AA2763 /* ViewControllers */ = {
+		4BBBCAE21DD9D9340047EAD5 /* Near */ = {
 			isa = PBXGroup;
 			children = (
-				4B9B7A971DD5D9AF00AA2763 /* HomePageViewController.swift */,
-				4BBBCAC51DD94DB00047EAD5 /* JobDetailTableViewController.swift */,
 			);
-			name = ViewControllers;
+			name = Near;
 			sourceTree = "<group>";
 		};
 		7AC283CADB40C2461508243F /* Pods */ = {
@@ -356,6 +352,8 @@
 			isa = PBXGroup;
 			children = (
 				E0F4043A1DDDA6CE00BB0DE1 /* Message */,
+				4BBBCAE21DD9D9340047EAD5 /* Near */,
+				4BBBCADD1DD9D8DC0047EAD5 /* Home */,
 				E00E503E1DD82B120087A8B6 /* Me */,
 			);
 			name = Scenes;
@@ -412,6 +410,11 @@
 			isa = PBXGroup;
 			children = (
 				E0F404351DDD9B2400BB0DE1 /* SwipeLabel */,
+				4BBBCAD31DD9D8CB0047EAD5 /* JobCellView.xib */,
+				4BBBCAD41DD9D8CB0047EAD5 /* JobTableViewCell.swift */,
+				4BBBCAD51DD9D8CB0047EAD5 /* JobTableViewCell.xib */,
+				4BBBCAD61DD9D8CB0047EAD5 /* JobTableViewCellHeader.swift */,
+				4BBBCAD71DD9D8CB0047EAD5 /* JobTableViewCellHeader.xib */,
 				E02E634D1DD6CF7900A496C5 /* CustomViews.h */,
 				E02E634E1DD6CF7900A496C5 /* Info.plist */,
 				E02E63571DD6D00700A496C5 /* MeHeadView.swift */,
@@ -522,10 +525,7 @@
 				E00E503B1DD82A630087A8B6 /* Services */,
 				E00E503C1DD82A700087A8B6 /* Workers */,
 				E00E503D1DD82A7C0087A8B6 /* Scenes */,
-				4B9B7A961DD5D94700AA2763 /* ViewControllers */,
-				4B9B7A8B1DD5C02200AA2763 /* Views */,
 				E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */,
-				E0E1631C1DD18A7E006EF708 /* ViewController.swift */,
 				E0E1631E1DD18A7E006EF708 /* Main.storyboard */,
 				E0E163211DD18A7E006EF708 /* Assets.xcassets */,
 				E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */,
@@ -728,7 +728,6 @@
 					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -782,9 +781,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBBCADC1DD9D8CB0047EAD5 /* JobTableViewCellHeader.xib in Resources */,
 				E02E635C1DD6E2FF00A496C5 /* Media.xcassets in Resources */,
 				E00E50351DD734910087A8B6 /* ResumeAddSkillView.xib in Resources */,
 				E02E635A1DD6D08100A496C5 /* MeHeadView.xib in Resources */,
+				4BBBCADA1DD9D8CB0047EAD5 /* JobTableViewCell.xib in Resources */,
+				4BBBCAD81DD9D8CB0047EAD5 /* JobCellView.xib in Resources */,
 				E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */,
 				E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */,
 				E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */,
@@ -798,10 +800,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */,
-				4BBBCAD21DD9C31B0047EAD5 /* JobCellView.xib in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
-				4BBBCACA1DD95A3A0047EAD5 /* JobTableViewCellHeader.xib in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -918,9 +918,11 @@
 				E02E635E1DD7067100A496C5 /* HeadPortraitView.swift in Sources */,
 				E00E50371DD73DBC0087A8B6 /* ShowUpMoreView.swift in Sources */,
 				E02E63601DD706AA00A496C5 /* BasicInfoView.swift in Sources */,
+				4BBBCADB1DD9D8CB0047EAD5 /* JobTableViewCellHeader.swift in Sources */,
 				E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */,
 				E02E63621DD7071600A496C5 /* OccupationalHistoryView.swift in Sources */,
 				E02E63641DD7079E00A496C5 /* EexpectationsJobView.swift in Sources */,
+				4BBBCAD91DD9D8CB0047EAD5 /* JobTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,6 +938,7 @@
 				E0F404481DDDA77600BB0DE1 /* WhoSeenMeViewController.swift in Sources */,
 				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
 				E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */,
+				4BBBCAE01DD9D9230047EAD5 /* HomePageViewController.swift in Sources */,
 				E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */,
 				E0D8EE471DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift in Sources */,
 				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
@@ -959,17 +962,12 @@
 				E00E50571DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift in Sources */,
 				E0D8EE2F1DE2D5EF003827F8 /* JobApplicationRecordWorker.swift in Sources */,
 				E0F404461DDDA77600BB0DE1 /* WhoSeenMePresenter.swift in Sources */,
-				4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */,
 				E0D8EE3C1DE2DB2F003827F8 /* MyJobOffersRouter.swift in Sources */,
 				E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */,
 				E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */,
-				4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */,
 				E0D8EE2E1DE2D5EF003827F8 /* JobApplicationRecordViewController.swift in Sources */,
 				E0D8EE2B1DE2D5EF003827F8 /* JobApplicationRecordModels.swift in Sources */,
-				4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */,
 				E0D8EE4A1DE2E501003827F8 /* PayAttentionCompanysPresenter.swift in Sources */,
-				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
-				4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */,
 				E0F404491DDDA77600BB0DE1 /* WhoSeenMeWorker.swift in Sources */,
 				E0D8EE101DE2C9E6003827F8 /* PositionListOfHRRouter.swift in Sources */,
 				E0F404431DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift in Sources */,
@@ -982,6 +980,7 @@
 				E0D8EE291DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift in Sources */,
 				E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
+				4BBBCAE11DD9D9230047EAD5 /* JobDetailTableViewController.swift in Sources */,
 				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1250,7 +1249,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AJTSJV3PVB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1267,7 +1266,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AJTSJV3PVB;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

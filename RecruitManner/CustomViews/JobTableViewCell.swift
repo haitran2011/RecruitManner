@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class JobTableViewCell: UIView {
+public class JobTableViewCell: UIView {
 
     @IBOutlet var contentView: UIView!
     
@@ -23,12 +23,12 @@ class JobTableViewCell: UIView {
     @IBOutlet weak var dateLable: UILabel!
     
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         initalFromXib()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initalFromXib()
     }
@@ -36,12 +36,59 @@ class JobTableViewCell: UIView {
     func initalFromXib() {
         
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "JobCellView", bundle: bundle)
+        let nib = UINib(nibName: "JobTableViewCell", bundle: bundle)
         contentView = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         contentView.frame = bounds
         addSubview(contentView)
     }
     
+    @IBInspectable
+    public var logoImage:UIImage? {
+        didSet {
+            self.logo.image = logoImage
+        }
+    }
     
+    @IBInspectable
+    public var titleName:String? {
+        didSet {
+            self.title.text = titleName
+        }
+    }
     
+    @IBInspectable
+    public var subTitleName:String? {
+        didSet {
+            self.subTitle.text = subTitleName
+        }
+    }
+    
+    @IBInspectable
+    public var detailName:String? {
+        didSet {
+            self.detail.text = detailName
+        }
+    }
+    
+    @IBInspectable
+    public var numberName:String? {
+        didSet {
+            self.number.text = numberName
+        }
+    }
+
+    @IBInspectable
+    public var subDetailName:String? {
+        didSet {
+            self.subDetail.text = subDetailName
+        }
+    }
+
+    @IBInspectable
+    public var dateName:String? {
+        didSet {
+            self.dateLable.text = dateName
+        }
+    }
+
 }

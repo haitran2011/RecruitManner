@@ -551,7 +551,6 @@
 			isa = PBXGroup;
 			children = (
 				E0F404351DDD9B2400BB0DE1 /* SwipeLabel */,
-				4BBBCAD31DD9D8CB0047EAD5 /* JobCellView.xib */,
 				4B0690311DDB357000A50CFE /* JobTableViewCell.xib */,
 				4BBBCAD41DD9D8CB0047EAD5 /* JobTableViewCell.swift */,
 				4BBBCAE71DD9ED970047EAD5 /* JobTableViewSessionHeader.swift */,
@@ -871,6 +870,7 @@
 					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1140,7 +1140,6 @@
 				E0D8EE0D1DE2C9E6003827F8 /* PositionListOfHRInteractor.swift in Sources */,
 				E0D8EE3A1DE2DB2F003827F8 /* MyJobOffersModels.swift in Sources */,
 				E0D8EE111DE2C9E6003827F8 /* PositionListOfHRViewController.swift in Sources */,
-				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
 				4B06902E1DDB2E2B00A50CFE /* NearJobRouter.swift in Sources */,
 				4B0E299B1DE0361000CE4225 /* JobBySelectedWorker.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
@@ -1427,7 +1426,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1444,7 +1443,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

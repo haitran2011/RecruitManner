@@ -39,6 +39,7 @@ PODS:
   - ShareSDK2/UI/iPhoneDefault (2.12.5)
   - ShareSDK2/UI/iPhoneSimple (2.12.5)
   - TPKeyboardAvoiding (1.3)
+  - YZPullDownMenu (1.0)
 
 DEPENDENCIES:
   - Alamofire (from `../github/Alamofire`)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - ShareSDK2/Connection/WeChat (~> 2.12.5)
   - ShareSDK2/UI (~> 2.12.5)
   - TPKeyboardAvoiding
+  - YZPullDownMenu
 
 EXTERNAL SOURCES:
   Alamofire:
@@ -72,7 +74,8 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   ShareSDK2: c076a9ea57d9d87650130b8071f2bcf0f169cb94
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  YZPullDownMenu: afc60c3fc4f7caedd9556d32da43ea1718e078e0
 
-PODFILE CHECKSUM: efb01a177272208816c6d50a5cbec4d1518d5f4c
+PODFILE CHECKSUM: 132fea3252d03a77d9750003898f8f8b77fcca6a
 
 COCOAPODS: 1.1.1

@@ -1,0 +1,6 @@
+framework module YZPullDownMenu {
+  umbrella header "YZPullDownMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

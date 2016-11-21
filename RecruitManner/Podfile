@@ -41,6 +41,9 @@ target :RecruitManner do
     # 可滑动Label
     #pod 'MarqueeLabel/Swift'
     
+    # 下拉菜单
+    pod 'YZPullDownMenu'
+    
 end
 
 target :AlamofireObjectMapper do

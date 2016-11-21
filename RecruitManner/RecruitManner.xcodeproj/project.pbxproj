@@ -52,6 +52,36 @@
 		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
+		E0D8EE011DE28D51003827F8 /* RollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE001DE28D51003827F8 /* RollLabel.swift */; };
+		E0D8EE031DE2C57C003827F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D8EE021DE2C57C003827F8 /* MapKit.framework */; };
+		E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */; };
+		E0D8EE0D1DE2C9E6003827F8 /* PositionListOfHRInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE061DE2C9E6003827F8 /* PositionListOfHRInteractor.swift */; };
+		E0D8EE0E1DE2C9E6003827F8 /* PositionListOfHRModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE071DE2C9E6003827F8 /* PositionListOfHRModels.swift */; };
+		E0D8EE0F1DE2C9E6003827F8 /* PositionListOfHRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE081DE2C9E6003827F8 /* PositionListOfHRPresenter.swift */; };
+		E0D8EE101DE2C9E6003827F8 /* PositionListOfHRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE091DE2C9E6003827F8 /* PositionListOfHRRouter.swift */; };
+		E0D8EE111DE2C9E6003827F8 /* PositionListOfHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE0A1DE2C9E6003827F8 /* PositionListOfHRViewController.swift */; };
+		E0D8EE121DE2C9E6003827F8 /* PositionListOfHRWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE0B1DE2C9E6003827F8 /* PositionListOfHRWorker.swift */; };
+		E0D8EE291DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE221DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift */; };
+		E0D8EE2A1DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE231DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift */; };
+		E0D8EE2B1DE2D5EF003827F8 /* JobApplicationRecordModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE241DE2D5EF003827F8 /* JobApplicationRecordModels.swift */; };
+		E0D8EE2C1DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE251DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift */; };
+		E0D8EE2D1DE2D5EF003827F8 /* JobApplicationRecordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE261DE2D5EF003827F8 /* JobApplicationRecordRouter.swift */; };
+		E0D8EE2E1DE2D5EF003827F8 /* JobApplicationRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE271DE2D5EF003827F8 /* JobApplicationRecordViewController.swift */; };
+		E0D8EE2F1DE2D5EF003827F8 /* JobApplicationRecordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE281DE2D5EF003827F8 /* JobApplicationRecordWorker.swift */; };
+		E0D8EE381DE2DB2F003827F8 /* MyJobOffersConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE311DE2DB2F003827F8 /* MyJobOffersConfigurator.swift */; };
+		E0D8EE391DE2DB2F003827F8 /* MyJobOffersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE321DE2DB2F003827F8 /* MyJobOffersInteractor.swift */; };
+		E0D8EE3A1DE2DB2F003827F8 /* MyJobOffersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE331DE2DB2F003827F8 /* MyJobOffersModels.swift */; };
+		E0D8EE3B1DE2DB2F003827F8 /* MyJobOffersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE341DE2DB2F003827F8 /* MyJobOffersPresenter.swift */; };
+		E0D8EE3C1DE2DB2F003827F8 /* MyJobOffersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE351DE2DB2F003827F8 /* MyJobOffersRouter.swift */; };
+		E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE361DE2DB2F003827F8 /* MyJobOffersViewController.swift */; };
+		E0D8EE3E1DE2DB2F003827F8 /* MyJobOffersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE371DE2DB2F003827F8 /* MyJobOffersWorker.swift */; };
+		E0D8EE471DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE401DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift */; };
+		E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE411DE2E501003827F8 /* PayAttentionCompanysInteractor.swift */; };
+		E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE421DE2E501003827F8 /* PayAttentionCompanysModels.swift */; };
+		E0D8EE4A1DE2E501003827F8 /* PayAttentionCompanysPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE431DE2E501003827F8 /* PayAttentionCompanysPresenter.swift */; };
+		E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE441DE2E501003827F8 /* PayAttentionCompanysRouter.swift */; };
+		E0D8EE4C1DE2E501003827F8 /* PayAttentionCompanysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE451DE2E501003827F8 /* PayAttentionCompanysViewController.swift */; };
+		E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE461DE2E501003827F8 /* PayAttentionCompanysWorker.swift */; };
 		E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */; };
 		E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1631C1DD18A7E006EF708 /* ViewController.swift */; };
 		E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E1631E1DD18A7E006EF708 /* Main.storyboard */; };
@@ -59,6 +89,13 @@
 		E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */; };
 		E0E163301DD18A7E006EF708 /* RecruitMannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1632F1DD18A7E006EF708 /* RecruitMannerTests.swift */; };
 		E0E1633B1DD18A7E006EF708 /* RecruitMannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1633A1DD18A7E006EF708 /* RecruitMannerUITests.swift */; };
+		E0F404431DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043C1DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift */; };
+		E0F404441DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043D1DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift */; };
+		E0F404451DDDA77600BB0DE1 /* WhoSeenMeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043E1DDDA77600BB0DE1 /* WhoSeenMeModels.swift */; };
+		E0F404461DDDA77600BB0DE1 /* WhoSeenMePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043F1DDDA77600BB0DE1 /* WhoSeenMePresenter.swift */; };
+		E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F404401DDDA77600BB0DE1 /* WhoSeenMeRouter.swift */; };
+		E0F404481DDDA77600BB0DE1 /* WhoSeenMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F404411DDDA77600BB0DE1 /* WhoSeenMeViewController.swift */; };
+		E0F404491DDDA77600BB0DE1 /* WhoSeenMeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F404421DDDA77600BB0DE1 /* WhoSeenMeWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +193,36 @@
 		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		E0D8EE001DE28D51003827F8 /* RollLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollLabel.swift; path = SwipeLabel/RollLabel.swift; sourceTree = "<group>"; };
+		E0D8EE021DE2C57C003827F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRConfigurator.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRConfigurator.swift; sourceTree = "<group>"; };
+		E0D8EE061DE2C9E6003827F8 /* PositionListOfHRInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRInteractor.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRInteractor.swift; sourceTree = "<group>"; };
+		E0D8EE071DE2C9E6003827F8 /* PositionListOfHRModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRModels.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRModels.swift; sourceTree = "<group>"; };
+		E0D8EE081DE2C9E6003827F8 /* PositionListOfHRPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRPresenter.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRPresenter.swift; sourceTree = "<group>"; };
+		E0D8EE091DE2C9E6003827F8 /* PositionListOfHRRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRRouter.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRRouter.swift; sourceTree = "<group>"; };
+		E0D8EE0A1DE2C9E6003827F8 /* PositionListOfHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRViewController.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRViewController.swift; sourceTree = "<group>"; };
+		E0D8EE0B1DE2C9E6003827F8 /* PositionListOfHRWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRWorker.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRWorker.swift; sourceTree = "<group>"; };
+		E0D8EE221DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordConfigurator.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordConfigurator.swift; sourceTree = "<group>"; };
+		E0D8EE231DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordInteractor.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordInteractor.swift; sourceTree = "<group>"; };
+		E0D8EE241DE2D5EF003827F8 /* JobApplicationRecordModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordModels.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordModels.swift; sourceTree = "<group>"; };
+		E0D8EE251DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordPresenter.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordPresenter.swift; sourceTree = "<group>"; };
+		E0D8EE261DE2D5EF003827F8 /* JobApplicationRecordRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordRouter.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordRouter.swift; sourceTree = "<group>"; };
+		E0D8EE271DE2D5EF003827F8 /* JobApplicationRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordViewController.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordViewController.swift; sourceTree = "<group>"; };
+		E0D8EE281DE2D5EF003827F8 /* JobApplicationRecordWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobApplicationRecordWorker.swift; path = Scenes/Message/JobApplicationRecord/JobApplicationRecordWorker.swift; sourceTree = "<group>"; };
+		E0D8EE311DE2DB2F003827F8 /* MyJobOffersConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersConfigurator.swift; path = Scenes/Message/MyJobOffers/MyJobOffersConfigurator.swift; sourceTree = "<group>"; };
+		E0D8EE321DE2DB2F003827F8 /* MyJobOffersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersInteractor.swift; path = Scenes/Message/MyJobOffers/MyJobOffersInteractor.swift; sourceTree = "<group>"; };
+		E0D8EE331DE2DB2F003827F8 /* MyJobOffersModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersModels.swift; path = Scenes/Message/MyJobOffers/MyJobOffersModels.swift; sourceTree = "<group>"; };
+		E0D8EE341DE2DB2F003827F8 /* MyJobOffersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersPresenter.swift; path = Scenes/Message/MyJobOffers/MyJobOffersPresenter.swift; sourceTree = "<group>"; };
+		E0D8EE351DE2DB2F003827F8 /* MyJobOffersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersRouter.swift; path = Scenes/Message/MyJobOffers/MyJobOffersRouter.swift; sourceTree = "<group>"; };
+		E0D8EE361DE2DB2F003827F8 /* MyJobOffersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersViewController.swift; path = Scenes/Message/MyJobOffers/MyJobOffersViewController.swift; sourceTree = "<group>"; };
+		E0D8EE371DE2DB2F003827F8 /* MyJobOffersWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyJobOffersWorker.swift; path = Scenes/Message/MyJobOffers/MyJobOffersWorker.swift; sourceTree = "<group>"; };
+		E0D8EE401DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysConfigurator.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysConfigurator.swift; sourceTree = "<group>"; };
+		E0D8EE411DE2E501003827F8 /* PayAttentionCompanysInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysInteractor.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysInteractor.swift; sourceTree = "<group>"; };
+		E0D8EE421DE2E501003827F8 /* PayAttentionCompanysModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysModels.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysModels.swift; sourceTree = "<group>"; };
+		E0D8EE431DE2E501003827F8 /* PayAttentionCompanysPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysPresenter.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysPresenter.swift; sourceTree = "<group>"; };
+		E0D8EE441DE2E501003827F8 /* PayAttentionCompanysRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysRouter.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysRouter.swift; sourceTree = "<group>"; };
+		E0D8EE451DE2E501003827F8 /* PayAttentionCompanysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysViewController.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysViewController.swift; sourceTree = "<group>"; };
+		E0D8EE461DE2E501003827F8 /* PayAttentionCompanysWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayAttentionCompanysWorker.swift; path = Scenes/Message/PayAttentionCompanys/PayAttentionCompanysWorker.swift; sourceTree = "<group>"; };
 		E0E163171DD18A7E006EF708 /* RecruitManner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecruitManner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E1631A1DD18A7E006EF708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0E1631C1DD18A7E006EF708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +236,13 @@
 		E0E163361DD18A7E006EF708 /* RecruitMannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecruitMannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E1633A1DD18A7E006EF708 /* RecruitMannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitMannerUITests.swift; sourceTree = "<group>"; };
 		E0E1633C1DD18A7E006EF708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F4043C1DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeConfigurator.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeConfigurator.swift; sourceTree = "<group>"; };
+		E0F4043D1DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeInteractor.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeInteractor.swift; sourceTree = "<group>"; };
+		E0F4043E1DDDA77600BB0DE1 /* WhoSeenMeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeModels.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeModels.swift; sourceTree = "<group>"; };
+		E0F4043F1DDDA77600BB0DE1 /* WhoSeenMePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMePresenter.swift; path = Scenes/Message/WoSeenMe/WhoSeenMePresenter.swift; sourceTree = "<group>"; };
+		E0F404401DDDA77600BB0DE1 /* WhoSeenMeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeRouter.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeRouter.swift; sourceTree = "<group>"; };
+		E0F404411DDDA77600BB0DE1 /* WhoSeenMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeViewController.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeViewController.swift; sourceTree = "<group>"; };
+		E0F404421DDDA77600BB0DE1 /* WhoSeenMeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeWorker.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeWorker.swift; sourceTree = "<group>"; };
 		FF28878C7C09964910918009 /* Pods_RecruitManner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecruitManner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,6 +268,7 @@
 			files = (
 				E02E63521DD6CF7900A496C5 /* CustomViews.framework in Frameworks */,
 				DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */,
+				E0D8EE031DE2C57C003827F8 /* MapKit.framework in Frameworks */,
 				E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +293,7 @@
 		48065A55071F652FBCCBAE6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0D8EE021DE2C57C003827F8 /* MapKit.framework */,
 				FF28878C7C09964910918009 /* Pods_RecruitManner.framework */,
 				827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */,
 			);
@@ -279,6 +355,7 @@
 		E00E503D1DD82A7C0087A8B6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E0F4043A1DDDA6CE00BB0DE1 /* Message */,
 				E00E503E1DD82B120087A8B6 /* Me */,
 			);
 			name = Scenes;
@@ -334,6 +411,7 @@
 		E02E634C1DD6CF7900A496C5 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				E0F404351DDD9B2400BB0DE1 /* SwipeLabel */,
 				E02E634D1DD6CF7900A496C5 /* CustomViews.h */,
 				E02E634E1DD6CF7900A496C5 /* Info.plist */,
 				E02E63571DD6D00700A496C5 /* MeHeadView.swift */,
@@ -353,6 +431,62 @@
 				E00E50381DD73DD90087A8B6 /* ShowUpMoreView.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E0D8EE041DE2C90E003827F8 /* PositionListOfHR */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */,
+				E0D8EE061DE2C9E6003827F8 /* PositionListOfHRInteractor.swift */,
+				E0D8EE071DE2C9E6003827F8 /* PositionListOfHRModels.swift */,
+				E0D8EE081DE2C9E6003827F8 /* PositionListOfHRPresenter.swift */,
+				E0D8EE091DE2C9E6003827F8 /* PositionListOfHRRouter.swift */,
+				E0D8EE0A1DE2C9E6003827F8 /* PositionListOfHRViewController.swift */,
+				E0D8EE0B1DE2C9E6003827F8 /* PositionListOfHRWorker.swift */,
+			);
+			name = PositionListOfHR;
+			sourceTree = "<group>";
+		};
+		E0D8EE131DE2D53F003827F8 /* JobApplicationRecord */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE221DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift */,
+				E0D8EE231DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift */,
+				E0D8EE241DE2D5EF003827F8 /* JobApplicationRecordModels.swift */,
+				E0D8EE251DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift */,
+				E0D8EE261DE2D5EF003827F8 /* JobApplicationRecordRouter.swift */,
+				E0D8EE271DE2D5EF003827F8 /* JobApplicationRecordViewController.swift */,
+				E0D8EE281DE2D5EF003827F8 /* JobApplicationRecordWorker.swift */,
+			);
+			name = JobApplicationRecord;
+			sourceTree = "<group>";
+		};
+		E0D8EE301DE2DADC003827F8 /* MyJobOffers */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE311DE2DB2F003827F8 /* MyJobOffersConfigurator.swift */,
+				E0D8EE321DE2DB2F003827F8 /* MyJobOffersInteractor.swift */,
+				E0D8EE331DE2DB2F003827F8 /* MyJobOffersModels.swift */,
+				E0D8EE341DE2DB2F003827F8 /* MyJobOffersPresenter.swift */,
+				E0D8EE351DE2DB2F003827F8 /* MyJobOffersRouter.swift */,
+				E0D8EE361DE2DB2F003827F8 /* MyJobOffersViewController.swift */,
+				E0D8EE371DE2DB2F003827F8 /* MyJobOffersWorker.swift */,
+			);
+			name = MyJobOffers;
+			sourceTree = "<group>";
+		};
+		E0D8EE3F1DE2E4A4003827F8 /* PayAttentionCompanys */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE401DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift */,
+				E0D8EE411DE2E501003827F8 /* PayAttentionCompanysInteractor.swift */,
+				E0D8EE421DE2E501003827F8 /* PayAttentionCompanysModels.swift */,
+				E0D8EE431DE2E501003827F8 /* PayAttentionCompanysPresenter.swift */,
+				E0D8EE441DE2E501003827F8 /* PayAttentionCompanysRouter.swift */,
+				E0D8EE451DE2E501003827F8 /* PayAttentionCompanysViewController.swift */,
+				E0D8EE461DE2E501003827F8 /* PayAttentionCompanysWorker.swift */,
+			);
+			name = PayAttentionCompanys;
 			sourceTree = "<group>";
 		};
 		E0E1630E1DD18A7D006EF708 = {
@@ -417,6 +551,40 @@
 				E0E1633C1DD18A7E006EF708 /* Info.plist */,
 			);
 			path = RecruitMannerUITests;
+			sourceTree = "<group>";
+		};
+		E0F404351DDD9B2400BB0DE1 /* SwipeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE001DE28D51003827F8 /* RollLabel.swift */,
+			);
+			name = SwipeLabel;
+			sourceTree = "<group>";
+		};
+		E0F4043A1DDDA6CE00BB0DE1 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E0D8EE3F1DE2E4A4003827F8 /* PayAttentionCompanys */,
+				E0D8EE301DE2DADC003827F8 /* MyJobOffers */,
+				E0D8EE131DE2D53F003827F8 /* JobApplicationRecord */,
+				E0D8EE041DE2C90E003827F8 /* PositionListOfHR */,
+				E0F4043B1DDDA6F200BB0DE1 /* WhoSeenMe */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		E0F4043B1DDDA6F200BB0DE1 /* WhoSeenMe */ = {
+			isa = PBXGroup;
+			children = (
+				E0F4043C1DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift */,
+				E0F4043D1DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift */,
+				E0F4043E1DDDA77600BB0DE1 /* WhoSeenMeModels.swift */,
+				E0F4043F1DDDA77600BB0DE1 /* WhoSeenMePresenter.swift */,
+				E0F404401DDDA77600BB0DE1 /* WhoSeenMeRouter.swift */,
+				E0F404411DDDA77600BB0DE1 /* WhoSeenMeViewController.swift */,
+				E0F404421DDDA77600BB0DE1 /* WhoSeenMeWorker.swift */,
+			);
+			name = WhoSeenMe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,7 +728,13 @@
 					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E0E1632A1DD18A7E006EF708 = {
 						CreatedOnToolsVersion = 8.0;
@@ -739,6 +913,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D8EE011DE28D51003827F8 /* RollLabel.swift in Sources */,
 				E02E63581DD6D00700A496C5 /* MeHeadView.swift in Sources */,
 				E02E635E1DD7067100A496C5 /* HeadPortraitView.swift in Sources */,
 				E00E50371DD73DBC0087A8B6 /* ShowUpMoreView.swift in Sources */,
@@ -754,23 +929,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */,
+				E0D8EE0F1DE2C9E6003827F8 /* PositionListOfHRPresenter.swift in Sources */,
 				E00E505A1DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift in Sources */,
+				E0D8EE121DE2C9E6003827F8 /* PositionListOfHRWorker.swift in Sources */,
+				E0D8EE2A1DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift in Sources */,
+				E0F404481DDDA77600BB0DE1 /* WhoSeenMeViewController.swift in Sources */,
+				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
 				E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */,
 				E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */,
+				E0D8EE471DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift in Sources */,
 				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
 				E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */,
+				E0D8EE4C1DE2E501003827F8 /* PayAttentionCompanysViewController.swift in Sources */,
+				E0D8EE2D1DE2D5EF003827F8 /* JobApplicationRecordRouter.swift in Sources */,
+				E0D8EE381DE2DB2F003827F8 /* MyJobOffersConfigurator.swift in Sources */,
+				E0D8EE0E1DE2C9E6003827F8 /* PositionListOfHRModels.swift in Sources */,
+				E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */,
 				E00E50461DD82BE80087A8B6 /* OnlineResumeConfigurator.swift in Sources */,
 				E00E505B1DD9AEF20087A8B6 /* OccupationalHistoryListViewController.swift in Sources */,
 				E00E505C1DD9AEF20087A8B6 /* OccupationalHistoryListWorker.swift in Sources */,
 				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
+				E0D8EE3E1DE2DB2F003827F8 /* MyJobOffersWorker.swift in Sources */,
+				E0F404441DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift in Sources */,
+				E0D8EE3B1DE2DB2F003827F8 /* MyJobOffersPresenter.swift in Sources */,
+				E0D8EE2C1DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift in Sources */,
+				E0D8EE391DE2DB2F003827F8 /* MyJobOffersInteractor.swift in Sources */,
+				E0F404451DDDA77600BB0DE1 /* WhoSeenMeModels.swift in Sources */,
 				E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */,
 				E00E50571DD9AEF20087A8B6 /* OccupationalHistoryListInteractor.swift in Sources */,
+				E0D8EE2F1DE2D5EF003827F8 /* JobApplicationRecordWorker.swift in Sources */,
+				E0F404461DDDA77600BB0DE1 /* WhoSeenMePresenter.swift in Sources */,
 				4B9B7A981DD5D9AF00AA2763 /* HomePageViewController.swift in Sources */,
+				E0D8EE3C1DE2DB2F003827F8 /* MyJobOffersRouter.swift in Sources */,
+				E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */,
+				E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */,
 				4BBBCAC61DD94DB00047EAD5 /* JobDetailTableViewController.swift in Sources */,
+				E0D8EE2E1DE2D5EF003827F8 /* JobApplicationRecordViewController.swift in Sources */,
+				E0D8EE2B1DE2D5EF003827F8 /* JobApplicationRecordModels.swift in Sources */,
 				4B9B7A901DD5C0DF00AA2763 /* JobTableViewCell.swift in Sources */,
+				E0D8EE4A1DE2E501003827F8 /* PayAttentionCompanysPresenter.swift in Sources */,
 				E0E1631D1DD18A7E006EF708 /* ViewController.swift in Sources */,
 				4BBBCAC91DD95A3A0047EAD5 /* JobTableViewCellHeader.swift in Sources */,
+				E0F404491DDDA77600BB0DE1 /* WhoSeenMeWorker.swift in Sources */,
+				E0D8EE101DE2C9E6003827F8 /* PositionListOfHRRouter.swift in Sources */,
+				E0F404431DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift in Sources */,
+				E0D8EE0D1DE2C9E6003827F8 /* PositionListOfHRInteractor.swift in Sources */,
+				E0D8EE3A1DE2DB2F003827F8 /* MyJobOffersModels.swift in Sources */,
+				E0D8EE111DE2C9E6003827F8 /* PositionListOfHRViewController.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
+				E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */,
+				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
+				E0D8EE291DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift in Sources */,
+				E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
 				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
 			);
@@ -1040,12 +1250,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1055,12 +1267,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

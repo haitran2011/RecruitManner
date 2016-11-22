@@ -42,7 +42,8 @@ target :RecruitManner do
     #pod 'MarqueeLabel/Swift'
     
     # 下拉菜单
-    pod 'YZPullDownMenu'
+    # pod 'YZPullDownMenu'
+    pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'
     
 end
 

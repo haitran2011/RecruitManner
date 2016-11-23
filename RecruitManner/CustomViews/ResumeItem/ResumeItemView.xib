@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResumeItemView" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="LyC-pf-qOs" id="5oR-Mf-f0Y"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hDu-3z-Hcu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LyC-pf-qOs">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投递给“销售经理”职位" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0H-fx-Kg7">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZb-eU-vvB" userLabel="divider">
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="0ML-u0-ob3"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="唐明黄的在线简历" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ya-kj-3Sm">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="social_logo_test" translatesAutoresizingMaskIntoConstraints="NO" id="Ytg-KA-jhe">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="pUd-PM-UGK"/>
+                                <constraint firstAttribute="width" constant="48" id="qMd-MU-wse"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDq-Ma-KA3" customClass="RollLabel" customModule="CustomViews" customModuleProvider="target">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="JS，前端，简洁控，南山区"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="aGM-ui-J5I"/>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mZb-eU-vvB" secondAttribute="trailing" id="0Uv-a9-VIs"/>
+                        <constraint firstAttribute="height" constant="128" id="8Ro-7A-gMH"/>
+                        <constraint firstItem="U0H-fx-Kg7" firstAttribute="leading" secondItem="LyC-pf-qOs" secondAttribute="leading" constant="16" id="Bee-b6-fvI"/>
+                        <constraint firstItem="dDq-Ma-KA3" firstAttribute="leading" secondItem="Ytg-KA-jhe" secondAttribute="trailing" constant="8" id="ERs-ab-pNc"/>
+                        <constraint firstAttribute="trailing" secondItem="dDq-Ma-KA3" secondAttribute="trailing" constant="16" id="Ih9-z4-paD"/>
+                        <constraint firstItem="aGM-ui-J5I" firstAttribute="centerY" secondItem="Ytg-KA-jhe" secondAttribute="centerY" id="Lyv-in-HJe"/>
+                        <constraint firstItem="Ytg-KA-jhe" firstAttribute="centerY" secondItem="LyC-pf-qOs" secondAttribute="centerY" constant="16" id="Qlx-Pd-3Uw"/>
+                        <constraint firstItem="9ya-kj-3Sm" firstAttribute="centerY" secondItem="LyC-pf-qOs" secondAttribute="centerY" id="SeK-9v-6wa"/>
+                        <constraint firstItem="mZb-eU-vvB" firstAttribute="top" secondItem="U0H-fx-Kg7" secondAttribute="bottom" constant="8" id="T94-0y-3hY"/>
+                        <constraint firstItem="Ytg-KA-jhe" firstAttribute="leading" secondItem="LyC-pf-qOs" secondAttribute="leading" constant="16" id="hge-hX-BjI"/>
+                        <constraint firstItem="U0H-fx-Kg7" firstAttribute="top" secondItem="LyC-pf-qOs" secondAttribute="top" constant="8" id="i8w-r2-P7x"/>
+                        <constraint firstAttribute="trailing" secondItem="aGM-ui-J5I" secondAttribute="trailing" constant="16" id="lzB-pp-5wG"/>
+                        <constraint firstItem="dDq-Ma-KA3" firstAttribute="top" secondItem="9ya-kj-3Sm" secondAttribute="bottom" constant="8" id="sI2-eg-UDr"/>
+                        <constraint firstAttribute="bottom" secondItem="dDq-Ma-KA3" secondAttribute="bottom" constant="8" id="uJn-rF-lkj"/>
+                        <constraint firstItem="mZb-eU-vvB" firstAttribute="leading" secondItem="LyC-pf-qOs" secondAttribute="leading" id="wq2-GQ-6II"/>
+                        <constraint firstItem="9ya-kj-3Sm" firstAttribute="leading" secondItem="Ytg-KA-jhe" secondAttribute="trailing" constant="8" id="zUf-Ey-fIZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09月19日 23:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yk-4Z-IDg">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LyC-pf-qOs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="32" id="2VS-Nq-jWM"/>
+                <constraint firstItem="1Yk-4Z-IDg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LsH-1f-Xdy"/>
+                <constraint firstAttribute="trailing" secondItem="LyC-pf-qOs" secondAttribute="trailing" constant="16" id="PU8-mY-Mv9"/>
+                <constraint firstItem="LyC-pf-qOs" firstAttribute="top" secondItem="1Yk-4Z-IDg" secondAttribute="bottom" constant="8" id="SVR-LE-97E"/>
+                <constraint firstItem="LyC-pf-qOs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="nIJ-Ci-B3n"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="12" height="15"/>
+        <image name="social_logo_test" width="36" height="36"/>
+    </resources>
+</document>

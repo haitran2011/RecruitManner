@@ -87,6 +87,16 @@
 		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
+		E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07AA2161DE5294A00508EE4 /* Company.storyboard */; };
+		E07AA21B1DE5338100508EE4 /* ResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */; };
+		E07AA21D1DE5339C00508EE4 /* ResumeItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */; };
+		E07AA2281DE544DC00508EE4 /* NewResumesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2211DE544DC00508EE4 /* NewResumesConfigurator.swift */; };
+		E07AA2291DE544DC00508EE4 /* NewResumesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2221DE544DC00508EE4 /* NewResumesInteractor.swift */; };
+		E07AA22A1DE544DC00508EE4 /* NewResumesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2231DE544DC00508EE4 /* NewResumesModels.swift */; };
+		E07AA22B1DE544DC00508EE4 /* NewResumesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2241DE544DC00508EE4 /* NewResumesPresenter.swift */; };
+		E07AA22C1DE544DC00508EE4 /* NewResumesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2251DE544DC00508EE4 /* NewResumesRouter.swift */; };
+		E07AA22D1DE544DC00508EE4 /* NewResumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2261DE544DC00508EE4 /* NewResumesViewController.swift */; };
+		E07AA22E1DE544DC00508EE4 /* NewResumesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2271DE544DC00508EE4 /* NewResumesWorker.swift */; };
 		E0D8EE011DE28D51003827F8 /* RollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE001DE28D51003827F8 /* RollLabel.swift */; };
 		E0D8EE031DE2C57C003827F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D8EE021DE2C57C003827F8 /* MapKit.framework */; };
 		E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */; };
@@ -262,6 +272,16 @@
 		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		E07AA2171DE5294A00508EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Company.storyboard; sourceTree = "<group>"; };
+		E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResumeItemView.swift; path = ResumeItem/ResumeItemView.swift; sourceTree = "<group>"; };
+		E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResumeItemView.xib; path = ResumeItem/ResumeItemView.xib; sourceTree = "<group>"; };
+		E07AA2211DE544DC00508EE4 /* NewResumesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesConfigurator.swift; path = Scenes/Company/Message/NewResumes/NewResumesConfigurator.swift; sourceTree = "<group>"; };
+		E07AA2221DE544DC00508EE4 /* NewResumesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesInteractor.swift; path = Scenes/Company/Message/NewResumes/NewResumesInteractor.swift; sourceTree = "<group>"; };
+		E07AA2231DE544DC00508EE4 /* NewResumesModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesModels.swift; path = Scenes/Company/Message/NewResumes/NewResumesModels.swift; sourceTree = "<group>"; };
+		E07AA2241DE544DC00508EE4 /* NewResumesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesPresenter.swift; path = Scenes/Company/Message/NewResumes/NewResumesPresenter.swift; sourceTree = "<group>"; };
+		E07AA2251DE544DC00508EE4 /* NewResumesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesRouter.swift; path = Scenes/Company/Message/NewResumes/NewResumesRouter.swift; sourceTree = "<group>"; };
+		E07AA2261DE544DC00508EE4 /* NewResumesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesViewController.swift; path = Scenes/Company/Message/NewResumes/NewResumesViewController.swift; sourceTree = "<group>"; };
+		E07AA2271DE544DC00508EE4 /* NewResumesWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewResumesWorker.swift; path = Scenes/Company/Message/NewResumes/NewResumesWorker.swift; sourceTree = "<group>"; };
 		E0D8EE001DE28D51003827F8 /* RollLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollLabel.swift; path = SwipeLabel/RollLabel.swift; sourceTree = "<group>"; };
 		E0D8EE021DE2C57C003827F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRConfigurator.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRConfigurator.swift; sourceTree = "<group>"; };
@@ -492,6 +512,7 @@
 		E00E503D1DD82A7C0087A8B6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E07AA21E1DE5440F00508EE4 /* Company */,
 				E0F4043A1DDDA6CE00BB0DE1 /* Message */,
 				4BBBCAE21DD9D9340047EAD5 /* Near */,
 				4BBBCADD1DD9D8DC0047EAD5 /* Home */,
@@ -550,6 +571,7 @@
 		E02E634C1DD6CF7900A496C5 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				E07AA2191DE5331000508EE4 /* ResumeItem */,
 				E0F404351DDD9B2400BB0DE1 /* SwipeLabel */,
 				4B0690311DDB357000A50CFE /* JobTableViewCell.xib */,
 				4BBBCAD41DD9D8CB0047EAD5 /* JobTableViewCell.swift */,
@@ -576,6 +598,45 @@
 				4BE9787A1DE284EF00777CD9 /* NavigationItemView.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E07AA2191DE5331000508EE4 /* ResumeItem */ = {
+			isa = PBXGroup;
+			children = (
+				E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */,
+				E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */,
+			);
+			name = ResumeItem;
+			sourceTree = "<group>";
+		};
+		E07AA21E1DE5440F00508EE4 /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				E07AA21F1DE544A200508EE4 /* Message */,
+			);
+			name = Company;
+			sourceTree = "<group>";
+		};
+		E07AA21F1DE544A200508EE4 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E07AA2201DE544AE00508EE4 /* NewResumes */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		E07AA2201DE544AE00508EE4 /* NewResumes */ = {
+			isa = PBXGroup;
+			children = (
+				E07AA2211DE544DC00508EE4 /* NewResumesConfigurator.swift */,
+				E07AA2221DE544DC00508EE4 /* NewResumesInteractor.swift */,
+				E07AA2231DE544DC00508EE4 /* NewResumesModels.swift */,
+				E07AA2241DE544DC00508EE4 /* NewResumesPresenter.swift */,
+				E07AA2251DE544DC00508EE4 /* NewResumesRouter.swift */,
+				E07AA2261DE544DC00508EE4 /* NewResumesViewController.swift */,
+				E07AA2271DE544DC00508EE4 /* NewResumesWorker.swift */,
+			);
+			name = NewResumes;
 			sourceTree = "<group>";
 		};
 		E0D8EE041DE2C90E003827F8 /* PositionListOfHR */ = {
@@ -673,6 +734,7 @@
 				E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */,
 				E0E163261DD18A7E006EF708 /* Info.plist */,
 				E02E63431DD6CE4A00A496C5 /* develop.storyboard */,
+				E07AA2161DE5294A00508EE4 /* Company.storyboard */,
 			);
 			path = RecruitManner;
 			sourceTree = "<group>";
@@ -926,6 +988,7 @@
 			files = (
 				E02E635C1DD6E2FF00A496C5 /* Media.xcassets in Resources */,
 				E00E50351DD734910087A8B6 /* ResumeAddSkillView.xib in Resources */,
+				E07AA21D1DE5339C00508EE4 /* ResumeItemView.xib in Resources */,
 				4BE9787B1DE284EF00777CD9 /* NavigationItemView.xib in Resources */,
 				E02E635A1DD6D08100A496C5 /* MeHeadView.xib in Resources */,
 				4B0690321DDB357000A50CFE /* JobTableViewCell.xib in Resources */,
@@ -943,6 +1006,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */,
+				E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
@@ -1066,6 +1130,7 @@
 				4BBBCAE81DD9ED970047EAD5 /* JobTableViewSessionHeader.swift in Sources */,
 				E02E63641DD7079E00A496C5 /* EexpectationsJobView.swift in Sources */,
 				4BBBCAD91DD9D8CB0047EAD5 /* JobTableViewCell.swift in Sources */,
+				E07AA21B1DE5338100508EE4 /* ResumeItemView.swift in Sources */,
 				4BE978791DE284DF00777CD9 /* NavigationItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1080,6 +1145,7 @@
 				E0D8EE121DE2C9E6003827F8 /* PositionListOfHRWorker.swift in Sources */,
 				E0D8EE2A1DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift in Sources */,
 				E0F404481DDDA77600BB0DE1 /* WhoSeenMeViewController.swift in Sources */,
+				E07AA22C1DE544DC00508EE4 /* NewResumesRouter.swift in Sources */,
 				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
 				4B0E29981DE0361000CE4225 /* JobBySelectedPresenter.swift in Sources */,
 				4BA929901DDEFE62000EADD1 /* JobByCompanyConfigurator.swift in Sources */,
@@ -1090,6 +1156,7 @@
 				E00E50491DD82BE80087A8B6 /* OnlineResumePresenter.swift in Sources */,
 				4B0E29971DE0361000CE4225 /* JobBySelectedModels.swift in Sources */,
 				E00E50471DD82BE80087A8B6 /* OnlineResumeInteractor.swift in Sources */,
+				E07AA2291DE544DC00508EE4 /* NewResumesInteractor.swift in Sources */,
 				E0D8EE471DE2E501003827F8 /* PayAttentionCompanysConfigurator.swift in Sources */,
 				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
 				4B0690111DDAEFCE00A50CFE /* HomePagePresenter.swift in Sources */,
@@ -1097,12 +1164,14 @@
 				4B0E29951DE0361000CE4225 /* JobBySelectedConfigurator.swift in Sources */,
 				4B06902A1DDB2E2B00A50CFE /* NearJobConfigurator.swift in Sources */,
 				4BA929951DDEFE62000EADD1 /* JobByCompanyViewController.swift in Sources */,
+				E07AA22E1DE544DC00508EE4 /* NewResumesWorker.swift in Sources */,
 				4B06900F1DDAEFCE00A50CFE /* HomePageInteractor.swift in Sources */,
 				4BA929941DDEFE62000EADD1 /* JobByCompanyRouter.swift in Sources */,
 				4BA929931DDEFE62000EADD1 /* JobByCompanyPresenter.swift in Sources */,
 				E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */,
 				E0D8EE4C1DE2E501003827F8 /* PayAttentionCompanysViewController.swift in Sources */,
 				E0D8EE2D1DE2D5EF003827F8 /* JobApplicationRecordRouter.swift in Sources */,
+				E07AA22B1DE544DC00508EE4 /* NewResumesPresenter.swift in Sources */,
 				E0D8EE381DE2DB2F003827F8 /* MyJobOffersConfigurator.swift in Sources */,
 				E0D8EE0E1DE2C9E6003827F8 /* PositionListOfHRModels.swift in Sources */,
 				E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */,
@@ -1140,8 +1209,11 @@
 				E0D8EE0D1DE2C9E6003827F8 /* PositionListOfHRInteractor.swift in Sources */,
 				E0D8EE3A1DE2DB2F003827F8 /* MyJobOffersModels.swift in Sources */,
 				E0D8EE111DE2C9E6003827F8 /* PositionListOfHRViewController.swift in Sources */,
+				E07AA22A1DE544DC00508EE4 /* NewResumesModels.swift in Sources */,
+				E07AA2281DE544DC00508EE4 /* NewResumesConfigurator.swift in Sources */,
 				4B06902E1DDB2E2B00A50CFE /* NearJobRouter.swift in Sources */,
 				4B0E299B1DE0361000CE4225 /* JobBySelectedWorker.swift in Sources */,
+				E07AA22D1DE544DC00508EE4 /* NewResumesViewController.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 				E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */,
 				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
@@ -1210,6 +1282,14 @@
 				E02E63441DD6CE4A00A496C5 /* Base */,
 			);
 			name = develop.storyboard;
+			sourceTree = "<group>";
+		};
+		E07AA2161DE5294A00508EE4 /* Company.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07AA2171DE5294A00508EE4 /* Base */,
+			);
+			name = Company.storyboard;
 			sourceTree = "<group>";
 		};
 		E0E1631E1DD18A7E006EF708 /* Main.storyboard */ = {

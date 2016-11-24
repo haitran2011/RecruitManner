@@ -13,7 +13,7 @@ import UIKit
 
 extension JobCityViewController: JobCityPresenterOutput {
 
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         router.passDataToNextScene(segue:segue)
     }
 }

@@ -89,6 +89,8 @@ class HomePageViewController: UITableViewController, HomePageViewControllerInput
 extension HomePageViewController: NavigationItemViewDelegate {
     func cityButtonAction() {
         print("cityButtonAction clicked")
+        let jobCityViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JobCityViewController")
+        self.navigationController?.pushViewController(jobCityViewController, animated: true)
     }
     
     func CancelButtonAction() {

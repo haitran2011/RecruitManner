@@ -141,6 +141,7 @@
 
 @implementation DOPDropDownMenu {
     CGFloat _tableViewHeight;
+    
 }
 
 #pragma mark - getter
@@ -189,7 +190,7 @@
 
 - (void)selectIndexPath:(DOPIndexPath *)indexPath triggerDelegate:(BOOL)trigger {
     if (!_dataSource || !_delegate
-        || ![_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:)]) {
+        || ![_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:)] ) {
         return;
     }
     
@@ -197,11 +198,6 @@
         return;
     }
     
-    
-    //    //第三级
-    //    if ([_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] <= indexPath.item) {
-    //        return;
-    //    }
     
     CATextLayer *title = (CATextLayer *)_titles[indexPath.column];
     if (indexPath.subItem < 0) {
@@ -220,7 +216,7 @@
             
             CGSize size = [self calculateTitleSizeWithString:title.string];
             CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-            title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
+            title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
             
         }
         else {
@@ -242,7 +238,7 @@
                 }
                 CGSize size = [self calculateTitleSizeWithString:title.string];
                 CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-                title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
+                title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
             }else if ([_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] > indexPath.column) {
                 title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:indexPath];
                 if (trigger) {
@@ -253,7 +249,7 @@
                 }
                 CGSize size = [self calculateTitleSizeWithString:title.string];
                 CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-                title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
+                title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
             }
             
         }
@@ -272,40 +268,9 @@
         
         CGSize size = [self calculateTitleSizeWithString:title.string];
         CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-        title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
+        title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
     }
     
-    //    if (indexPath.item < 0 ) {
-    //        if (!_isClickHaveItemValid && [_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] > 0){
-    //            title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:0]];
-    //            if (trigger) {
-    //                [_delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:indexPath.row item:0]];
-    //            }
-    //        }else {
-    //            title.string = [_dataSource menu:self titleForRowAtIndexPath:
-    //                            [DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row]];
-    //            if (trigger) {
-    //                [_delegate menu:self didSelectRowAtIndexPath:indexPath];
-    //            }
-    //        }
-    //        if (_currentSelectRowArray.count > indexPath.column) {
-    //            _currentSelectRowArray[indexPath.column] = @(indexPath.row);
-    //        }
-    //        CGSize size = [self calculateTitleSizeWithString:title.string];
-    //        CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-    //        title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
-    //    }else if ([_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] > indexPath.column) {
-    //        title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:indexPath];
-    //        if (trigger) {
-    //            [_delegate menu:self didSelectRowAtIndexPath:indexPath];
-    //        }
-    //        if (_currentSelectRowArray.count > indexPath.column) {
-    //            _currentSelectRowArray[indexPath.column] = @(indexPath.row);
-    //        }
-    //        CGSize size = [self calculateTitleSizeWithString:title.string];
-    //        CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-    //        title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
-    //    }
 }
 
 - (void)selectIndexPath:(DOPIndexPath *)indexPath {
@@ -391,7 +356,7 @@
         [self.layer addSublayer:title];
         [tempTitles addObject:title];
         //indicator
-        CAShapeLayer *indicator = [self createIndicatorWithColor:self.indicatorColor andPosition:CGPointMake((i + 1)*separatorLineInterval - 10, self.frame.size.height / 2)];
+        CAShapeLayer *indicator = [self createIndicatorWithColor:self.indicatorColor andPosition:CGPointMake((i + 1)*separatorLineInterval - 10, self.frame.size.height / 2) andShow:!_custom];
         [self.layer addSublayer:indicator];
         [tempIndicators addObject:indicator];
         
@@ -414,6 +379,7 @@
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     self = [self initWithFrame:CGRectMake(origin.x, origin.y, screenSize.width, height)];
     if (self) {
+        _custom = NO;
         _origin = origin;
         _currentSelectedMenudIndex = -1;
         _show = NO;
@@ -492,13 +458,16 @@
     return layer;
 }
 
-- (CAShapeLayer *)createIndicatorWithColor:(UIColor *)color andPosition:(CGPoint)point {
+- (CAShapeLayer *)createIndicatorWithColor:(UIColor *)color andPosition:(CGPoint)point andShow:(BOOL)show {
     CAShapeLayer *layer = [CAShapeLayer new];
     
     UIBezierPath *path = [UIBezierPath new];
     [path moveToPoint:CGPointMake(0, 0)];
+    // MAKE : Test
+    if (show == YES) {
     [path addLineToPoint:CGPointMake(8, 0)];
     [path addLineToPoint:CGPointMake(4, 5)];
+    }
     [path closePath];
     
     layer.path = path.CGPath;
@@ -564,9 +533,13 @@
     if (_dataSource == nil) {
         return;
     }
+    
+    NSInteger tapIndex = 0;
+    if (!_custom) {
     CGPoint touchPoint = [paramSender locationInView:self];
     //calculate index
-    NSInteger tapIndex = touchPoint.x / (self.frame.size.width / _numOfMenu);
+    tapIndex = touchPoint.x / (self.frame.size.width / _numOfMenu);
+    }
     
     for (int i = 0; i < _numOfMenu; i++) {
         if (i != tapIndex) {
@@ -779,7 +752,7 @@
 - (void)animateTitle:(CATextLayer *)title show:(BOOL)show complete:(void(^)())complete {
     CGSize size = [self calculateTitleSizeWithString:title.string];
     CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
-    title.bounds = CGRectMake(0, 0, sizeWidth, size.height);
+    title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
     if (!show) {
         title.foregroundColor = _textColor.CGColor;
     } else {
@@ -951,31 +924,9 @@
             cell.imageView.image = nil;
             cell.detailTextLabel.text = nil;
             
-            //                if (_dataSourceFlags.imageNameForItemsInRowAtIndexPath) {
-            //                    NSString *imageName = [_dataSource menu:self imageNameForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:indexPath.row]];
-            //
-            //                    if (imageName && imageName.length > 0) {
-            //                        cell.imageView.image = [UIImage imageNamed:imageName];
-            //                    }else {
-            //                        cell.imageView.image = nil;
-            //                    }
-            //                }else {
-            //                    cell.imageView.image = nil;
-            //                }
-            
-            //                if (_dataSourceFlags.detailTextForItemsInRowAtIndexPath) {
-            //                    NSString *detailText = [_dataSource menu:self detailTextForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:indexPath.row]];
-            //                    cell.detailTextLabel.text = detailText;
-            //                }else {
-            //                    cell.detailTextLabel.text = nil;
-            //                }
-            
-            //            }
             
         }
-        //            else {
-        //                //NSAssert(0 == 1, @"dataSource method needs to be implemented");
-        //            }
+ 
         if([cell.textLabel.text isEqualToString:[(CATextLayer *)[_titles objectAtIndex:_currentSelectedMenudIndex] string]]) {
             NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
             NSInteger currentSelectedItemMenudRow = [_currentSelectItemArray[currentSelectedMenudRow] integerValue];//xiaoyin
@@ -1029,16 +980,6 @@
         } else {
             //TODO: delegate is nil
         }
-        
-        
-        //        [self confiMenuWithSelectItem:indexPath.item];
-        //        if (self.delegate && [_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:)]) {
-        //            NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
-        //            [self.delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:indexPath.row]];
-        //        } else {
-        //            //TODO: delegate is nil
-        //
-        //        }
     }
     else {
         [self confiMenuWithSelectSubItem:indexPath.item];
@@ -1096,40 +1037,13 @@
         [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
             _show = NO;
         }];
+        if ([_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:isNoHaveItem:)]) {
+            [self.delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:row ] isNoHaveItem:YES];
+        }
+        
         return YES;
     }
 }
-//    //xiaoyin
-//    - (BOOL )confiMenuWithSelectRowItem:(NSInteger)row {
-////        NSInteger selectRow = _currentSelectRowArray[_currentSelectedMenudIndex];
-////        _currentSelectItemArray[selectRow] = @(row);
-//        _currentSelectItemArray[_currentSelectedRowIndex] = @(row);
-//        NSInteger currentSelectedItemMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];//xiaoyin
-//        CATextLayer *title = (CATextLayer *)_titles[_currentSelectedMenudIndex];
-//
-//        if (_dataSourceFlags.numberOfsubItemsInRowItem && [_dataSource menu:self numberOfsubItemsInRowItem:row column:_currentSelectedMenudIndex item:currentSelectedItemMenudRow]> 0) {
-//
-//            // 有双列表 有item数据
-//            if (self.isClickHaveItemValid) {
-//                title.string = [_dataSource menu:self titleForRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:row]];
-//                [self animateTitle:title show:YES complete:^{
-//                    [_rightTableView reloadData];
-//                }];
-//            } else {
-//                [_rightTableView reloadData];
-//            }
-//            return NO;
-//
-//        } else {
-//
-//            title.string = [_dataSource menu:self titleForRowAtIndexPath:
-//                            [DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:self.isRemainMenuTitle ? 0 : row]];
-//            [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
-//                _show = NO;
-//            }];
-//            return YES;
-//        }
-//    }
 
 - (BOOL)confiMenuWithSelectItem:(NSInteger)item {
     

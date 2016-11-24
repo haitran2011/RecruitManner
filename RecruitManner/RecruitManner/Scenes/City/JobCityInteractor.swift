@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol JobCityInteractorInput {
 
@@ -25,10 +26,12 @@ protocol JobCityInteractorOutput {
 // MARK: - JobCityInteractor Class Definition
 // ============================================================================= //
 
-class JobCityInteractor: JobCityInteractorInput {
+class JobCityInteractor: NSObject, JobCityInteractorInput {
 
     var output: JobCityInteractorOutput!
     var worker: JobCityWorker!
+    
+    var locationManager = CLLocationManager()
     
     // MARK: Business logic
     
@@ -44,3 +47,4 @@ class JobCityInteractor: JobCityInteractorInput {
         output.presentSomething(response: response)
     }
 }
+

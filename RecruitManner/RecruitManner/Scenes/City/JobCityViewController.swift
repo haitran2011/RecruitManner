@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import CustomViews
 
 protocol JobCityViewControllerInput {
 
@@ -31,6 +32,26 @@ class JobCityViewController: UIViewController, JobCityViewControllerInput {
     var router: JobCityRouter!
   
     @IBOutlet weak var cityButtonView: UIView!
+    
+    @IBOutlet weak var dropDownView: UIView!
+    
+    var menu:DOPDropDownMenu!
+    var classifys = ["美食","今日新单","电影","酒店"]
+    var cates = ["自助餐","快餐","火锅","日韩料理","西餐","烧烤小吃"]
+    var movices = ["内地剧","港台剧","英美剧"]
+    var hostels = ["经济酒店","商务酒店","连锁酒店","度假酒店","公寓酒店"]
+    var areas = ["全城","芙蓉区","雨花区","天心区","开福区","岳麓区"];
+    var sorts = ["全城","芙蓉区","雨花区","天心区","开福区","岳麓区"]
+    
+    var catesTest1 = ["自助餐1","自助餐2","自助餐3","自助餐4","自助餐5","自助餐6"]
+    var catesTest2 = ["火锅1","火锅2","火锅3","火锅4","火锅5","火锅6"]
+    var catesTest3 = ["日韩料理1","日韩料理2","日韩料理3","日韩料理4","日韩料理5","日韩料理6"]
+    
+    @IBOutlet weak var cityButton: UIButton!
+    
+    @IBAction func cityButtonAction(_ sender: Any) {
+        self.menu.menuTapped(nil)
+    }
     // MARK: Object lifecycle
   
     override func awakeFromNib() {
@@ -45,8 +66,22 @@ class JobCityViewController: UIViewController, JobCityViewControllerInput {
 
         super.viewDidLoad()
         doSomethingOnLoad()
-        
+        self.title = "选择地标"
+        // 添加下拉菜单
+        self.menu = DOPDropDownMenu(origin: CGPoint(x:0,y:0), andHeight: 0)
+        //        self.menu.frame.width = self.cityButtonView.frame.width
+        self.menu.custom = true
+        self.menu.delegate = self
+        self.menu.dataSource = self
+        self.menu.backgroundColor = UIColor.green
+        self.dropDownView.addSubview(self.menu)
+        self.menu.selectDefalutIndexPath()
     }
+    
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        
+//    }
   
     // MARK: Event handling
   
@@ -64,4 +99,106 @@ class JobCityViewController: UIViewController, JobCityViewControllerInput {
     
         // nameTextField.text = viewModel.name
     }
+}
+
+extension JobCityViewController:DOPDropDownMenuDataSource,DOPDropDownMenuDelegate {
+    func numberOfColumns(in menu: DOPDropDownMenu!) -> Int {
+        return 1
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
+        if column == 0 {
+            return self.classifys.count
+        } else if column == 1 {
+            return self.areas.count
+        } else {
+            return self.sorts.count
+        }
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, numberOfItemsInRow row: Int, column: Int) -> Int {
+        if column == 0 {
+            if row == 0 {
+                return self.cates.count
+            } else if row == 2 {
+                return self.movices.count
+            } else if row == 3 {
+                return self.hostels.count
+            }
+        }
+        return 0
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, numberOfsubItemsInRowItem row: Int, column: Int, item: Int) -> Int {
+        if column == 0 {
+            if row == 0 {
+                if item == 0 {
+                    return self.catesTest1.count
+                } else if item == 2 {
+                    return self.catesTest2.count
+                } else if item == 3 {
+                    return self.catesTest3.count
+                }
+            }
+        }
+        return 0
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, titleForRowAt indexPath: DOPIndexPath!) -> String! {
+        if indexPath.column == 0 {
+            return self.classifys[indexPath.row]
+        } else if indexPath.column == 1 {
+            return self.areas[indexPath.row]
+        } else {
+            return self.sorts[indexPath.row]
+        }
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, titleForItemsInRowAt indexPath: DOPIndexPath!) -> String! {
+        if indexPath.column == 0 {
+            if indexPath.row == 0 {
+                return self.cates[indexPath.item]
+            } else if indexPath.row == 2 {
+                return self.movices[indexPath.item]
+            } else if indexPath.row == 3 {
+                return self.hostels[indexPath.item]
+            }
+        }
+        return nil
+    }
+    
+    
+    func menu(_ menu: DOPDropDownMenu!, titleForsubItemsInRowItemAt indexPath: DOPIndexPath!) -> String! {
+        if indexPath.column == 0 {
+            if indexPath.row == 0 {
+                if indexPath.item == 0 {
+                    return self.catesTest1[indexPath.subItem]
+                } else if indexPath.item == 2 {
+                    return self.catesTest2[indexPath.subItem]
+                } else if indexPath.item == 3 {
+                    return self.catesTest3[indexPath.subItem]
+                }
+            }
+        }
+        return nil
+    }
+    
+    func menu(_ menu: DOPDropDownMenu!, didSelectRowAt indexPath: DOPIndexPath!) {
+        if indexPath.subItem >= 0 {
+            print("点击了 %ld - %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item,indexPath.subItem)
+        } else if indexPath.item >= 0 {
+            print("点击了 %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item)
+        } else {
+            print("点击了 %ld - %ld 项目",indexPath.column,indexPath.row)
+        }
+    }
+    func menu(_ menu: DOPDropDownMenu!, didSelectRowAt indexPath: DOPIndexPath!, isNoHaveItem: Bool) {
+        if indexPath.column == 0 {
+            if indexPath.row == 1 {
+                self.cityButton .setTitle(self.classifys[indexPath.row], for: .normal)
+
+            }
+        }
+    }
+    
 }

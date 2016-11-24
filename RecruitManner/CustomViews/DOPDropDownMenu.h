@@ -100,10 +100,10 @@
  */
 - (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath;
 
-//    /**
-//     *  点击代理，点击了第column 第row 或者item项 或者suItem项，如果 subItem >=0
-//     */
-//- (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath;
+    /**
+     *  点击代理，点击了第column 第row 或者item项 或者suItem项，如果 subItem >=0
+     */
+- (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath isNoHaveItem:(BOOL)isNoHaveItem;
 
 
 /** 新增
@@ -135,6 +135,10 @@
 @property (nonatomic, getter=isRemainMenuTitle) BOOL remainMenuTitle; // 切换条件时是否更改menu title
 @property (nonatomic, strong) NSMutableArray  *currentSelectRowArray; // 恢复默认选项用
 @property (nonatomic, strong) NSMutableArray  *currentSelectItemArray; // 恢复默认选项用
+
+// MAKE 是否显示三角形
+@property (nonatomic, assign) BOOL custom;
+
 /**
  *  the width of menu will be set to screen width defaultly
  *
@@ -157,4 +161,7 @@
 - (void)selectIndexPath:(DOPIndexPath *)indexPath; // 默认trigger delegate
 
 - (void)selectIndexPath:(DOPIndexPath *)indexPath triggerDelegate:(BOOL)trigger; // 调用代理
+
+- (void)menuTapped:(UITapGestureRecognizer *)paramSender;
+
 @end

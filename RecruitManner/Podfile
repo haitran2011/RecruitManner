@@ -43,7 +43,7 @@ target :RecruitManner do
     
     # 下拉菜单
     # pod 'YZPullDownMenu'
-    pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'
+    # pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'
     
     # 顶部Tab
     pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'

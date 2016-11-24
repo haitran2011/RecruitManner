@@ -46,7 +46,7 @@ target :RecruitManner do
     pod 'DOPDropDownMenu-Enhanced', '~> 1.0.0'
     
     # 顶部Tab
-    # pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
+    pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
     
 end
 

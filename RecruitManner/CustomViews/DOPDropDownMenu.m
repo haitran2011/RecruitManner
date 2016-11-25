@@ -202,7 +202,11 @@
     CATextLayer *title = (CATextLayer *)_titles[indexPath.column];
     if (indexPath.subItem < 0) {
         if (!_isClickHavesubItemValid && [_dataSource menu:self numberOfsubItemsInItem:indexPath.item column:indexPath.column row:indexPath.row] > 0) {
-            title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:indexPath.item subItem:indexPath.subItem]];
+            if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+            } else {
+                title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:indexPath.item subItem:indexPath.subItem]];
+            }
             if (trigger) {
                 [_delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:indexPath.row item:indexPath.item subItem:indexPath.subItem]];
             }
@@ -222,13 +226,21 @@
         else {
             if (indexPath.item < 0 ) {
                 if (!_isClickHaveItemValid && [_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] > 0){
-                    title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:0]];
+                    if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                        title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+                    } else {
+                        title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:0]];
+                    }
                     if (trigger) {
                         [_delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:indexPath.row item:0]];
                     }
                 }else {
-                    title.string = [_dataSource menu:self titleForRowAtIndexPath:
+                    if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                        title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+                    } else {
+                        title.string = [_dataSource menu:self titleForRowAtIndexPath:
                                     [DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row]];
+                    }
                     if (trigger) {
                         [_delegate menu:self didSelectRowAtIndexPath:indexPath];
                     }
@@ -240,7 +252,11 @@
                 CGFloat sizeWidth = (size.width < (self.frame.size.width / _numOfMenu) - 25) ? size.width : self.frame.size.width / _numOfMenu - 25;
                 title.bounds = CGRectMake(0, 0, _custom ? 0 : sizeWidth, size.height);
             }else if ([_dataSource menu:self numberOfItemsInRow:indexPath.row column:indexPath.column] > indexPath.column) {
-                title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:indexPath];
+                if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                    title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+                } else {
+                    title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:indexPath];
+                }
                 if (trigger) {
                     [_delegate menu:self didSelectRowAtIndexPath:indexPath];
                 }
@@ -254,7 +270,11 @@
             
         }
     } else if ([_dataSource menu:self numberOfsubItemsInItem:indexPath.item column:indexPath.column row:indexPath.row] > indexPath.row) {
-        title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:indexPath];
+        if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+            title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+        } else {
+            title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:indexPath];
+        }
         if (trigger) {
             [_delegate menu:self didSelectRowAtIndexPath:indexPath];
         }
@@ -343,12 +363,13 @@
         CGPoint titlePosition = CGPointMake( (i * 2 + 1) * textLayerInterval , self.frame.size.height / 2);
         
         NSString *titleString;
-        if (!self.isClickHavesubItemValid && _dataSourceFlags.numberOfsubItemsInItem && [_dataSource menu:self numberOfsubItemsInItem:0 column:i row:0]>0) {
+        if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+            titleString = [_dataSource menu:self titleForColumn:i];
+        } else if (!self.isClickHavesubItemValid && _dataSourceFlags.numberOfsubItemsInItem && [_dataSource menu:self numberOfsubItemsInItem:0 column:i row:0]>0) {
             titleString = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0 item:0 subItem:0]];
-        }
-        else if (!self.isClickHaveItemValid && _dataSourceFlags.numberOfItemsInRow && [_dataSource menu:self numberOfItemsInRow:0 column:i]>0) {
+        } else if (!self.isClickHaveItemValid && _dataSourceFlags.numberOfItemsInRow && [_dataSource menu:self numberOfItemsInRow:0 column:i]>0) {
             titleString = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0 item:0]];
-        }else {
+        } else {
             titleString =[_dataSource menu:self titleForRowAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0]];
         }
         
@@ -1009,7 +1030,11 @@
         
         // 有双列表 有item数据
         if (self.isClickHaveItemValid) {
-            title.string = [_dataSource menu:self titleForRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:row]];
+            if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+            } else {
+                title.string = [_dataSource menu:self titleForRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:row]];
+            }
             [self animateTitle:title show:YES complete:^{
                 [_rightTableView reloadData];
             }];
@@ -1034,9 +1059,12 @@
         return NO;
         
     } else {
-        
-        title.string = [_dataSource menu:self titleForRowAtIndexPath:
-                        [DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:self.isRemainMenuTitle ? 0 : row]];
+        if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+            title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+        } else {
+            title.string = [_dataSource menu:self titleForRowAtIndexPath:
+                            [DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:self.isRemainMenuTitle ? 0 : row]];
+        }
         [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
             _show = NO;
         }];
@@ -1059,7 +1087,11 @@
         
         // 有三级列表 有subitem数据
         if (self.isClickHavesubItemValid) {
-            title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:item]];
+            if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+                title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+            } else {
+                title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:item]];
+            }
             [self animateTitle:title show:YES complete:^{
                 [_thirdTableView reloadData];
             }];
@@ -1069,9 +1101,12 @@
         return NO;
         
     } else {
-        
-        title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:
+        if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+            title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+        } else {
+            title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:
                         [DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:item]];
+        }
         [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
             _show = NO;
         }];
@@ -1089,7 +1124,12 @@
     CATextLayer *title = (CATextLayer *)_titles[_currentSelectedMenudIndex];
     NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
     NSInteger currentSelectedItem = [_currentSelectItemArray[currentSelectedMenudRow] integerValue];//xiaoyin
-    title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItem subItem:subItem]];
+    
+    if (self.dataSource && [_dataSource respondsToSelector:@selector(menu:titleForColumn:)]) {
+        title.string = [_dataSource menu:self titleForColumn:_currentSelectedMenudIndex];
+    } else {
+        title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItem subItem:subItem]];
+    }
     [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
         _show = NO;
     }];

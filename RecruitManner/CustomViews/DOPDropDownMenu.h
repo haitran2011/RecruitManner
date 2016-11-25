@@ -90,6 +90,14 @@
 // 新增
 - (NSString *)menu:(DOPDropDownMenu *)menu detailTextForsubItemsInRowAtIndexPath:(DOPIndexPath *)indexPath;
 
+
+/**
+ ** 自定义
+ *
+ */
+//func menu(_ menu: DOPDropDownMenu!, titleForColumn column: Int) -> String!
+- (NSString *)menu:(DOPDropDownMenu *)menu titleForColumn:(NSInteger)column;
+
 @end
 
 #pragma mark - delegate

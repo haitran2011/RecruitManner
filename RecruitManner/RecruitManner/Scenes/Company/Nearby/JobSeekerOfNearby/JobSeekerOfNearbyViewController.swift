@@ -96,14 +96,19 @@ extension JobSeekerOfNearbyViewController: DOPDropDownMenuDataSource, DOPDropDow
         return 3
     }
     
+    func menu(_ menu: DOPDropDownMenu!, titleForColumn column: Int) -> String! {
+        return ["期望薪资", "最高学历", "工作经验"][column]
+    }
+    
+    
+    func menu(_ menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
+        return [8, 5, 4][column]
+    }
+    
     func menu(_ menu: DOPDropDownMenu!, titleForRowAt indexPath: DOPIndexPath!) -> String! {
         return [["不限", "2k以下", "2k-5k", "5k-10k", "10k-15k", "15k-25k", "25k-50k", "50k以上"],
          ["不限", "大专及以上", "本科及以上", "硕士及以上", "博士及以上"],
          ["不限", "3年以下", "3年及以上", "7年及以上"]][indexPath.column][indexPath.row]
-    }
-    
-    func menu(_ menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
-        return [8, 5, 4][column]
     }
     
     func menu(_ menu: DOPDropDownMenu!, numberOfItemsInRow row: Int, column: Int) -> Int {

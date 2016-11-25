@@ -82,10 +82,10 @@
     struct {
         unsigned int numberOfRowsInColumn :1;
         unsigned int numberOfItemsInRow :1;
-        unsigned int numberOfsubItemsInRowItem :1;//新增
+        unsigned int numberOfsubItemsInItem :1;//新增
         unsigned int titleForRowAtIndexPath :1;
         unsigned int titleForItemsInRowAtIndexPath :1;
-        unsigned int titleForsubItemsInRowItemAtIndexPath :1;//三级新增
+        unsigned int titleForsubItemsInItemAtIndexPath :1;//三级新增
         unsigned int imageNameForRowAtIndexPath :1;
         unsigned int imageNameForItemsInRowAtIndexPath :1;
         unsigned int detailTextForRowAtIndexPath: 1;
@@ -201,8 +201,8 @@
     
     CATextLayer *title = (CATextLayer *)_titles[indexPath.column];
     if (indexPath.subItem < 0) {
-        if (!_isClickHavesubItemValid && [_dataSource menu:self numberOfsubItemsInRowItem:indexPath.row column:indexPath.column item:indexPath.item] > 0) {
-            title.string = [_dataSource menu:self titleForsubItemsInRowItemAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:indexPath.item subItem:indexPath.subItem]];
+        if (!_isClickHavesubItemValid && [_dataSource menu:self numberOfsubItemsInItem:indexPath.item column:indexPath.column row:indexPath.row] > 0) {
+            title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:self.isRemainMenuTitle ? 0 : indexPath.row item:indexPath.item subItem:indexPath.subItem]];
             if (trigger) {
                 [_delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:indexPath.column row:indexPath.row item:indexPath.item subItem:indexPath.subItem]];
             }
@@ -253,8 +253,8 @@
             }
             
         }
-    } else if ([_dataSource menu:self numberOfsubItemsInRowItem:indexPath.row column:indexPath.column item:indexPath.item] > indexPath.row) {
-        title.string = [_dataSource menu:self titleForsubItemsInRowItemAtIndexPath:indexPath];
+    } else if ([_dataSource menu:self numberOfsubItemsInItem:indexPath.item column:indexPath.column row:indexPath.row] > indexPath.row) {
+        title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:indexPath];
         if (trigger) {
             [_delegate menu:self didSelectRowAtIndexPath:indexPath];
         }
@@ -320,9 +320,9 @@
     _dataSourceFlags.detailTextForItemsInRowAtIndexPath = [_dataSource respondsToSelector:@selector(menu:detailTextForItemsInRowAtIndexPath:)];
     
     //三级菜单新增
-    _dataSourceFlags.numberOfsubItemsInRowItem = [_dataSource respondsToSelector:@selector(menu:numberOfsubItemsInRowItem:column:item:)];
+    _dataSourceFlags.numberOfsubItemsInItem = [_dataSource respondsToSelector:@selector(menu:numberOfsubItemsInItem:column:row:)];
     
-    _dataSourceFlags.titleForsubItemsInRowItemAtIndexPath = [_dataSource respondsToSelector:@selector(menu:titleForsubItemsInRowItemAtIndexPath:)];
+    _dataSourceFlags.titleForsubItemsInItemAtIndexPath = [_dataSource respondsToSelector:@selector(menu:titleForsubItemsInItemAtIndexPath:)];
     
     _bottomShadow.hidden = NO;
     CGFloat textLayerInterval = self.frame.size.width / ( _numOfMenu * 2);
@@ -343,8 +343,8 @@
         CGPoint titlePosition = CGPointMake( (i * 2 + 1) * textLayerInterval , self.frame.size.height / 2);
         
         NSString *titleString;
-        if (!self.isClickHavesubItemValid && _dataSourceFlags.numberOfsubItemsInRowItem && [_dataSource menu:self numberOfsubItemsInRowItem:0 column:i item:0]>0) {
-            titleString = [_dataSource menu:self titleForsubItemsInRowItemAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0 item:0 subItem:0]];
+        if (!self.isClickHavesubItemValid && _dataSourceFlags.numberOfsubItemsInItem && [_dataSource menu:self numberOfsubItemsInItem:0 column:i row:0]>0) {
+            titleString = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0 item:0 subItem:0]];
         }
         else if (!self.isClickHaveItemValid && _dataSourceFlags.numberOfItemsInRow && [_dataSource menu:self numberOfItemsInRow:0 column:i]>0) {
             titleString = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:i row:0 item:0]];
@@ -383,7 +383,7 @@
         _origin = origin;
         _currentSelectedMenudIndex = -1;
         _show = NO;
-        _fontSize = 14;
+        _fontSize = 13;
         _cellStyle = UITableViewCellStyleValue1;
         _separatorColor = kSeparatorColor;
         _textColor = kTextColor;
@@ -577,7 +577,7 @@
         if (_dataSource && _dataSourceFlags.numberOfItemsInRow) {
             [_rightTableView reloadData];
             //三级菜单
-            if (_dataSource && _dataSourceFlags.numberOfsubItemsInRowItem) {
+            if (_dataSource && _dataSourceFlags.numberOfsubItemsInItem) {
                 [_thirdTableView reloadData];
             }
         }
@@ -662,8 +662,8 @@
             if (_dataSourceFlags.numberOfItemsInRow
                 &&  numberOfItemsInRowInColumn > 0) {
                 for ( NSInteger j = 0; j < numberOfItemsInRowInColumn; ++j) {
-                    if (_dataSourceFlags.numberOfsubItemsInRowItem
-                        &&  [_dataSource menu:self numberOfsubItemsInRowItem:i column:_currentSelectedMenudIndex item:j] > 0) {
+                    if (_dataSourceFlags.numberOfsubItemsInItem
+                        &&  [_dataSource menu:self numberOfsubItemsInItem:j column:_currentSelectedMenudIndex row:i] > 0) {
                         haveSubItems = YES;
                         break;
                     }
@@ -800,10 +800,10 @@
         }
     }
     else {
-        if (_dataSourceFlags.numberOfsubItemsInRowItem) {
+        if (_dataSourceFlags.numberOfsubItemsInItem) {
             NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
             NSInteger currentSelectedMenudRowItem = [_currentSelectItemArray[currentSelectedMenudRow] integerValue];//获取item number xiaoyin
-            return [_dataSource menu:self numberOfsubItemsInRowItem:currentSelectedMenudRow column:_currentSelectedMenudIndex item:currentSelectedMenudRowItem];
+            return [_dataSource menu:self numberOfsubItemsInItem: currentSelectedMenudRowItem column:_currentSelectedMenudIndex row:currentSelectedMenudRow];
         } else {
             //NSAssert(0 == 1, @"required method of dataSource protocol should be implemented");
             return 0;
@@ -911,7 +911,7 @@
             [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
         }
         
-        if (_dataSourceFlags.numberOfsubItemsInRowItem && [_dataSource menu:self numberOfsubItemsInRowItem:indexPath.row column:_currentSelectedMenudIndex item:indexPath.row]> 0){
+        if (_dataSourceFlags.numberOfsubItemsInItem && [_dataSource menu:self numberOfsubItemsInItem:indexPath.item column:_currentSelectedMenudIndex row:indexPath.row]> 0){
             cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon_chose_arrow_nor"] highlightedImage:[UIImage imageNamed:@"icon_chose_arrow_sel"]];
         } else {
             cell.accessoryView = nil;
@@ -920,10 +920,10 @@
         cell.backgroundColor = kCellBgColor;
     }
     else {
-        if (_dataSourceFlags.titleForsubItemsInRowItemAtIndexPath) {
+        if (_dataSourceFlags.titleForsubItemsInItemAtIndexPath) {
             NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
             NSInteger currentSelectedItemMenudRow = [_currentSelectItemArray[currentSelectedMenudRow] integerValue];
-            cell.textLabel.text = [_dataSource menu:self titleForsubItemsInRowItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItemMenudRow subItem:indexPath.row]];
+            cell.textLabel.text = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItemMenudRow subItem:indexPath.row]];
             cell.imageView.image = nil;
             cell.detailTextLabel.text = nil;
             
@@ -1055,7 +1055,7 @@
     
     CATextLayer *title = (CATextLayer *)_titles[_currentSelectedMenudIndex];
     
-    if (_dataSourceFlags.numberOfsubItemsInRowItem && [_dataSource menu:self numberOfsubItemsInRowItem:currentSelectedMenudRow column:_currentSelectedMenudIndex item:item]> 0) {
+    if (_dataSourceFlags.numberOfsubItemsInItem && [_dataSource menu:self numberOfsubItemsInItem: item column:_currentSelectedMenudIndex row:currentSelectedMenudRow]> 0) {
         
         // 有三级列表 有subitem数据
         if (self.isClickHavesubItemValid) {
@@ -1075,16 +1075,12 @@
         [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
             _show = NO;
         }];
+        
+        if ([_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:isNoHaveItem:)]) {
+            [self.delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow   item:item] isNoHaveItem:YES];
+        }
         return YES;
     }
-    
-    
-    //    CATextLayer *title = (CATextLayer *)_titles[_currentSelectedMenudIndex];
-    //    NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
-    //    title.string = [_dataSource menu:self titleForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:item]];
-    //    [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
-    //        _show = NO;
-    //    }];
     
 }
 
@@ -1093,10 +1089,14 @@
     CATextLayer *title = (CATextLayer *)_titles[_currentSelectedMenudIndex];
     NSInteger currentSelectedMenudRow = [_currentSelectRowArray[_currentSelectedMenudIndex] integerValue];
     NSInteger currentSelectedItem = [_currentSelectItemArray[currentSelectedMenudRow] integerValue];//xiaoyin
-    title.string = [_dataSource menu:self titleForsubItemsInRowItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItem subItem:subItem]];
+    title.string = [_dataSource menu:self titleForsubItemsInItemAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:currentSelectedItem subItem:subItem]];
     [self animateIdicator:_indicators[_currentSelectedMenudIndex] background:_backGroundView tableView:_leftTableView title:_titles[_currentSelectedMenudIndex] forward:NO complecte:^{
         _show = NO;
     }];
+    
+    if ([_delegate respondsToSelector:@selector(menu:didSelectRowAtIndexPath:isNoHaveItem:)]) {
+        [self.delegate menu:self didSelectRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow   item:currentSelectedItem subItem:subItem] isNoHaveItem:YES];
+    }
     
 }
 

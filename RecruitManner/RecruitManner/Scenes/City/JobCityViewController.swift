@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import CoreLocation
 import CustomViews
 
 protocol JobCityViewControllerInput {
@@ -36,22 +37,23 @@ class JobCityViewController: UIViewController, JobCityViewControllerInput {
     @IBOutlet weak var dropDownView: UIView!
     
     var menu:DOPDropDownMenu!
-    var classifys = ["美食","今日新单","电影","酒店"]
-    var cates = ["自助餐","快餐","火锅","日韩料理","西餐","烧烤小吃"]
-    var movices = ["内地剧","港台剧","英美剧"]
-    var hostels = ["经济酒店","商务酒店","连锁酒店","度假酒店","公寓酒店"]
-    var areas = ["全城","芙蓉区","雨花区","天心区","开福区","岳麓区"];
-    var sorts = ["全城","芙蓉区","雨花区","天心区","开福区","岳麓区"]
-    
-    var catesTest1 = ["自助餐1","自助餐2","自助餐3","自助餐4","自助餐5","自助餐6"]
-    var catesTest2 = ["火锅1","火锅2","火锅3","火锅4","火锅5","火锅6"]
-    var catesTest3 = ["日韩料理1","日韩料理2","日韩料理3","日韩料理4","日韩料理5","日韩料理6"]
+    var cityAreaList = ["光明新区","罗湖区","福田区","盐田区","南山区","宝安区","龙岗区","南澳大鹏新区","龙华新区","坪山新区"]
+    var cityStreetList = ["华侨城","西丽","南山中心区","南头","海岸城/保利","前海","蛇口","太古城","花园城","世界之窗","海上世界","科技园","南油","欢乐海岸","白石洲","南山京基百纳"]
+    var landMarkList = ["飞亚达","大冲商务中心","德赛科技","XXXXXXXXXXX","XXXXXXXXXXX","XXXXXXXXXXX"]
     
     @IBOutlet weak var cityButton: UIButton!
+    
+    @IBOutlet weak var cityAddress1: UIButton!
+    
+    @IBOutlet weak var cityAddress2: UIButton!
+    @IBOutlet weak var cityAddress3: UIButton!
+    
     
     @IBAction func cityButtonAction(_ sender: Any) {
         self.menu.menuTapped(nil)
     }
+    
+    var locationManager = CLLocationManager()
     // MARK: Object lifecycle
   
     override func awakeFromNib() {
@@ -69,19 +71,36 @@ class JobCityViewController: UIViewController, JobCityViewControllerInput {
         self.title = "选择地标"
         // 添加下拉菜单
         self.menu = DOPDropDownMenu(origin: CGPoint(x:0,y:0), andHeight: 0)
-        //        self.menu.frame.width = self.cityButtonView.frame.width
         self.menu.custom = true
         self.menu.delegate = self
         self.menu.dataSource = self
-        self.menu.backgroundColor = UIColor.green
         self.dropDownView.addSubview(self.menu)
         self.menu.selectDefalutIndexPath()
+        
+        let saveCityName = UserDefaults.standard.string(forKey: "KCityName")
+        if saveCityName == nil || saveCityName == ""{
+            self.loadLocation()
+        }
+        else {
+            self.cityButton.setTitle(saveCityName, for: .normal)
+            let saveAddressName1 = UserDefaults.standard.string(forKey: "KcityAddress1")
+            let saveAddressName2 = UserDefaults.standard.string(forKey: "KcityAddress2")
+            let saveAddressName3 = UserDefaults.standard.string(forKey: "KcityAddress3")
+            
+            if saveAddressName1 != nil && saveAddressName1 != "" {
+                self.cityAddress1.setTitle(saveAddressName1, for: .normal)
+            }
+            
+            if saveAddressName2 != nil && saveAddressName2 != "" {
+                self.cityAddress2.setTitle(saveAddressName2, for: .normal)
+            }
+
+            if saveAddressName3 != nil && saveAddressName3 != "" {
+                self.cityAddress3.setTitle(saveAddressName3, for: .normal)
+            }
+
+        }
     }
-    
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        
-//    }
   
     // MARK: Event handling
   
@@ -107,37 +126,30 @@ extension JobCityViewController:DOPDropDownMenuDataSource,DOPDropDownMenuDelegat
     }
     
     func menu(_ menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
-        if column == 0 {
-            return self.classifys.count
-        } else if column == 1 {
-            return self.areas.count
-        } else {
-            return self.sorts.count
-        }
+//        if column == 0 {
+//            return self.cityAreaList.count
+//        }
+        return self.cityAreaList.count
     }
     
     func menu(_ menu: DOPDropDownMenu!, numberOfItemsInRow row: Int, column: Int) -> Int {
         if column == 0 {
-            if row == 0 {
-                return self.cates.count
-            } else if row == 2 {
-                return self.movices.count
-            } else if row == 3 {
-                return self.hostels.count
+            if row == 4 {
+                return cityStreetList.count
             }
+//            else if row == 2 {
+//                return self.movices.count
+//            } else if row == 3 {
+//                return self.hostels.count
+//            }
         }
         return 0
     }
-    
-    func menu(_ menu: DOPDropDownMenu!, numberOfsubItemsInRowItem row: Int, column: Int, item: Int) -> Int {
+    func menu(_ menu: DOPDropDownMenu!, numberOfsubItemsInItem item: Int, column: Int, row: Int) -> Int {
         if column == 0 {
-            if row == 0 {
-                if item == 0 {
-                    return self.catesTest1.count
-                } else if item == 2 {
-                    return self.catesTest2.count
-                } else if item == 3 {
-                    return self.catesTest3.count
+            if row == 4 {
+                if item == 11 {
+                    return self.landMarkList.count
                 }
             }
         }
@@ -145,38 +157,32 @@ extension JobCityViewController:DOPDropDownMenuDataSource,DOPDropDownMenuDelegat
     }
     
     func menu(_ menu: DOPDropDownMenu!, titleForRowAt indexPath: DOPIndexPath!) -> String! {
-        if indexPath.column == 0 {
-            return self.classifys[indexPath.row]
-        } else if indexPath.column == 1 {
-            return self.areas[indexPath.row]
-        } else {
-            return self.sorts[indexPath.row]
-        }
+//        if indexPath.column == 0 {
+//            return self.classifys[indexPath.row]
+//        } else if indexPath.column == 1 {
+//            return self.areas[indexPath.row]
+//        } else {
+//            return self.sorts[indexPath.row]
+//        }
+        return cityAreaList[indexPath.row]
     }
     
     func menu(_ menu: DOPDropDownMenu!, titleForItemsInRowAt indexPath: DOPIndexPath!) -> String! {
         if indexPath.column == 0 {
-            if indexPath.row == 0 {
-                return self.cates[indexPath.item]
-            } else if indexPath.row == 2 {
-                return self.movices[indexPath.item]
-            } else if indexPath.row == 3 {
-                return self.hostels[indexPath.item]
+            if indexPath.row == 4 {
+                return self.cityStreetList[indexPath.item]
             }
         }
+        
         return nil
     }
     
     
-    func menu(_ menu: DOPDropDownMenu!, titleForsubItemsInRowItemAt indexPath: DOPIndexPath!) -> String! {
+    func menu(_ menu: DOPDropDownMenu!, titleForsubItemsInItemAt indexPath: DOPIndexPath!) -> String! {
         if indexPath.column == 0 {
-            if indexPath.row == 0 {
-                if indexPath.item == 0 {
-                    return self.catesTest1[indexPath.subItem]
-                } else if indexPath.item == 2 {
-                    return self.catesTest2[indexPath.subItem]
-                } else if indexPath.item == 3 {
-                    return self.catesTest3[indexPath.subItem]
+            if indexPath.row == 4 {
+                if indexPath.item == 11 {
+                    return self.landMarkList[indexPath.subItem]
                 }
             }
         }
@@ -185,20 +191,113 @@ extension JobCityViewController:DOPDropDownMenuDataSource,DOPDropDownMenuDelegat
     
     func menu(_ menu: DOPDropDownMenu!, didSelectRowAt indexPath: DOPIndexPath!) {
         if indexPath.subItem >= 0 {
-            print("点击了 %ld - %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item,indexPath.subItem)
+            print("点击了",indexPath.column,indexPath.row,indexPath.item,indexPath.subItem)
+            
         } else if indexPath.item >= 0 {
-            print("点击了 %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item)
+            print("点击了 ",indexPath.column,indexPath.row,indexPath.item)
         } else {
-            print("点击了 %ld - %ld 项目",indexPath.column,indexPath.row)
+            print("点击了",indexPath.column,indexPath.row)
         }
     }
+    
     func menu(_ menu: DOPDropDownMenu!, didSelectRowAt indexPath: DOPIndexPath!, isNoHaveItem: Bool) {
-        if indexPath.column == 0 {
-            if indexPath.row == 1 {
-                self.cityButton .setTitle(self.classifys[indexPath.row], for: .normal)
+        
+        var addressName = ""
+        if indexPath.subItem >= 0 {
+            addressName = self.landMarkList[indexPath.subItem]
+        }
+        else if indexPath.item >= 0 {
+            addressName = self.landMarkList[indexPath.item]
+        }
+        else if indexPath.row >= 0 {
+            addressName = self.cityAreaList[indexPath.row]
+        }
+        
+        let userDefaults = UserDefaults.standard
+        
+        var saveCityNumber = userDefaults.integer(forKey: "kSaveCityNumber")
+        switch saveCityNumber {
+        case 0:
+            self.cityAddress1.setTitle(addressName, for: .normal)
+            userDefaults.set(addressName, forKey: "KcityAddress1")
+        case 1:
+            self.cityAddress2.setTitle(addressName, for: .normal)
+            userDefaults.set(addressName, forKey: "KcityAddress2")
+        case 2:
+            self.cityAddress3.setTitle(addressName, for: .normal)
+            userDefaults.set(addressName, forKey: "KcityAddress3")
+        default:
+            self.cityAddress1.setTitle(addressName, for: .normal)
+            userDefaults.set(addressName, forKey: "KcityAddress1")
+            break
+        }
+        saveCityNumber = (saveCityNumber + 1) % 3
+        userDefaults.set(saveCityNumber, forKey: "kSaveCityNumber")
+        userDefaults.set("深圳市", forKey: "KCityName")
+        
+        userDefaults.synchronize()
 
+    }
+    
+}
+
+extension JobCityViewController: CLLocationManagerDelegate {
+    
+    func loadLocation() {
+        if CLLocationManager.locationServicesEnabled() {
+            self.locationManager.delegate = self
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.startUpdatingLocation()
+        } else {
+            
+        }
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let currentLocation:CLLocation = locations.last!
+        self.lonLatToCity(location: currentLocation)
+        manager.stopUpdatingLocation()
+    }
+    
+    func lonLatToCity(location: CLLocation) {
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location){(placemarks, error) -> Void in
+            if (error == nil) {
+                let array = placemarks! as [CLPlacemark]
+                
+                if (array.count > 0){
+                    
+                    let pm = array[0]
+                    var subThoroughtare:String = ""
+                    var thoroughfare:String = ""
+                    var subLocality:String = ""
+                    var locality:String = ""
+                    
+                    if pm.subThoroughfare != nil {subThoroughtare = pm.subThoroughfare!}
+                    if pm.thoroughfare != nil {thoroughfare = pm.thoroughfare!}
+                    if pm.subLocality != nil {subLocality = pm.subLocality!}
+                    if pm.locality != nil {locality = pm.locality!}
+                    locality = locality.replacingOccurrences(of: "市", with: "")
+                    //                    self.navigationItemView.cityTitle = locality
+//                    let userDefaults = UserDefaults.standard
+//                    userDefaults.setValue(locality, forKey: "KCityName")
+//                    userDefaults.synchronize()
+                    self.cityButton.setTitle(locality, for: .normal)
+                    print("\(subThoroughtare) \(thoroughfare) \n \(subLocality) \n \(locality) \n ")
+                }else{
+                    print("No Placemarks!")
+                }
+            } else {
+                print(error.debugDescription)
             }
         }
     }
     
+    func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
+        print(error?.localizedDescription ?? "")
+    }
 }
+

@@ -561,7 +561,7 @@
         //configure view
         if (_currentSelectedMenudIndex != tapIndex) {
             if ([_dataSource respondsToSelector:@selector(menu:numberOfRowsInColumn:)]) {
-                _numOfRow = [_dataSource menu:self numberOfRowsInColumn:_currentSelectedMenudIndex];
+                _numOfRow = [_dataSource menu:self numberOfRowsInColumn: tapIndex];
             } else {
                 _numOfRow = 0;
             }

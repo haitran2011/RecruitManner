@@ -668,7 +668,10 @@
                         break;
                     }
                 }
-                break;
+                
+                if (haveSubItems) {
+                    break;
+                }
             }
         }
         
@@ -934,7 +937,7 @@
             [_rightTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:currentSelectedItemMenudRow inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
             [_thirdTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
         }
-        cell.backgroundColor = [UIColor whiteColor];
+        cell.backgroundColor = kCellBgColor;
         cell.accessoryView = nil;
     }
     

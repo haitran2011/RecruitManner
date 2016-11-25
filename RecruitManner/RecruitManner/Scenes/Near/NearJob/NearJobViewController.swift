@@ -86,7 +86,7 @@ class NearJobViewController: UIViewController, NearJobViewControllerInput {
 
 }
 
-extension NearJobViewController:UITableViewDelegate,UITableViewDataSource {
+extension NearJobViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5

@@ -136,6 +136,13 @@
 		E0819D301DE7F879008D4A19 /* CompanyLabelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D291DE7F879008D4A19 /* CompanyLabelRouter.swift */; };
 		E0819D311DE7F879008D4A19 /* CompanyLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D2A1DE7F879008D4A19 /* CompanyLabelViewController.swift */; };
 		E0819D321DE7F879008D4A19 /* CompanyLabelWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */; };
+		E0819D3C1DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D351DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift */; };
+		E0819D3D1DE80819008D4A19 /* JobSeekerOfNearbyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D361DE80819008D4A19 /* JobSeekerOfNearbyInteractor.swift */; };
+		E0819D3E1DE80819008D4A19 /* JobSeekerOfNearbyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D371DE80819008D4A19 /* JobSeekerOfNearbyModels.swift */; };
+		E0819D3F1DE80819008D4A19 /* JobSeekerOfNearbyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D381DE80819008D4A19 /* JobSeekerOfNearbyPresenter.swift */; };
+		E0819D401DE80819008D4A19 /* JobSeekerOfNearbyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D391DE80819008D4A19 /* JobSeekerOfNearbyRouter.swift */; };
+		E0819D411DE8081A008D4A19 /* JobSeekerOfNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D3A1DE80819008D4A19 /* JobSeekerOfNearbyViewController.swift */; };
+		E0819D421DE8081A008D4A19 /* JobSeekerOfNearbyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D3B1DE80819008D4A19 /* JobSeekerOfNearbyWorker.swift */; };
 		E0D8EE011DE28D51003827F8 /* RollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE001DE28D51003827F8 /* RollLabel.swift */; };
 		E0D8EE031DE2C57C003827F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D8EE021DE2C57C003827F8 /* MapKit.framework */; };
 		E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */; };
@@ -383,6 +390,13 @@
 		E0819D291DE7F879008D4A19 /* CompanyLabelRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelRouter.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelRouter.swift; sourceTree = "<group>"; };
 		E0819D2A1DE7F879008D4A19 /* CompanyLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelViewController.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelViewController.swift; sourceTree = "<group>"; };
 		E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelWorker.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelWorker.swift; sourceTree = "<group>"; };
+		E0819D351DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyConfigurator.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyConfigurator.swift; sourceTree = "<group>"; };
+		E0819D361DE80819008D4A19 /* JobSeekerOfNearbyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyInteractor.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyInteractor.swift; sourceTree = "<group>"; };
+		E0819D371DE80819008D4A19 /* JobSeekerOfNearbyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyModels.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyModels.swift; sourceTree = "<group>"; };
+		E0819D381DE80819008D4A19 /* JobSeekerOfNearbyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyPresenter.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyPresenter.swift; sourceTree = "<group>"; };
+		E0819D391DE80819008D4A19 /* JobSeekerOfNearbyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyRouter.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyRouter.swift; sourceTree = "<group>"; };
+		E0819D3A1DE80819008D4A19 /* JobSeekerOfNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyViewController.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyViewController.swift; sourceTree = "<group>"; };
+		E0819D3B1DE80819008D4A19 /* JobSeekerOfNearbyWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobSeekerOfNearbyWorker.swift; path = Scenes/Company/Nearby/JobSeekerOfNearby/JobSeekerOfNearbyWorker.swift; sourceTree = "<group>"; };
 		E0D8EE001DE28D51003827F8 /* RollLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollLabel.swift; path = SwipeLabel/RollLabel.swift; sourceTree = "<group>"; };
 		E0D8EE021DE2C57C003827F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRConfigurator.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRConfigurator.swift; sourceTree = "<group>"; };
@@ -762,6 +776,7 @@
 		E07AA21E1DE5440F00508EE4 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				E0819D331DE80744008D4A19 /* Nearby */,
 				E0819D141DE7E827008D4A19 /* Me */,
 				E07AA21F1DE544A200508EE4 /* Message */,
 			);
@@ -858,6 +873,28 @@
 				E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */,
 			);
 			name = CompanyLabel;
+			sourceTree = "<group>";
+		};
+		E0819D331DE80744008D4A19 /* Nearby */ = {
+			isa = PBXGroup;
+			children = (
+				E0819D341DE807F2008D4A19 /* JobSeekerOfNearby */,
+			);
+			name = Nearby;
+			sourceTree = "<group>";
+		};
+		E0819D341DE807F2008D4A19 /* JobSeekerOfNearby */ = {
+			isa = PBXGroup;
+			children = (
+				E0819D351DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift */,
+				E0819D361DE80819008D4A19 /* JobSeekerOfNearbyInteractor.swift */,
+				E0819D371DE80819008D4A19 /* JobSeekerOfNearbyModels.swift */,
+				E0819D381DE80819008D4A19 /* JobSeekerOfNearbyPresenter.swift */,
+				E0819D391DE80819008D4A19 /* JobSeekerOfNearbyRouter.swift */,
+				E0819D3A1DE80819008D4A19 /* JobSeekerOfNearbyViewController.swift */,
+				E0819D3B1DE80819008D4A19 /* JobSeekerOfNearbyWorker.swift */,
+			);
+			name = JobSeekerOfNearby;
 			sourceTree = "<group>";
 		};
 		E0D8EE041DE2C90E003827F8 /* PositionListOfHR */ = {
@@ -1206,6 +1243,7 @@
 					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -1444,6 +1482,7 @@
 				E07AA23B1DE57D0000508EE4 /* CompanyTrackRouter.swift in Sources */,
 				E00E504C1DD82BE80087A8B6 /* OnlineResumeWorker.swift in Sources */,
 				4B0690111DDAEFCE00A50CFE /* HomePagePresenter.swift in Sources */,
+				E0819D401DE80819008D4A19 /* JobSeekerOfNearbyRouter.swift in Sources */,
 				4BFC83CF1DE687DF007D1ED6 /* JobCityRouter.swift in Sources */,
 				4BFC83CC1DE687DF007D1ED6 /* JobCityInteractor.swift in Sources */,
 				4BA929961DDEFE62000EADD1 /* JobByCompanyWorker.swift in Sources */,
@@ -1456,6 +1495,7 @@
 				4B06900F1DDAEFCE00A50CFE /* HomePageInteractor.swift in Sources */,
 				E0819D1E1DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift in Sources */,
 				E07AA23D1DE57D0000508EE4 /* CompanyTrackWorker.swift in Sources */,
+				E0819D3C1DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift in Sources */,
 				E0FA17671DE5B3C400C29A85 /* ConcernJobSeekerInteractor.swift in Sources */,
 				E0FA17591DE5AF8300C29A85 /* ConcernCompanyModels.swift in Sources */,
 				4BA929941DDEFE62000EADD1 /* JobByCompanyRouter.swift in Sources */,
@@ -1514,6 +1554,9 @@
 				E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */,
 				4BFC83D11DE687DF007D1ED6 /* JobCityWorker.swift in Sources */,
 				E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */,
+				E0819D3E1DE80819008D4A19 /* JobSeekerOfNearbyModels.swift in Sources */,
+				E0819D421DE8081A008D4A19 /* JobSeekerOfNearbyWorker.swift in Sources */,
+				E0819D3D1DE80819008D4A19 /* JobSeekerOfNearbyInteractor.swift in Sources */,
 				E0819D1F1DE7EA0D008D4A19 /* MyFullTimeJobModels.swift in Sources */,
 				E0819D2C1DE7F879008D4A19 /* CompanyLabelConfigurator.swift in Sources */,
 				E0D8EE2E1DE2D5EF003827F8 /* JobApplicationRecordViewController.swift in Sources */,
@@ -1537,6 +1580,7 @@
 				E07AA22D1DE544DC00508EE4 /* NewResumesViewController.swift in Sources */,
 				E07AA2381DE57D0000508EE4 /* CompanyTrackInteractor.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
+				E0819D411DE8081A008D4A19 /* JobSeekerOfNearbyViewController.swift in Sources */,
 				E0FA17581DE5AF8300C29A85 /* ConcernCompanyInteractor.swift in Sources */,
 				E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */,
 				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
@@ -1560,6 +1604,7 @@
 				E0819D201DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift in Sources */,
 				4BA929911DDEFE62000EADD1 /* JobByCompanyInteractor.swift in Sources */,
 				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
+				E0819D3F1DE80819008D4A19 /* JobSeekerOfNearbyPresenter.swift in Sources */,
 				4BFC83CD1DE687DF007D1ED6 /* JobCityModels.swift in Sources */,
 				4B0690131DDAEFCE00A50CFE /* HomePageViewController.swift in Sources */,
 				E0FA17751DE5B9AE00C29A85 /* WhoSeeMyPositionConfigurator.swift in Sources */,
@@ -1847,8 +1892,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1868,8 +1913,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

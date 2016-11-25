@@ -122,6 +122,20 @@
 		E07AA24C1DE5840E00508EE4 /* SingleCompanyTrackWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA2451DE5840E00508EE4 /* SingleCompanyTrackWorker.swift */; };
 		E07AA24E1DE59CBD00508EE4 /* ResumeDeliverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA24D1DE59CBD00508EE4 /* ResumeDeliverItemView.swift */; };
 		E07AA2501DE59CE300508EE4 /* ResumeDeliverItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07AA24F1DE59CE300508EE4 /* ResumeDeliverItemView.xib */; };
+		E0819D1D1DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D161DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift */; };
+		E0819D1E1DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D171DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift */; };
+		E0819D1F1DE7EA0D008D4A19 /* MyFullTimeJobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D181DE7EA0D008D4A19 /* MyFullTimeJobModels.swift */; };
+		E0819D201DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D191DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift */; };
+		E0819D211DE7EA0D008D4A19 /* MyFullTimeJobRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D1A1DE7EA0D008D4A19 /* MyFullTimeJobRouter.swift */; };
+		E0819D221DE7EA0D008D4A19 /* MyFullTimeJobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D1B1DE7EA0D008D4A19 /* MyFullTimeJobViewController.swift */; };
+		E0819D231DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D1C1DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift */; };
+		E0819D2C1DE7F879008D4A19 /* CompanyLabelConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D251DE7F879008D4A19 /* CompanyLabelConfigurator.swift */; };
+		E0819D2D1DE7F879008D4A19 /* CompanyLabelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D261DE7F879008D4A19 /* CompanyLabelInteractor.swift */; };
+		E0819D2E1DE7F879008D4A19 /* CompanyLabelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D271DE7F879008D4A19 /* CompanyLabelModels.swift */; };
+		E0819D2F1DE7F879008D4A19 /* CompanyLabelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D281DE7F879008D4A19 /* CompanyLabelPresenter.swift */; };
+		E0819D301DE7F879008D4A19 /* CompanyLabelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D291DE7F879008D4A19 /* CompanyLabelRouter.swift */; };
+		E0819D311DE7F879008D4A19 /* CompanyLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D2A1DE7F879008D4A19 /* CompanyLabelViewController.swift */; };
+		E0819D321DE7F879008D4A19 /* CompanyLabelWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */; };
 		E0D8EE011DE28D51003827F8 /* RollLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE001DE28D51003827F8 /* RollLabel.swift */; };
 		E0D8EE031DE2C57C003827F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D8EE021DE2C57C003827F8 /* MapKit.framework */; };
 		E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */; };
@@ -355,6 +369,20 @@
 		E07AA2451DE5840E00508EE4 /* SingleCompanyTrackWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleCompanyTrackWorker.swift; path = Scenes/Company/Message/CompanyTrack/SingleCompanyTrack/SingleCompanyTrackWorker.swift; sourceTree = "<group>"; };
 		E07AA24D1DE59CBD00508EE4 /* ResumeDeliverItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResumeDeliverItemView.swift; path = ResumeItem/ResumeDeliverItemView.swift; sourceTree = "<group>"; };
 		E07AA24F1DE59CE300508EE4 /* ResumeDeliverItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeDeliverItemView.xib; sourceTree = "<group>"; };
+		E0819D161DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobConfigurator.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobConfigurator.swift; sourceTree = "<group>"; };
+		E0819D171DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobInteractor.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobInteractor.swift; sourceTree = "<group>"; };
+		E0819D181DE7EA0D008D4A19 /* MyFullTimeJobModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobModels.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobModels.swift; sourceTree = "<group>"; };
+		E0819D191DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobPresenter.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobPresenter.swift; sourceTree = "<group>"; };
+		E0819D1A1DE7EA0D008D4A19 /* MyFullTimeJobRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobRouter.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobRouter.swift; sourceTree = "<group>"; };
+		E0819D1B1DE7EA0D008D4A19 /* MyFullTimeJobViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobViewController.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobViewController.swift; sourceTree = "<group>"; };
+		E0819D1C1DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyFullTimeJobWorker.swift; path = Scenes/Company/Me/MyFullTimeJob/MyFullTimeJobWorker.swift; sourceTree = "<group>"; };
+		E0819D251DE7F879008D4A19 /* CompanyLabelConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelConfigurator.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelConfigurator.swift; sourceTree = "<group>"; };
+		E0819D261DE7F879008D4A19 /* CompanyLabelInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelInteractor.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelInteractor.swift; sourceTree = "<group>"; };
+		E0819D271DE7F879008D4A19 /* CompanyLabelModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelModels.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelModels.swift; sourceTree = "<group>"; };
+		E0819D281DE7F879008D4A19 /* CompanyLabelPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelPresenter.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelPresenter.swift; sourceTree = "<group>"; };
+		E0819D291DE7F879008D4A19 /* CompanyLabelRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelRouter.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelRouter.swift; sourceTree = "<group>"; };
+		E0819D2A1DE7F879008D4A19 /* CompanyLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelViewController.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelViewController.swift; sourceTree = "<group>"; };
+		E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLabelWorker.swift; path = Scenes/Company/Me/CompanyLabel/CompanyLabelWorker.swift; sourceTree = "<group>"; };
 		E0D8EE001DE28D51003827F8 /* RollLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollLabel.swift; path = SwipeLabel/RollLabel.swift; sourceTree = "<group>"; };
 		E0D8EE021DE2C57C003827F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E0D8EE051DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PositionListOfHRConfigurator.swift; path = Scenes/Message/PositionListOfHR/PositionListOfHRConfigurator.swift; sourceTree = "<group>"; };
@@ -734,6 +762,7 @@
 		E07AA21E1DE5440F00508EE4 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				E0819D141DE7E827008D4A19 /* Me */,
 				E07AA21F1DE544A200508EE4 /* Message */,
 			);
 			name = Company;
@@ -792,6 +821,43 @@
 				E0FA174C1DE5A65F00C29A85 /* ResumeDeliverTableViewController.swift */,
 			);
 			name = SingleCompanyTrack;
+			sourceTree = "<group>";
+		};
+		E0819D141DE7E827008D4A19 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				E0819D241DE7F852008D4A19 /* CompanyLabel */,
+				E0819D151DE7E9DB008D4A19 /* MyFullTimeJob */,
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		E0819D151DE7E9DB008D4A19 /* MyFullTimeJob */ = {
+			isa = PBXGroup;
+			children = (
+				E0819D161DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift */,
+				E0819D171DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift */,
+				E0819D181DE7EA0D008D4A19 /* MyFullTimeJobModels.swift */,
+				E0819D191DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift */,
+				E0819D1A1DE7EA0D008D4A19 /* MyFullTimeJobRouter.swift */,
+				E0819D1B1DE7EA0D008D4A19 /* MyFullTimeJobViewController.swift */,
+				E0819D1C1DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift */,
+			);
+			name = MyFullTimeJob;
+			sourceTree = "<group>";
+		};
+		E0819D241DE7F852008D4A19 /* CompanyLabel */ = {
+			isa = PBXGroup;
+			children = (
+				E0819D251DE7F879008D4A19 /* CompanyLabelConfigurator.swift */,
+				E0819D261DE7F879008D4A19 /* CompanyLabelInteractor.swift */,
+				E0819D271DE7F879008D4A19 /* CompanyLabelModels.swift */,
+				E0819D281DE7F879008D4A19 /* CompanyLabelPresenter.swift */,
+				E0819D291DE7F879008D4A19 /* CompanyLabelRouter.swift */,
+				E0819D2A1DE7F879008D4A19 /* CompanyLabelViewController.swift */,
+				E0819D2B1DE7F879008D4A19 /* CompanyLabelWorker.swift */,
+			);
+			name = CompanyLabel;
 			sourceTree = "<group>";
 		};
 		E0D8EE041DE2C90E003827F8 /* PositionListOfHR */ = {
@@ -1350,11 +1416,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0FA175A1DE5AF8300C29A85 /* ConcernCompanyPresenter.swift in Sources */,
+				E0819D211DE7EA0D008D4A19 /* MyFullTimeJobRouter.swift in Sources */,
 				E00E504B1DD82BE80087A8B6 /* OnlineResumeViewController.swift in Sources */,
 				E0D8EE0F1DE2C9E6003827F8 /* PositionListOfHRPresenter.swift in Sources */,
 				E00E505A1DD9AEF20087A8B6 /* OccupationalHistoryListRouter.swift in Sources */,
 				E0D8EE121DE2C9E6003827F8 /* PositionListOfHRWorker.swift in Sources */,
+				E0819D2E1DE7F879008D4A19 /* CompanyLabelModels.swift in Sources */,
 				E0D8EE2A1DE2D5EF003827F8 /* JobApplicationRecordInteractor.swift in Sources */,
+				E0819D321DE7F879008D4A19 /* CompanyLabelWorker.swift in Sources */,
 				E0F404481DDDA77600BB0DE1 /* WhoSeenMeViewController.swift in Sources */,
 				E07AA22C1DE544DC00508EE4 /* NewResumesRouter.swift in Sources */,
 				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
@@ -1381,9 +1450,11 @@
 				4B0E29951DE0361000CE4225 /* JobBySelectedConfigurator.swift in Sources */,
 				4BFC83D01DE687DF007D1ED6 /* JobCityViewController.swift in Sources */,
 				4B06902A1DDB2E2B00A50CFE /* NearJobConfigurator.swift in Sources */,
+				E0819D221DE7EA0D008D4A19 /* MyFullTimeJobViewController.swift in Sources */,
 				4BA929951DDEFE62000EADD1 /* JobByCompanyViewController.swift in Sources */,
 				E07AA22E1DE544DC00508EE4 /* NewResumesWorker.swift in Sources */,
 				4B06900F1DDAEFCE00A50CFE /* HomePageInteractor.swift in Sources */,
+				E0819D1E1DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift in Sources */,
 				E07AA23D1DE57D0000508EE4 /* CompanyTrackWorker.swift in Sources */,
 				E0FA17671DE5B3C400C29A85 /* ConcernJobSeekerInteractor.swift in Sources */,
 				E0FA17591DE5AF8300C29A85 /* ConcernCompanyModels.swift in Sources */,
@@ -1392,6 +1463,7 @@
 				E07AA24A1DE5840E00508EE4 /* SingleCompanyTrackRouter.swift in Sources */,
 				E00E504A1DD82BE80087A8B6 /* OnlineResumeRouter.swift in Sources */,
 				E0FA17571DE5AF8300C29A85 /* ConcernCompanyConfigurator.swift in Sources */,
+				E0819D2D1DE7F879008D4A19 /* CompanyLabelInteractor.swift in Sources */,
 				E0D8EE4C1DE2E501003827F8 /* PayAttentionCompanysViewController.swift in Sources */,
 				E0D8EE2D1DE2D5EF003827F8 /* JobApplicationRecordRouter.swift in Sources */,
 				E0FA175C1DE5AF8300C29A85 /* ConcernCompanyViewController.swift in Sources */,
@@ -1404,10 +1476,12 @@
 				E07AA2471DE5840E00508EE4 /* SingleCompanyTrackInteractor.swift in Sources */,
 				4B0690211DDAF0C000A50CFE /* JobDetailViewController.swift in Sources */,
 				4B06901F1DDAF0C000A50CFE /* JobDetailPresenter.swift in Sources */,
+				E0819D1D1DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift in Sources */,
 				E07AA2391DE57D0000508EE4 /* CompanyTrackModels.swift in Sources */,
 				4B06902D1DDB2E2B00A50CFE /* NearJobPresenter.swift in Sources */,
 				E07AA2491DE5840E00508EE4 /* SingleCompanyTrackPresenter.swift in Sources */,
 				4B06902C1DDB2E2B00A50CFE /* NearJobModels.swift in Sources */,
+				E0819D231DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift in Sources */,
 				4B0690301DDB2E2B00A50CFE /* NearJobWorker.swift in Sources */,
 				E07AA24B1DE5840E00508EE4 /* SingleCompanyTrackViewController.swift in Sources */,
 				E00E50461DD82BE80087A8B6 /* OnlineResumeConfigurator.swift in Sources */,
@@ -1417,6 +1491,7 @@
 				4BFC83CB1DE687DF007D1ED6 /* JobCityConfigurator.swift in Sources */,
 				4B0690141DDAEFCE00A50CFE /* HomePageWorker.swift in Sources */,
 				4B06900E1DDAEFCE00A50CFE /* HomePageConfigurator.swift in Sources */,
+				E0819D311DE7F879008D4A19 /* CompanyLabelViewController.swift in Sources */,
 				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
 				E0D8EE3E1DE2DB2F003827F8 /* MyJobOffersWorker.swift in Sources */,
 				E07AA2481DE5840E00508EE4 /* SingleCompanyTrackModels.swift in Sources */,
@@ -1439,6 +1514,8 @@
 				E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */,
 				4BFC83D11DE687DF007D1ED6 /* JobCityWorker.swift in Sources */,
 				E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */,
+				E0819D1F1DE7EA0D008D4A19 /* MyFullTimeJobModels.swift in Sources */,
+				E0819D2C1DE7F879008D4A19 /* CompanyLabelConfigurator.swift in Sources */,
 				E0D8EE2E1DE2D5EF003827F8 /* JobApplicationRecordViewController.swift in Sources */,
 				E07AA24C1DE5840E00508EE4 /* SingleCompanyTrackWorker.swift in Sources */,
 				E0FA177B1DE5B9AE00C29A85 /* WhoSeeMyPositionWorker.swift in Sources */,
@@ -1467,17 +1544,20 @@
 				E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
 				4BA929921DDEFE62000EADD1 /* JobByCompanyModels.swift in Sources */,
+				E0819D2F1DE7F879008D4A19 /* CompanyLabelPresenter.swift in Sources */,
 				E0FA175D1DE5AF8300C29A85 /* ConcernCompanyWorker.swift in Sources */,
 				E0FA17771DE5B9AE00C29A85 /* WhoSeeMyPositionModels.swift in Sources */,
 				4B06901D1DDAF0C000A50CFE /* JobDetailInteractor.swift in Sources */,
 				4B0690101DDAEFCE00A50CFE /* HomePageModels.swift in Sources */,
 				4B06901C1DDAF0C000A50CFE /* JobDetailConfigurator.swift in Sources */,
+				E0819D301DE7F879008D4A19 /* CompanyLabelRouter.swift in Sources */,
 				4B06902B1DDB2E2B00A50CFE /* NearJobInteractor.swift in Sources */,
 				4B0690201DDAF0C000A50CFE /* JobDetailRouter.swift in Sources */,
 				E0FA17691DE5B3C400C29A85 /* ConcernJobSeekerPresenter.swift in Sources */,
 				4B0690121DDAEFCE00A50CFE /* HomePageRouter.swift in Sources */,
 				4B0E299A1DE0361000CE4225 /* JobBySelectedViewController.swift in Sources */,
 				E07AA23C1DE57D0000508EE4 /* CompanyTrackViewController.swift in Sources */,
+				E0819D201DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift in Sources */,
 				4BA929911DDEFE62000EADD1 /* JobByCompanyInteractor.swift in Sources */,
 				E00E50561DD9AEF20087A8B6 /* OccupationalHistoryListConfigurator.swift in Sources */,
 				4BFC83CD1DE687DF007D1ED6 /* JobCityModels.swift in Sources */,
@@ -1699,7 +1779,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1744,7 +1824,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1759,13 +1839,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1777,13 +1860,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

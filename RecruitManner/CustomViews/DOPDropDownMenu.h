@@ -65,7 +65,7 @@
  *  当有column列 row 行 item 返回有多少个subItem ，如果>0，说明有三级列表 ，=0 没有三级列表
  *  如果都没有可以不实现该协议
  */
-- (NSInteger)menu:(DOPDropDownMenu *)menu numberOfsubItemsInRowItem:(NSInteger)row column:(NSInteger)column item:(NSInteger)item;
+- (NSInteger)menu:(DOPDropDownMenu *)menu numberOfsubItemsInItem:(NSInteger)item column:(NSInteger)column row:(NSInteger)row;
 
 /** 新增
  *  当有column列 row 行 item项 title
@@ -77,7 +77,7 @@
  *  当有column列 row 行 item项 suItem项 title
  *  如果都没有可以不实现该协议
  */
-- (NSString *)menu:(DOPDropDownMenu *)menu titleForsubItemsInRowItemAtIndexPath:(DOPIndexPath *)indexPath;
+- (NSString *)menu:(DOPDropDownMenu *)menu titleForsubItemsInItemAtIndexPath:(DOPIndexPath *)indexPath;
 
 // 新增 当有column列 row 行 item项 image
 - (NSString *)menu:(DOPDropDownMenu *)menu imageNameForItemsInRowAtIndexPath:(DOPIndexPath *)indexPath;

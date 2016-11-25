@@ -50,10 +50,13 @@ class HomePageViewController: UITableViewController, HomePageViewControllerInput
         super.viewDidLoad()
         doSomethingOnLoad()
         self.navigationItemView.delegate = self
-        self.loadLocation()
-        let userDefaults = UserDefaults.standard
-        
-        self.navigationItemView.cityTitle = userDefaults.string(forKey: "City")
+
+        let saveCityName = UserDefaults.standard.string(forKey: "KCityName")
+        if saveCityName == nil || saveCityName == ""{
+            self.loadLocation()
+        } else {
+            self.navigationItemView.cityTitle = saveCityName
+        }
     }
     
     // MARK: Event handling
@@ -144,8 +147,6 @@ extension HomePageViewController:CLLocationManagerDelegate {
                     if pm.locality != nil {locality = pm.locality!}
                     locality = locality.replacingOccurrences(of: "市", with: "")
                     self.navigationItemView.cityTitle = locality
-                    let userDefaults = UserDefaults.standard
-                    userDefaults.setValue(locality, forKey: "City")
                     print("\(subThoroughtare) \(thoroughfare) \n \(subLocality) \n \(locality) \n ")
                 }else{
                     print("No Placemarks!")

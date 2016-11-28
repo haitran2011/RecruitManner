@@ -96,6 +96,15 @@
 		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
+		E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */; };
+		E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */; };
+		E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */; };
+		E05DBA321DEBC81100006416 /* CompanyHomePageInfosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2B1DEBC81100006416 /* CompanyHomePageInfosInteractor.swift */; };
+		E05DBA331DEBC81100006416 /* CompanyHomePageInfosModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2C1DEBC81100006416 /* CompanyHomePageInfosModels.swift */; };
+		E05DBA341DEBC81100006416 /* CompanyHomePageInfosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2D1DEBC81100006416 /* CompanyHomePageInfosPresenter.swift */; };
+		E05DBA351DEBC81100006416 /* CompanyHomePageInfosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2E1DEBC81100006416 /* CompanyHomePageInfosRouter.swift */; };
+		E05DBA361DEBC81100006416 /* CompanyHomePageInfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2F1DEBC81100006416 /* CompanyHomePageInfosViewController.swift */; };
+		E05DBA371DEBC81100006416 /* CompanyHomePageInfosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */; };
 		E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07AA2161DE5294A00508EE4 /* Company.storyboard */; };
 		E07AA21B1DE5338100508EE4 /* ResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */; };
 		E07AA21D1DE5339C00508EE4 /* ResumeItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */; };
@@ -350,6 +359,15 @@
 		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobInfoItemView.swift; path = ResumeItem/JobInfoItemView.swift; sourceTree = "<group>"; };
+		E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobInfoItemView.xib; path = ResumeItem/JobInfoItemView.xib; sourceTree = "<group>"; };
+		E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosConfigurator.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosConfigurator.swift; sourceTree = "<group>"; };
+		E05DBA2B1DEBC81100006416 /* CompanyHomePageInfosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosInteractor.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosInteractor.swift; sourceTree = "<group>"; };
+		E05DBA2C1DEBC81100006416 /* CompanyHomePageInfosModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosModels.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosModels.swift; sourceTree = "<group>"; };
+		E05DBA2D1DEBC81100006416 /* CompanyHomePageInfosPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosPresenter.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosPresenter.swift; sourceTree = "<group>"; };
+		E05DBA2E1DEBC81100006416 /* CompanyHomePageInfosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosRouter.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosRouter.swift; sourceTree = "<group>"; };
+		E05DBA2F1DEBC81100006416 /* CompanyHomePageInfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosViewController.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosViewController.swift; sourceTree = "<group>"; };
+		E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosWorker.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosWorker.swift; sourceTree = "<group>"; };
 		E07AA2171DE5294A00508EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Company.storyboard; sourceTree = "<group>"; };
 		E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResumeItemView.swift; path = ResumeItem/ResumeItemView.swift; sourceTree = "<group>"; };
 		E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResumeItemView.xib; path = ResumeItem/ResumeItemView.xib; sourceTree = "<group>"; };
@@ -762,6 +780,20 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		E05DBA291DEBC7A600006416 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */,
+				E05DBA2B1DEBC81100006416 /* CompanyHomePageInfosInteractor.swift */,
+				E05DBA2C1DEBC81100006416 /* CompanyHomePageInfosModels.swift */,
+				E05DBA2D1DEBC81100006416 /* CompanyHomePageInfosPresenter.swift */,
+				E05DBA2E1DEBC81100006416 /* CompanyHomePageInfosRouter.swift */,
+				E05DBA2F1DEBC81100006416 /* CompanyHomePageInfosViewController.swift */,
+				E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		E07AA2191DE5331000508EE4 /* ResumeItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +801,8 @@
 				E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */,
 				E07AA24D1DE59CBD00508EE4 /* ResumeDeliverItemView.swift */,
 				E07AA24F1DE59CE300508EE4 /* ResumeDeliverItemView.xib */,
+				E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */,
+				E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */,
 			);
 			name = ResumeItem;
 			sourceTree = "<group>";
@@ -776,6 +810,7 @@
 		E07AA21E1DE5440F00508EE4 /* Company */ = {
 			isa = PBXGroup;
 			children = (
+				E05DBA291DEBC7A600006416 /* Home */,
 				E0819D331DE80744008D4A19 /* Nearby */,
 				E0819D141DE7E827008D4A19 /* Me */,
 				E07AA21F1DE544A200508EE4 /* Message */,
@@ -1310,6 +1345,7 @@
 				E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */,
 				E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */,
 				E00E50391DD73DD90087A8B6 /* ShowUpMoreView.xib in Resources */,
+				E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1443,6 +1479,7 @@
 				E02E63621DD7071600A496C5 /* OccupationalHistoryView.swift in Sources */,
 				4BBBCAE81DD9ED970047EAD5 /* JobTableViewSessionHeader.swift in Sources */,
 				E02E63641DD7079E00A496C5 /* EexpectationsJobView.swift in Sources */,
+				E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */,
 				4BBBCAD91DD9D8CB0047EAD5 /* JobTableViewCell.swift in Sources */,
 				E07AA21B1DE5338100508EE4 /* ResumeItemView.swift in Sources */,
 				4BE978791DE284DF00777CD9 /* NavigationItemView.swift in Sources */,
@@ -1495,6 +1532,7 @@
 				4B06900F1DDAEFCE00A50CFE /* HomePageInteractor.swift in Sources */,
 				E0819D1E1DE7EA0D008D4A19 /* MyFullTimeJobInteractor.swift in Sources */,
 				E07AA23D1DE57D0000508EE4 /* CompanyTrackWorker.swift in Sources */,
+				E05DBA351DEBC81100006416 /* CompanyHomePageInfosRouter.swift in Sources */,
 				E0819D3C1DE80819008D4A19 /* JobSeekerOfNearbyConfigurator.swift in Sources */,
 				E0FA17671DE5B3C400C29A85 /* ConcernJobSeekerInteractor.swift in Sources */,
 				E0FA17591DE5AF8300C29A85 /* ConcernCompanyModels.swift in Sources */,
@@ -1530,8 +1568,10 @@
 				4B06902F1DDB2E2B00A50CFE /* NearJobViewController.swift in Sources */,
 				4BFC83CB1DE687DF007D1ED6 /* JobCityConfigurator.swift in Sources */,
 				4B0690141DDAEFCE00A50CFE /* HomePageWorker.swift in Sources */,
+				E05DBA361DEBC81100006416 /* CompanyHomePageInfosViewController.swift in Sources */,
 				4B06900E1DDAEFCE00A50CFE /* HomePageConfigurator.swift in Sources */,
 				E0819D311DE7F879008D4A19 /* CompanyLabelViewController.swift in Sources */,
+				E05DBA371DEBC81100006416 /* CompanyHomePageInfosWorker.swift in Sources */,
 				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
 				E0D8EE3E1DE2DB2F003827F8 /* MyJobOffersWorker.swift in Sources */,
 				E07AA2481DE5840E00508EE4 /* SingleCompanyTrackModels.swift in Sources */,
@@ -1553,6 +1593,7 @@
 				E0FA17761DE5B9AE00C29A85 /* WhoSeeMyPositionInteractor.swift in Sources */,
 				E0D8EE4B1DE2E501003827F8 /* PayAttentionCompanysRouter.swift in Sources */,
 				4BFC83D11DE687DF007D1ED6 /* JobCityWorker.swift in Sources */,
+				E05DBA321DEBC81100006416 /* CompanyHomePageInfosInteractor.swift in Sources */,
 				E0D8EE491DE2E501003827F8 /* PayAttentionCompanysModels.swift in Sources */,
 				E0819D3E1DE80819008D4A19 /* JobSeekerOfNearbyModels.swift in Sources */,
 				E0819D421DE8081A008D4A19 /* JobSeekerOfNearbyWorker.swift in Sources */,
@@ -1582,11 +1623,13 @@
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 				E0819D411DE8081A008D4A19 /* JobSeekerOfNearbyViewController.swift in Sources */,
 				E0FA17581DE5AF8300C29A85 /* ConcernCompanyInteractor.swift in Sources */,
+				E05DBA341DEBC81100006416 /* CompanyHomePageInfosPresenter.swift in Sources */,
 				E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */,
 				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
 				E0D8EE291DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift in Sources */,
 				E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
+				E05DBA331DEBC81100006416 /* CompanyHomePageInfosModels.swift in Sources */,
 				4BA929921DDEFE62000EADD1 /* JobByCompanyModels.swift in Sources */,
 				E0819D2F1DE7F879008D4A19 /* CompanyLabelPresenter.swift in Sources */,
 				E0FA175D1DE5AF8300C29A85 /* ConcernCompanyWorker.swift in Sources */,
@@ -1599,6 +1642,7 @@
 				4B0690201DDAF0C000A50CFE /* JobDetailRouter.swift in Sources */,
 				E0FA17691DE5B3C400C29A85 /* ConcernJobSeekerPresenter.swift in Sources */,
 				4B0690121DDAEFCE00A50CFE /* HomePageRouter.swift in Sources */,
+				E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */,
 				4B0E299A1DE0361000CE4225 /* JobBySelectedViewController.swift in Sources */,
 				E07AA23C1DE57D0000508EE4 /* CompanyTrackViewController.swift in Sources */,
 				E0819D201DE7EA0D008D4A19 /* MyFullTimeJobPresenter.swift in Sources */,

@@ -30,8 +30,6 @@ class CompanyLabelViewController: UIViewController, CompanyLabelViewControllerIn
     var output: CompanyLabelViewControllerOutput!
     var router: CompanyLabelRouter!
   
-    @IBOutlet weak var collectionView: UICollectionView!
-    
     // MARK: Object lifecycle
   
     override func awakeFromNib() {

@@ -31,8 +31,6 @@ class JobSeekerOfNearbyViewController: UITableViewController, JobSeekerOfNearbyV
     var output: JobSeekerOfNearbyViewControllerOutput!
     var router: JobSeekerOfNearbyRouter!
     
-    @IBOutlet weak var headerView: UIView!
-    
     // MARK: Object lifecycle
     
     override func awakeFromNib()

@@ -23,7 +23,7 @@ target :RecruitManner do
     
     # HTTP + json
     pod 'Alamofire', :path => '../github/Alamofire'
-    pod 'ObjectMapper', '~> 2.2.1'
+    # pod 'ObjectMapper', '~> 2.2.1'
     pod 'HandyJSON', '~> 1.2.1'
     
     # iOS图片、文字轮播器
@@ -52,6 +52,6 @@ end
 
 target :AlamofireObjectMapper do
     pod 'Alamofire', :path => '../github/Alamofire'
-    pod 'ObjectMapper', '~> 2.2.1'
+    # pod 'ObjectMapper', '~> 2.2.1'
     pod 'HandyJSON', '~> 1.2.1'
 end

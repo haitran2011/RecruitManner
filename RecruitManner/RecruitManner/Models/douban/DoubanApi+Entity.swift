@@ -8,7 +8,6 @@
 
 import Foundation
 import HandyJSON
-import ObjectMapper
 
 extension DoubanApi {
     

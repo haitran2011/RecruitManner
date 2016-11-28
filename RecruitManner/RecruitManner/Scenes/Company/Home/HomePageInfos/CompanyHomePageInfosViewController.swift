@@ -82,21 +82,23 @@ extension CompanyHomePageInfosViewController {
         switch indexPath.section {
         case 0:
             return 120
-        default:
+        case 1:
             return 188
+        default:
+            return 44
         }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
         case 0:
-            return cellHomePost(forTableView: tableView, cellForRowAt: indexPath)
+            return cellHomePost(in: tableView, forRowAt: indexPath)
         default:
-            return cellHomeResume(forTableView: tableView, cellForRowAt: indexPath)
+            return cellHomeResume(in: tableView, forRowAt: indexPath)
         }
     }
     
-    private func cellHomePost(forTableView tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellHomePost(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellCompanyHomePagePostIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
@@ -108,7 +110,7 @@ extension CompanyHomePageInfosViewController {
         return cell
     }
     
-    private func cellHomeResume(forTableView tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellHomeResume(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellCompanyHomePageResumeIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         

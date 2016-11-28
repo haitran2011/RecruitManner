@@ -105,6 +105,9 @@
 		E05DBA351DEBC81100006416 /* CompanyHomePageInfosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2E1DEBC81100006416 /* CompanyHomePageInfosRouter.swift */; };
 		E05DBA361DEBC81100006416 /* CompanyHomePageInfosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2F1DEBC81100006416 /* CompanyHomePageInfosViewController.swift */; };
 		E05DBA371DEBC81100006416 /* CompanyHomePageInfosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */; };
+		E05DBA391DEBF64500006416 /* AlamofireHandyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA381DEBF64500006416 /* AlamofireHandyJSON.swift */; };
+		E05DBA3C1DEC077E00006416 /* doubanApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA3B1DEC077E00006416 /* doubanApi.swift */; };
+		E05DBA3E1DEC158B00006416 /* DoubanEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA3D1DEC158B00006416 /* DoubanEntity.swift */; };
 		E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07AA2161DE5294A00508EE4 /* Company.storyboard */; };
 		E07AA21B1DE5338100508EE4 /* ResumeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */; };
 		E07AA21D1DE5339C00508EE4 /* ResumeItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */; };
@@ -368,6 +371,9 @@
 		E05DBA2E1DEBC81100006416 /* CompanyHomePageInfosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosRouter.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosRouter.swift; sourceTree = "<group>"; };
 		E05DBA2F1DEBC81100006416 /* CompanyHomePageInfosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosViewController.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosViewController.swift; sourceTree = "<group>"; };
 		E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosWorker.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosWorker.swift; sourceTree = "<group>"; };
+		E05DBA381DEBF64500006416 /* AlamofireHandyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHandyJSON.swift; sourceTree = "<group>"; };
+		E05DBA3B1DEC077E00006416 /* doubanApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = doubanApi.swift; path = Models/douban/doubanApi.swift; sourceTree = "<group>"; };
+		E05DBA3D1DEC158B00006416 /* DoubanEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubanEntity.swift; path = Models/douban/DoubanEntity.swift; sourceTree = "<group>"; };
 		E07AA2171DE5294A00508EE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Company.storyboard; sourceTree = "<group>"; };
 		E07AA21A1DE5338100508EE4 /* ResumeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResumeItemView.swift; path = ResumeItem/ResumeItemView.swift; sourceTree = "<group>"; };
 		E07AA21C1DE5339B00508EE4 /* ResumeItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ResumeItemView.xib; path = ResumeItem/ResumeItemView.xib; sourceTree = "<group>"; };
@@ -669,6 +675,7 @@
 		E00E503A1DD82A570087A8B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E05DBA3A1DEC06E800006416 /* douban */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -743,6 +750,7 @@
 				E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */,
 				E021192D1DD4370F0051A0E3 /* AlamofireObjectMapper.swift */,
 				E02119231DD4367E0051A0E3 /* Info.plist */,
+				E05DBA381DEBF64500006416 /* AlamofireHandyJSON.swift */,
 			);
 			path = AlamofireObjectMapper;
 			sourceTree = "<group>";
@@ -792,6 +800,15 @@
 				E05DBA301DEBC81100006416 /* CompanyHomePageInfosWorker.swift */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		E05DBA3A1DEC06E800006416 /* douban */ = {
+			isa = PBXGroup;
+			children = (
+				E05DBA3B1DEC077E00006416 /* doubanApi.swift */,
+				E05DBA3D1DEC158B00006416 /* DoubanEntity.swift */,
+			);
+			name = douban;
 			sourceTree = "<group>";
 		};
 		E07AA2191DE5331000508EE4 /* ResumeItem */ = {
@@ -1461,6 +1478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E021192E1DD4370F0051A0E3 /* AlamofireObjectMapper.swift in Sources */,
+				E05DBA391DEBF64500006416 /* AlamofireHandyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1623,6 +1641,7 @@
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
 				E0819D411DE8081A008D4A19 /* JobSeekerOfNearbyViewController.swift in Sources */,
 				E0FA17581DE5AF8300C29A85 /* ConcernCompanyInteractor.swift in Sources */,
+				E05DBA3C1DEC077E00006416 /* doubanApi.swift in Sources */,
 				E05DBA341DEBC81100006416 /* CompanyHomePageInfosPresenter.swift in Sources */,
 				E0D8EE481DE2E501003827F8 /* PayAttentionCompanysInteractor.swift in Sources */,
 				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
@@ -1638,6 +1657,7 @@
 				4B0690101DDAEFCE00A50CFE /* HomePageModels.swift in Sources */,
 				4B06901C1DDAF0C000A50CFE /* JobDetailConfigurator.swift in Sources */,
 				E0819D301DE7F879008D4A19 /* CompanyLabelRouter.swift in Sources */,
+				E05DBA3E1DEC158B00006416 /* DoubanEntity.swift in Sources */,
 				4B06902B1DDB2E2B00A50CFE /* NearJobInteractor.swift in Sources */,
 				4B0690201DDAF0C000A50CFE /* JobDetailRouter.swift in Sources */,
 				E0FA17691DE5B3C400C29A85 /* ConcernJobSeekerPresenter.swift in Sources */,

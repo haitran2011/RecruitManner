@@ -151,91 +151,91 @@ extension OnlineResumeViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == ConstCellAddHeadPortraitIdentifier {
-            return cellAddHeadPortraitView(tableView, cellForRowAt: indexPath)
+            return cellAddHeadPortraitView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellBasicInfoIdentifier {
-            return cellBasicInfoView(tableView, cellForRowAt: indexPath)
+            return cellBasicInfoView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellOccupationalHistoryIdentifier {
-            return cellOccupationalHistoryView(tableView, cellForRowAt: indexPath)
+            return cellOccupationalHistoryView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellEducationHistoryIdentifier {
-            return cellEducationHistoryView(tableView, cellForRowAt: indexPath)
+            return cellEducationHistoryView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellEexpectationsJobIdentifier {
-            return cellEexpectationsJobView(tableView, cellForRowAt: indexPath)
+            return cellEexpectationsJobView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellAddSkillIdentifier {
-            return cellAddSkillView(tableView, cellForRowAt: indexPath)
+            return cellAddSkillView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellAddSelfDescriptionIdentifier {
-            return cellAddSelfDescriptionView(tableView, cellForRowAt: indexPath)
+            return cellAddSelfDescriptionView(in: tableView, forRowAt: indexPath)
         }
         
         if indexPath.section == ConstCellShowUpMoreIdentifier {
-            return cellShowUpMoreView(tableView, cellForRowAt: indexPath)
+            return cellShowUpMoreView(in: tableView, forRowAt: indexPath)
         }
         
         return UITableViewCell()
     }
     
     
-    private func cellAddHeadPortraitView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellAddHeadPortraitView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellAddHeadPortraitIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    func cellBasicInfoView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func cellBasicInfoView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellBasicInfoIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellOccupationalHistoryView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellOccupationalHistoryView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellOccupationalHistoryIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellEducationHistoryView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellEducationHistoryView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellEducationHistoryIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellEexpectationsJobView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellEexpectationsJobView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellEexpectationsJobIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellAddSkillView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellAddSkillView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellAddSkillIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellAddSelfDescriptionView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellAddSelfDescriptionView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellAddSelfDescriptionIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
         return cell
     }
     
-    private func cellShowUpMoreView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    private func cellShowUpMoreView(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellShowUpMoreIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         

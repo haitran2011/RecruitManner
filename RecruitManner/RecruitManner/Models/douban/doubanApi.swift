@@ -8,8 +8,14 @@
 
 import Foundation
 import Alamofire
+import AlamofireObjectMapper
 
-struct DoubanApi {
+public class DoubanApi {
+    
+    private static let sharedInstance = DoubanApi()
+    class public var shared: DoubanApi {
+        return sharedInstance
+    }
     
     enum Router: URLRequestConvertible {
         
@@ -35,8 +41,6 @@ struct DoubanApi {
             switch self {
             case .readMovie(let start, let count):
                 return ["start" : start, "count" : count]
-            default:
-                return [:]
             }
         }
         
@@ -47,7 +51,7 @@ struct DoubanApi {
             urlRequest.httpMethod = method.rawValue
             
             switch self {
-            case .readMovie(let start, let count):
+            case .readMovie:
                  urlRequest = try URLEncoding.default.encode(urlRequest, with: parameters)
             }
             
@@ -55,4 +59,15 @@ struct DoubanApi {
         }
     }
     
+    func fetchMovice(start: Int, count: Int, completionHandler: @escaping (Info?, Error?) -> Void) {
+        Alamofire.request(Router.readMovie(start: start, count: count))
+            .responseHandy { (response: DataResponse<Info>) in
+                switch response.result {
+                case .success(let value):
+                    completionHandler(value, nil)
+                case .failure(let error):
+                    completionHandler(nil, error)
+                }
+        }
+    }
 }

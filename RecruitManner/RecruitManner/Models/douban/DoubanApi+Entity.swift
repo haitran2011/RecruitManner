@@ -8,18 +8,15 @@
 
 import Foundation
 import HandyJSON
+import ObjectMapper
 
-struct DoubanEntity {
+extension DoubanApi {
     
     struct Info: HandyJSON {
         var count: Int?
         var start: Int?
         var total: Int?
         var title: String?
-        
-//        var description: String {
-//            return
-//        }
     }
     
     static func toJSON<T : HandyJSON>(model: T) -> String? {

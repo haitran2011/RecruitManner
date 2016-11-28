@@ -21,6 +21,19 @@ class RecruitMannerTests: XCTestCase {
         super.tearDown()
     }
     
+    func testAlamofireHandyJSON() {
+        let exp = expectation(description: "AlamofireHandyJSON")
+        
+        DoubanApi.shared.fetchMovice(start: 0, count: 1) {
+            print($0)
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10) { (error) in
+            // ...
+        }
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

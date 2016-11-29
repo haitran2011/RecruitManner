@@ -10,6 +10,8 @@
 //
 
 import UIKit
+import CustomViews
+import CoreLocation
 
 protocol NearJobViewControllerInput {
 
@@ -33,8 +35,11 @@ class NearJobViewController: UIViewController, NearJobViewControllerInput {
     @IBOutlet weak var childView1: UIView!
     @IBOutlet weak var childView2: UIView!
     
+    @IBOutlet weak var navigationItemView: NavigationItemView!
   
     @IBOutlet weak var tableView: UITableView!
+    
+    let locationManager = CLLocationManager()
     // MARK: Object lifecycle
   
     override func awakeFromNib() {
@@ -64,6 +69,14 @@ class NearJobViewController: UIViewController, NearJobViewControllerInput {
 
         super.viewDidLoad()
         doSomethingOnLoad()
+        self.navigationItemView.delegate = self
+        
+        let saveCityName = UserDefaults.standard.string(forKey: "KCityName")
+        if saveCityName == nil || saveCityName == ""{
+            self.loadLocation()
+        } else {
+            self.navigationItemView.cityTitle = saveCityName
+        }
 
     }
   
@@ -97,3 +110,85 @@ extension NearJobViewController:UITableViewDelegate,UITableViewDataSource {
         return cell
     }
 }
+
+extension NearJobViewController: NavigationItemViewDelegate {
+    func cityButtonAction() {
+        let jobCityViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "JobCityViewController")
+        self.navigationController?.pushViewController(jobCityViewController, animated: true)
+    }
+    
+    func cancelButtonAction() {
+    }
+    
+    func navigationSearchBarButtonClicked(_ searchBar: UISearchBar) -> Bool {
+        return true
+    }
+    
+    func navigationSearchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        print(searchBar.text ?? "test")
+        searchBar.resignFirstResponder()
+    }
+
+    func navigationsearchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+}
+
+extension NearJobViewController:CLLocationManagerDelegate {
+    
+    func loadLocation() {
+        if CLLocationManager.locationServicesEnabled() {
+            self.locationManager.delegate = self
+            self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager.requestWhenInUseAuthorization()
+            self.locationManager.startUpdatingLocation()
+        } else {
+            
+        }
+        
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let currentLocation:CLLocation = locations.last!
+        self.lonLatToCity(location: currentLocation)
+        manager.stopUpdatingLocation()
+    }
+    
+    func lonLatToCity(location: CLLocation) {
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location){(placemarks, error) -> Void in
+            if (error == nil) {
+                let array = placemarks! as [CLPlacemark]
+                
+                if (array.count > 0){
+                    
+                    let pm = array[0]
+                    var subThoroughtare:String = ""
+                    var thoroughfare:String = ""
+                    var subLocality:String = ""
+                    var locality:String = ""
+                    
+                    if pm.subThoroughfare != nil {subThoroughtare = pm.subThoroughfare!}
+                    if pm.thoroughfare != nil {thoroughfare = pm.thoroughfare!}
+                    if pm.subLocality != nil {subLocality = pm.subLocality!}
+                    if pm.locality != nil {locality = pm.locality!}
+                    locality = locality.replacingOccurrences(of: "市", with: "")
+                    self.navigationItemView.cityTitle = locality
+                    print("\(subThoroughtare) \(thoroughfare) \n \(subLocality) \n \(locality) \n ")
+                }else{
+                    print("No Placemarks!")
+                }
+            } else {
+                print(error.debugDescription)
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
+        print(error?.localizedDescription ?? "")
+    }
+}
+
+

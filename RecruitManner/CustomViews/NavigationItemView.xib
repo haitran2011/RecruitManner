@@ -14,17 +14,17 @@
                 <outlet property="cityAllowImageView" destination="o2w-Al-8i7" id="She-bL-aYW"/>
                 <outlet property="cityLabel" destination="9e6-GV-Ew4" id="txx-ML-wC5"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="6Xt-w9-WIO"/>
-                <outlet property="locationImageView" destination="lpT-eS-V3k" id="m5z-VV-dtp"/>
+                <outlet property="locationImageView" destination="g2m-Q4-TZa" id="MRw-Y7-USy"/>
                 <outlet property="searchJobBar" destination="IaG-54-4io" id="G7K-dg-mFy"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="379" height="674"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-Qu-YMc">
-                    <rect key="frame" x="329" y="315" width="50" height="44"/>
+                    <rect key="frame" x="325" y="312" width="50" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="lMN-T6-td6"/>
                         <constraint firstAttribute="width" constant="50" id="oNK-yc-yFR"/>
@@ -36,18 +36,17 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAW-oB-Bzz">
-                    <rect key="frame" x="0.0" y="315" width="100" height="44"/>
+                    <rect key="frame" x="0.0" y="312" width="80" height="44"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin_location" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-eS-V3k">
-                            <rect key="frame" x="0.0" y="11" width="22" height="22"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin_location" translatesAutoresizingMaskIntoConstraints="NO" id="g2m-Q4-TZa">
+                            <rect key="frame" x="0.0" y="14" width="11" height="16"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="22" id="FbU-lr-CPV"/>
-                                <constraint firstAttribute="width" constant="22" id="vNO-m1-UCQ"/>
+                                <constraint firstAttribute="width" constant="11" id="0jA-Dt-JJF"/>
+                                <constraint firstAttribute="height" constant="16" id="mHx-GG-4pe"/>
                             </constraints>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-Al-8i7">
-                            <rect key="frame" x="78" y="11" width="22" height="22"/>
+                            <rect key="frame" x="58" y="11" width="22" height="22"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="22" id="XXT-eF-Y01"/>
@@ -55,14 +54,14 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9e6-GV-Ew4">
-                            <rect key="frame" x="22" y="15" width="56" height="14"/>
+                            <rect key="frame" x="11" y="15" width="47" height="14"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTP-5f-LCb">
-                            <rect key="frame" x="0.0" y="0.0" width="100" height="44"/>
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="44"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <state key="normal">
@@ -77,21 +76,21 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="kTP-5f-LCb" secondAttribute="trailing" id="53z-w5-rqc"/>
                         <constraint firstItem="kTP-5f-LCb" firstAttribute="leading" secondItem="TAW-oB-Bzz" secondAttribute="leading" id="5DB-u3-QrO"/>
+                        <constraint firstItem="g2m-Q4-TZa" firstAttribute="leading" secondItem="TAW-oB-Bzz" secondAttribute="leading" id="863-JV-FSr"/>
                         <constraint firstAttribute="trailing" secondItem="o2w-Al-8i7" secondAttribute="trailing" id="CbL-ch-ZcB"/>
-                        <constraint firstItem="lpT-eS-V3k" firstAttribute="leading" secondItem="TAW-oB-Bzz" secondAttribute="leading" id="Lwe-sL-ygQ"/>
+                        <constraint firstItem="9e6-GV-Ew4" firstAttribute="leading" secondItem="g2m-Q4-TZa" secondAttribute="trailing" id="FTW-4q-OwE"/>
                         <constraint firstItem="kTP-5f-LCb" firstAttribute="top" secondItem="TAW-oB-Bzz" secondAttribute="top" id="MUz-gC-A0k"/>
                         <constraint firstItem="9e6-GV-Ew4" firstAttribute="centerY" secondItem="TAW-oB-Bzz" secondAttribute="centerY" id="N5Z-1h-vzk"/>
                         <constraint firstAttribute="height" constant="44" id="Ods-9e-yda"/>
                         <constraint firstItem="o2w-Al-8i7" firstAttribute="leading" secondItem="9e6-GV-Ew4" secondAttribute="trailing" id="QIw-NO-FKG"/>
-                        <constraint firstItem="lpT-eS-V3k" firstAttribute="centerY" secondItem="TAW-oB-Bzz" secondAttribute="centerY" id="SyM-Fj-wZs"/>
-                        <constraint firstItem="lpT-eS-V3k" firstAttribute="trailing" secondItem="9e6-GV-Ew4" secondAttribute="leading" id="X1u-VI-iiG"/>
                         <constraint firstAttribute="bottom" secondItem="kTP-5f-LCb" secondAttribute="bottom" id="ZJB-t9-q1n"/>
-                        <constraint firstAttribute="width" constant="100" id="hkJ-pc-iiu"/>
+                        <constraint firstItem="g2m-Q4-TZa" firstAttribute="centerY" secondItem="TAW-oB-Bzz" secondAttribute="centerY" id="eY2-At-Hq7"/>
+                        <constraint firstAttribute="width" constant="80" id="hkJ-pc-iiu"/>
                         <constraint firstItem="o2w-Al-8i7" firstAttribute="centerY" secondItem="TAW-oB-Bzz" secondAttribute="centerY" id="tfb-eg-nS4"/>
                     </constraints>
                 </view>
-                <searchBar contentMode="redraw" backgroundImage="ToolbarBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-54-4io">
-                    <rect key="frame" x="100" y="315" width="229" height="44"/>
+                <searchBar contentMode="redraw" placeholder="请输入关键词搜索人才" backgroundImage="ToolbarBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="IaG-54-4io">
+                    <rect key="frame" x="80" y="312" width="245" height="44"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="t5K-Ub-Ufd"/>
@@ -117,8 +116,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Pin_location" width="49" height="71"/>
+        <image name="Pin_location" width="11" height="16"/>
         <image name="ToolbarBG.png" width="1" height="1"/>
-        <image name="down_arrow" width="128" height="128"/>
+        <image name="down_arrow" width="63" height="65"/>
     </resources>
 </document>

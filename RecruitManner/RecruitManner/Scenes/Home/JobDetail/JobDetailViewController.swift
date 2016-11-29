@@ -26,11 +26,13 @@ protocol JobDetailViewControllerOutput
 // ============================================================================= //
 // MARK: - JobDetailViewController Class Definition
 // ============================================================================= //
-class JobDetailViewController: UITableViewController, JobDetailViewControllerInput
+class JobDetailViewController: UIViewController, JobDetailViewControllerInput
 {
     var output: JobDetailViewControllerOutput!
     var router: JobDetailRouter!
+    @IBOutlet weak var sendResume: UIButton!
     
+    @IBOutlet weak var tableView: UITableView!
     // MARK: Object lifecycle
     
     override func awakeFromNib()
@@ -45,7 +47,7 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
     {
         super.viewDidLoad()
         doSomethingOnLoad()
-        self.tableView.contentInset.top += 30
+        
     }
     
     // MARK: Event handling
@@ -66,13 +68,15 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
         
         // nameTextField.text = viewModel.name
     }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
+
+}
+extension JobDetailViewController: UITableViewDelegate,UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 5
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
         var rowNumber = 0
@@ -86,7 +90,7 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
         return rowNumber
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headView1 = JobTableViewSessionHeader(frame: CGRect(x:0,y:0,width:self.tableView.frame.width,height:44))
         var title:String?
         switch section {
@@ -108,7 +112,7 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
         // Configure the cell...
@@ -140,7 +144,7 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
         return cell!
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         var rowHeiht:CGFloat = 44.0
         
@@ -160,5 +164,4 @@ class JobDetailViewController: UITableViewController, JobDetailViewControllerInp
         }
         return rowHeiht
     }
-
 }

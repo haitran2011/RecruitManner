@@ -96,13 +96,23 @@ extension HomePageViewController: NavigationItemViewDelegate {
         self.navigationController?.pushViewController(jobCityViewController, animated: true)
     }
     
-    func CancelButtonAction() {
+    func cancelButtonAction() {
         print("CancelButtonAction clicked")
     }
     
-    func NavigationSearchBarButtonClicked(_ searchBar: UISearchBar) {
-        print("NavigationSearchBarButtonClicked clicked")
+    func navigationSearchBarButtonClicked(_ searchBar: UISearchBar) -> Bool {
+        return true
     }
+    
+    func navigationSearchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        print(searchBar.text ?? "test")
+        searchBar.resignFirstResponder()
+    }
+    
+    func navigationsearchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
     
 }
 

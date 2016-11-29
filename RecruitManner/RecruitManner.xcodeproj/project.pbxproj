@@ -37,6 +37,7 @@
 		4B0E29991DE0361000CE4225 /* JobBySelectedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E29921DE0361000CE4225 /* JobBySelectedRouter.swift */; };
 		4B0E299A1DE0361000CE4225 /* JobBySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E29931DE0361000CE4225 /* JobBySelectedViewController.swift */; };
 		4B0E299B1DE0361000CE4225 /* JobBySelectedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E29941DE0361000CE4225 /* JobBySelectedWorker.swift */; };
+		4B124DBB1DEC2C14000B6352 /* PreViewresumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B124DBA1DEC2C14000B6352 /* PreViewresumeViewController.swift */; };
 		4BA929901DDEFE62000EADD1 /* JobByCompanyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA929891DDEFE62000EADD1 /* JobByCompanyConfigurator.swift */; };
 		4BA929911DDEFE62000EADD1 /* JobByCompanyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9298A1DDEFE62000EADD1 /* JobByCompanyInteractor.swift */; };
 		4BA929921DDEFE62000EADD1 /* JobByCompanyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9298B1DDEFE62000EADD1 /* JobByCompanyModels.swift */; };
@@ -82,7 +83,6 @@
 		E02119271DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; };
 		E02119281DD4367E0051A0E3 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02119201DD4367E0051A0E3 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E021192E1DD4370F0051A0E3 /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E021192D1DD4370F0051A0E3 /* AlamofireObjectMapper.swift */; };
-		E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02E63431DD6CE4A00A496C5 /* develop.storyboard */; };
 		E02E634F1DD6CF7900A496C5 /* CustomViews.h in Headers */ = {isa = PBXBuildFile; fileRef = E02E634D1DD6CF7900A496C5 /* CustomViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E02E63521DD6CF7900A496C5 /* CustomViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02E634B1DD6CF7900A496C5 /* CustomViews.framework */; };
 		E02E63531DD6CF7900A496C5 /* CustomViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02E634B1DD6CF7900A496C5 /* CustomViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -267,6 +267,7 @@
 		4B0E29921DE0361000CE4225 /* JobBySelectedRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobBySelectedRouter.swift; path = Scenes/Near/NearJob/JobBySelectedRouter.swift; sourceTree = "<group>"; };
 		4B0E29931DE0361000CE4225 /* JobBySelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobBySelectedViewController.swift; path = Scenes/Near/NearJob/JobBySelectedViewController.swift; sourceTree = "<group>"; };
 		4B0E29941DE0361000CE4225 /* JobBySelectedWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobBySelectedWorker.swift; path = Scenes/Near/NearJob/JobBySelectedWorker.swift; sourceTree = "<group>"; };
+		4B124DBA1DEC2C14000B6352 /* PreViewresumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreViewresumeViewController.swift; path = Scenes/Me/OnlineResume/PreViewresumeViewController.swift; sourceTree = "<group>"; };
 		4BA929891DDEFE62000EADD1 /* JobByCompanyConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobByCompanyConfigurator.swift; path = Scenes/Near/NearJob/JobByCompanyConfigurator.swift; sourceTree = "<group>"; };
 		4BA9298A1DDEFE62000EADD1 /* JobByCompanyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobByCompanyInteractor.swift; path = Scenes/Near/NearJob/JobByCompanyInteractor.swift; sourceTree = "<group>"; };
 		4BA9298B1DDEFE62000EADD1 /* JobByCompanyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobByCompanyModels.swift; path = Scenes/Near/NearJob/JobByCompanyModels.swift; sourceTree = "<group>"; };
@@ -315,7 +316,6 @@
 		E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlamofireObjectMapper.h; sourceTree = "<group>"; };
 		E02119231DD4367E0051A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E021192D1DD4370F0051A0E3 /* AlamofireObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireObjectMapper.swift; sourceTree = "<group>"; };
-		E02E63441DD6CE4A00A496C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/develop.storyboard; sourceTree = "<group>"; };
 		E02E634B1DD6CF7900A496C5 /* CustomViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02E634D1DD6CF7900A496C5 /* CustomViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViews.h; sourceTree = "<group>"; };
 		E02E634E1DD6CF7900A496C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -659,6 +659,7 @@
 				E00E50431DD82BE80087A8B6 /* OnlineResumeRouter.swift */,
 				E00E50441DD82BE80087A8B6 /* OnlineResumeViewController.swift */,
 				E00E50451DD82BE80087A8B6 /* OnlineResumeWorker.swift */,
+				4B124DBA1DEC2C14000B6352 /* PreViewresumeViewController.swift */,
 			);
 			name = OnlineResume;
 			sourceTree = "<group>";
@@ -888,7 +889,6 @@
 				E0E163211DD18A7E006EF708 /* Assets.xcassets */,
 				E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */,
 				E0E163261DD18A7E006EF708 /* Info.plist */,
-				E02E63431DD6CE4A00A496C5 /* develop.storyboard */,
 				E07AA2161DE5294A00508EE4 /* Company.storyboard */,
 				4BFC83D21DE6BC3C007D1ED6 /* RecruitMannerBridgingHeader.h */,
 			);
@@ -1213,7 +1213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E02E63451DD6CE4A00A496C5 /* develop.storyboard in Resources */,
 				E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
@@ -1359,6 +1358,7 @@
 				E07AA22C1DE544DC00508EE4 /* NewResumesRouter.swift in Sources */,
 				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
 				E07AA2461DE5840E00508EE4 /* SingleCompanyTrackConfigurator.swift in Sources */,
+				4B124DBB1DEC2C14000B6352 /* PreViewresumeViewController.swift in Sources */,
 				4B0E29981DE0361000CE4225 /* JobBySelectedPresenter.swift in Sources */,
 				4BA929901DDEFE62000EADD1 /* JobByCompanyConfigurator.swift in Sources */,
 				4B0E29961DE0361000CE4225 /* JobBySelectedInteractor.swift in Sources */,
@@ -1529,14 +1529,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E02E63431DD6CE4A00A496C5 /* develop.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E02E63441DD6CE4A00A496C5 /* Base */,
-			);
-			name = develop.storyboard;
-			sourceTree = "<group>";
-		};
 		E07AA2161DE5294A00508EE4 /* Company.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

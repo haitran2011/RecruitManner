@@ -22,9 +22,16 @@ public class JobTableViewSessionHeader: UIView {
             self.headTitleLable.text = title
         }
     }
+    
     public var image:UIImage? {
         didSet {
             self.headImageView.image = image
+        }
+    }
+    
+    public var hideImageView = false {
+        didSet {
+            self.headImageView.isHidden = hideImageView
         }
     }
 

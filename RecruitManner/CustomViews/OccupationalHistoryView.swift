@@ -17,6 +17,8 @@ class OccupationalHistoryView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
     
+    @IBOutlet weak var editImageView: UIImageView!
+    
     @IBInspectable
     var dateText: String? {
         get {
@@ -44,6 +46,13 @@ class OccupationalHistoryView: UIView {
         }
         set (newValue) {
             contentLabel.text = newValue
+        }
+    }
+    
+    @IBInspectable
+    var hideEdit:Bool = false {
+        didSet {
+            self.editImageView.isHidden = hideEdit
         }
     }
     

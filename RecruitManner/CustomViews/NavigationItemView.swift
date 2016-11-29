@@ -29,8 +29,9 @@ public class NavigationItemView: UIView {
     
     
     @IBAction func cancelClickAction(_ sender: UIButton) {
-        self.delegate?.CancelButtonAction?()
+        self.delegate?.cancelButtonAction?()
         self.cancelBlock?(sender)
+        self.searchJobBar.resignFirstResponder()
     }
 
     @IBAction func cityButtonClickAction(_ sender: UIButton) {
@@ -43,7 +44,7 @@ public class NavigationItemView: UIView {
     public var delegate: NavigationItemViewDelegate?
     var cancelBlock: ((_ sender: UIButton) -> Void)?
     var cityButtonBlock: ((_ sender: UIButton) -> Void)?
-    var navigationSearchBarBlock: ((_ searchBar: UISearchBar) -> Void)?
+    var navigationSearchBarBlock: ((_ searchBar: UISearchBar) -> Bool)?
     
     @IBInspectable
     public var cityTitle: String? {
@@ -76,15 +77,25 @@ public class NavigationItemView: UIView {
 extension NavigationItemView: UISearchBarDelegate {
     
     public func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        self.delegate?.NavigationSearchBarButtonClicked?(searchBar)
-        self.navigationSearchBarBlock?(searchBar)
-        return false
+        return (self.delegate?.navigationSearchBarButtonClicked(searchBar))!
+        //self.navigationSearchBarBlock?(searchBar)
+        
+    }
+    
+    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        self.delegate?.navigationSearchBarTextDidEndEditing?(searchBar)
+    }
+    
+    public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.delegate?.navigationsearchBarSearchButtonClicked?(searchBar)
     }
 }
 
 
 @objc public protocol NavigationItemViewDelegate {
     @objc optional func cityButtonAction()
-    @objc optional func CancelButtonAction()
-    @objc optional func NavigationSearchBarButtonClicked(_ searchBar: UISearchBar)
+    @objc optional func cancelButtonAction()
+    func navigationSearchBarButtonClicked(_ searchBar: UISearchBar) -> Bool
+    @objc optional func navigationSearchBarTextDidEndEditing(_ searchBar: UISearchBar)
+    @objc optional func navigationsearchBarSearchButtonClicked(_ searchBar: UISearchBar)
 }

@@ -17,6 +17,7 @@ class MeHeadView: UIView {
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var descriptionLable: UILabel!
     
+    @IBOutlet weak var modifyButton: UIButton!
     
     var delegate: MeHeadViewDelegate?
     
@@ -38,6 +39,13 @@ class MeHeadView: UIView {
     var desc: String? {
         didSet {
             descriptionLable.text = desc
+        }
+    }
+    
+    @IBInspectable
+    var hiddenEdit: Bool = false {
+        didSet {
+            self.modifyButton.isHidden = hiddenEdit
         }
     }
     

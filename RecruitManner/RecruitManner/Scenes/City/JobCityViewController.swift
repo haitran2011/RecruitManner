@@ -207,7 +207,7 @@ extension JobCityViewController:DOPDropDownMenuDataSource,DOPDropDownMenuDelegat
             addressName = self.landMarkList[indexPath.subItem]
         }
         else if indexPath.item >= 0 {
-            addressName = self.landMarkList[indexPath.item]
+            addressName = self.cityStreetList[indexPath.item]
         }
         else if indexPath.row >= 0 {
             addressName = self.cityAreaList[indexPath.row]
@@ -300,4 +300,5 @@ extension JobCityViewController: CLLocationManagerDelegate {
         print(error?.localizedDescription ?? "")
     }
 }
+
 

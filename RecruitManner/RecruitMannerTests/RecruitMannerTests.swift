@@ -24,8 +24,17 @@ class RecruitMannerTests: XCTestCase {
     func testAlamofireHandyJSON() {
         let exp = expectation(description: "AlamofireHandyJSON")
         
-        DoubanApi.shared.fetchMovice() {
-            print($0)
+        DoubanApi.shared.fetchMovice(start: 0, count: 1) {
+            debugPrint($0)
+            $0.handleValue(handler: {
+                XCTAssertEqual($0.count, 1)
+                XCTAssertEqual($0.start, 0)
+                XCTAssertEqual($0.total, 250)
+                XCTAssertEqual($0.title, "豆瓣电影Top250")
+            })
+            $0.handleError(handler: {
+                XCTFail("\($0)")
+            })
             exp.fulfill()
         }
         

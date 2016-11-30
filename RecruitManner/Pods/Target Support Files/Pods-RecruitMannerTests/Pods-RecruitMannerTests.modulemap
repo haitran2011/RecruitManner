@@ -1,0 +1,6 @@
+framework module Pods_RecruitMannerTests {
+  umbrella header "Pods-RecruitMannerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

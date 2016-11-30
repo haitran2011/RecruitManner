@@ -66,15 +66,18 @@ public class DoubanApi {
         sessionManager = Alamofire.SessionManager.default
     }
     
-    func fetchMovice (completionHandler: @escaping (Info?, Error?) -> Void) {
-        fetchMovice(start: 0, count: 1) { (result: Result<Info>) in
-            result.handle(value: { completionHandler($0, nil) }, orError: { completionHandler(nil, $0) })
+    func fetchMovice (start: Int, count: Int, completionHandler: @escaping (WorkResult<Info>) -> Void )  {
+        sessionManager.request(Router.readMovie(start: start, count: count)).responseHandy { (response: DataResponse<Info>) in
+            completionHandler(DoubanApi.mapper(response.result))
         }
     }
     
-    func fetchMovice (start: Int, count: Int, completionHandler: @escaping (Result<Info>) -> Void )  {
-        sessionManager.request(Router.readMovie(start: start, count: count)).responseHandy { (response: DataResponse<Info>) in
-            completionHandler(response.result)
+    private static func mapper<T> (_ result: Result<T>) -> WorkResult<T> {
+        switch result {
+        case .failure(let error):
+            return .failure(error)
+        case .success(let value):
+            return .success(value)
         }
     }
 }

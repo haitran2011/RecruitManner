@@ -59,6 +59,7 @@
 		4BFC83CF1DE687DF007D1ED6 /* JobCityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC83C81DE687DF007D1ED6 /* JobCityRouter.swift */; };
 		4BFC83D01DE687DF007D1ED6 /* JobCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC83C91DE687DF007D1ED6 /* JobCityViewController.swift */; };
 		4BFC83D11DE687DF007D1ED6 /* JobCityWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFC83CA1DE687DF007D1ED6 /* JobCityWorker.swift */; };
+		5768ED2BFA1AE97929D27C3A /* Pods_RecruitMannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5071E734D2529AF4499704B5 /* Pods_RecruitMannerTests.framework */; };
 		DDF8AAD7AA98FFCF0FD2C641 /* Pods_RecruitManner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28878C7C09964910918009 /* Pods_RecruitManner.framework */; };
 		E00E50311DD722B20087A8B6 /* OccupationalHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50301DD722B20087A8B6 /* OccupationalHistoryView.xib */; };
 		E00E50331DD72BA00087A8B6 /* EexpectationsJobView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00E50321DD72BA00087A8B6 /* EexpectationsJobView.xib */; };
@@ -95,6 +96,7 @@
 		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
+		E0414B391DEE8A600016E0A3 /* WorkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B381DEE8A600016E0A3 /* WorkResult.swift */; };
 		E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */; };
 		E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */; };
 		E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */; };
@@ -270,6 +272,7 @@
 /* Begin PBXFileReference section */
 		183557662E4E4A8F4E53FCF1 /* Pods-RecruitManner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.release.xcconfig"; sourceTree = "<group>"; };
 		2B3A6EBB2FF7DB9211401120 /* Pods-AlamofireObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.release.xcconfig"; sourceTree = "<group>"; };
+		305631E51CCEDDEC5E0333B2 /* Pods-RecruitMannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitMannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitMannerTests/Pods-RecruitMannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B0690071DDAEFCE00A50CFE /* HomePageConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageConfigurator.swift; path = Scenes/Home/HomePage/HomePageConfigurator.swift; sourceTree = "<group>"; };
 		4B0690081DDAEFCE00A50CFE /* HomePageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageInteractor.swift; path = Scenes/Home/HomePage/HomePageInteractor.swift; sourceTree = "<group>"; };
 		4B0690091DDAEFCE00A50CFE /* HomePageModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageModels.swift; path = Scenes/Home/HomePage/HomePageModels.swift; sourceTree = "<group>"; };
@@ -322,6 +325,7 @@
 		4BFC83C91DE687DF007D1ED6 /* JobCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobCityViewController.swift; path = Scenes/City/JobCityViewController.swift; sourceTree = "<group>"; };
 		4BFC83CA1DE687DF007D1ED6 /* JobCityWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobCityWorker.swift; path = Scenes/City/JobCityWorker.swift; sourceTree = "<group>"; };
 		4BFC83D21DE6BC3C007D1ED6 /* RecruitMannerBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecruitMannerBridgingHeader.h; sourceTree = "<group>"; };
+		5071E734D2529AF4499704B5 /* Pods_RecruitMannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecruitMannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7041C3C843D3B5BD3A82DAD6 /* Pods-RecruitManner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitManner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitManner/Pods-RecruitManner.debug.xcconfig"; sourceTree = "<group>"; };
 		827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlamofireObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireObjectMapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofireObjectMapper/Pods-AlamofireObjectMapper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		E0414B381DEE8A600016E0A3 /* WorkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkResult.swift; path = Workers/WorkResult.swift; sourceTree = "<group>"; };
 		E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobInfoItemView.swift; path = ResumeItem/JobInfoItemView.swift; sourceTree = "<group>"; };
 		E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobInfoItemView.xib; path = ResumeItem/JobInfoItemView.xib; sourceTree = "<group>"; };
 		E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosConfigurator.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosConfigurator.swift; sourceTree = "<group>"; };
@@ -490,6 +495,7 @@
 		E0FA17721DE5B9AE00C29A85 /* WhoSeeMyPositionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeeMyPositionRouter.swift; path = Scenes/Company/Message/WhoSeeMyPosition/WhoSeeMyPositionRouter.swift; sourceTree = "<group>"; };
 		E0FA17731DE5B9AE00C29A85 /* WhoSeeMyPositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeeMyPositionViewController.swift; path = Scenes/Company/Message/WhoSeeMyPosition/WhoSeeMyPositionViewController.swift; sourceTree = "<group>"; };
 		E0FA17741DE5B9AE00C29A85 /* WhoSeeMyPositionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeeMyPositionWorker.swift; path = Scenes/Company/Message/WhoSeeMyPosition/WhoSeeMyPositionWorker.swift; sourceTree = "<group>"; };
+		E5581E4C84D6FE333ECEF4FF /* Pods-RecruitMannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecruitMannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecruitMannerTests/Pods-RecruitMannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		FF28878C7C09964910918009 /* Pods_RecruitManner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecruitManner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -524,6 +530,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5768ED2BFA1AE97929D27C3A /* Pods_RecruitMannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +550,7 @@
 				E0D8EE021DE2C57C003827F8 /* MapKit.framework */,
 				FF28878C7C09964910918009 /* Pods_RecruitManner.framework */,
 				827AAD8ADDDE7378CD9B90FD /* Pods_AlamofireObjectMapper.framework */,
+				5071E734D2529AF4499704B5 /* Pods_RecruitMannerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -666,6 +674,8 @@
 				183557662E4E4A8F4E53FCF1 /* Pods-RecruitManner.release.xcconfig */,
 				CD1992C11B24268C7DC91A0A /* Pods-AlamofireObjectMapper.debug.xcconfig */,
 				2B3A6EBB2FF7DB9211401120 /* Pods-AlamofireObjectMapper.release.xcconfig */,
+				305631E51CCEDDEC5E0333B2 /* Pods-RecruitMannerTests.debug.xcconfig */,
+				E5581E4C84D6FE333ECEF4FF /* Pods-RecruitMannerTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -688,6 +698,7 @@
 		E00E503C1DD82A700087A8B6 /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				E0414B381DEE8A600016E0A3 /* WorkResult.swift */,
 			);
 			name = Workers;
 			sourceTree = "<group>";
@@ -1238,9 +1249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0E163421DD18A7E006EF708 /* Build configuration list for PBXNativeTarget "RecruitMannerTests" */;
 			buildPhases = (
+				16A71E48EAB0625B04274FE2 /* [CP] Check Pods Manifest.lock */,
 				E0E163271DD18A7E006EF708 /* Sources */,
 				E0E163281DD18A7E006EF708 /* Frameworks */,
 				E0E163291DD18A7E006EF708 /* Resources */,
+				D644AC17B84E5B5F8CC844FB /* [CP] Embed Pods Frameworks */,
+				3A678BBCCCC2E88C58185340 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1391,6 +1405,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16A71E48EAB0625B04274FE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		30483E43CE4344095054F35F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1404,6 +1433,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3A678BBCCCC2E88C58185340 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecruitMannerTests/Pods-RecruitMannerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4B55EB596712D35E388ADF93 /* [CP] Copy Pods Resources */ = {
@@ -1449,6 +1493,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D644AC17B84E5B5F8CC844FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecruitMannerTests/Pods-RecruitMannerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9FA89A65301B6A367B21EC9 /* [CP] Copy Pods Resources */ = {
@@ -1564,6 +1623,7 @@
 				E07AA2371DE57D0000508EE4 /* CompanyTrackConfigurator.swift in Sources */,
 				E0D8EE0E1DE2C9E6003827F8 /* PositionListOfHRModels.swift in Sources */,
 				E0FA176C1DE5B3C400C29A85 /* ConcernJobSeekerWorker.swift in Sources */,
+				E0414B391DEE8A600016E0A3 /* WorkResult.swift in Sources */,
 				E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */,
 				E07AA2471DE5840E00508EE4 /* SingleCompanyTrackInteractor.swift in Sources */,
 				4B0690211DDAF0C000A50CFE /* JobDetailViewController.swift in Sources */,
@@ -1974,6 +2034,7 @@
 		};
 		E0E163431DD18A7E006EF708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305631E51CCEDDEC5E0333B2 /* Pods-RecruitMannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1988,6 +2049,7 @@
 		};
 		E0E163441DD18A7E006EF708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5581E4C84D6FE333ECEF4FF /* Pods-RecruitMannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

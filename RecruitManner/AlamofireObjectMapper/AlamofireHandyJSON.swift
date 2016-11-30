@@ -17,22 +17,6 @@ extension DataRequest {
         case dataSerializationFailed = 2
     }
     
-    internal static func log(_ response: HTTPURLResponse?, _ result: Result<Any>) {
-        print("==========================================================================")
-        if let _response = response { print(_response) }
-        print("--------------------------------------------------------------------------")
-        if let _v = result.value { print(_v) }
-        print("==========================================================================")
-    }
-    
-//    internal static func log(_ response: HTTPURLResponse?, _ result: Result<String>) {
-//        print("==========================================================================")
-//        if let _response = response { print(_response) }
-//        print("--------------------------------------------------------------------------")
-//        if let _v = result.value { print(_v) }
-//        print("==========================================================================")
-//    }
-    
     internal static func newError(_ code: ErrorCode, failureReason: String) -> NSError {
         let errorDomain = "com.alamofireobjectmapper.error"
         
@@ -40,6 +24,14 @@ extension DataRequest {
         let returnError = NSError(domain: errorDomain, code: code.rawValue, userInfo: userInfo)
         
         return returnError
+    }
+    
+    internal static func log(_ response: HTTPURLResponse?, _ result: Result<Any>) {
+        debugPrint("==========================================================================")
+        if let _response = response { debugPrint(_response) }
+        debugPrint("--------------------------------------------------------------------------")
+        if let _v = result.value { debugPrint(_v) }
+        debugPrint("==========================================================================")
     }
     
     public static func HandyMapperSerializer<T: HandyJSON>(_ keyPath: String?) -> DataResponseSerializer<T> {

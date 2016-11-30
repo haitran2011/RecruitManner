@@ -95,6 +95,7 @@
 		E02E63681DD708BA00A496C5 /* ResumeAddSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */; };
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
+		E0414B371DEE69110016E0A3 /* Alamofire+ResultFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B361DEE69110016E0A3 /* Alamofire+ResultFlow.swift */; };
 		E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */; };
 		E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */; };
 		E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */; };
@@ -360,6 +361,7 @@
 		E02E63671DD708BA00A496C5 /* ResumeAddSkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeAddSkillView.swift; sourceTree = "<group>"; };
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		E0414B361DEE69110016E0A3 /* Alamofire+ResultFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+ResultFlow.swift"; sourceTree = "<group>"; };
 		E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobInfoItemView.swift; path = ResumeItem/JobInfoItemView.swift; sourceTree = "<group>"; };
 		E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobInfoItemView.xib; path = ResumeItem/JobInfoItemView.xib; sourceTree = "<group>"; };
 		E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosConfigurator.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosConfigurator.swift; sourceTree = "<group>"; };
@@ -748,6 +750,7 @@
 				E02119221DD4367E0051A0E3 /* AlamofireObjectMapper.h */,
 				E02119231DD4367E0051A0E3 /* Info.plist */,
 				E05DBA381DEBF64500006416 /* AlamofireHandyJSON.swift */,
+				E0414B361DEE69110016E0A3 /* Alamofire+ResultFlow.swift */,
 			);
 			path = AlamofireObjectMapper;
 			sourceTree = "<group>";
@@ -1475,6 +1478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E05DBA391DEBF64500006416 /* AlamofireHandyJSON.swift in Sources */,
+				E0414B371DEE69110016E0A3 /* Alamofire+ResultFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

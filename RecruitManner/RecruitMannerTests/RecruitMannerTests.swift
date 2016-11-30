@@ -24,7 +24,7 @@ class RecruitMannerTests: XCTestCase {
     func testAlamofireHandyJSON() {
         let exp = expectation(description: "AlamofireHandyJSON")
         
-        DoubanApi.shared.fetchMovice(start: 0, count: 1) {
+        DoubanApi.shared.fetchMovice() {
             print($0)
             exp.fulfill()
         }

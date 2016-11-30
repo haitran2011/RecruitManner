@@ -43,6 +43,30 @@ class RecruitMannerTests: XCTestCase {
         }
     }
     
+    func testDoubanWorker() {
+        let exp = expectation(description: "douban worker")
+        
+        let worker = MovieWorker(store: MovieCloud())
+        worker.fetchMovicesInfo(start: 0, count: 1) {
+            debugPrint($0)
+            
+            guard let info = $0 else {
+                XCTFail("\($0)")
+                return
+            }
+            
+            XCTAssertEqual(info.count, 1)
+            XCTAssertEqual(info.start, 0)
+            XCTAssertEqual(info.total, 250)
+            XCTAssertEqual(info.title, "豆瓣电影Top250")
+            exp.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10) { (error) in
+            // ...
+        }
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.

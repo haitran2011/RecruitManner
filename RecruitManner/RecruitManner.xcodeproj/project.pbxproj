@@ -97,6 +97,9 @@
 		E02E636A1DD708ED00A496C5 /* HeadPortraitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */; };
 		E02E636E1DD70D2000A496C5 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */; };
 		E0414B391DEE8A600016E0A3 /* WorkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B381DEE8A600016E0A3 /* WorkResult.swift */; };
+		E0414B3C1DEE9CB00016E0A3 /* MovieWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */; };
+		E0414B3F1DEEA0E60016E0A3 /* MovieCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */; };
+		E053AE611DEEB67400709BB7 /* Boot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E053AE5F1DEEB67400709BB7 /* Boot.storyboard */; };
 		E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */; };
 		E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */; };
 		E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */; };
@@ -365,6 +368,9 @@
 		E02E63691DD708ED00A496C5 /* HeadPortraitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadPortraitView.xib; sourceTree = "<group>"; };
 		E02E636D1DD70D2000A496C5 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
 		E0414B381DEE8A600016E0A3 /* WorkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkResult.swift; path = Workers/WorkResult.swift; sourceTree = "<group>"; };
+		E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieWorker.swift; path = Workers/douban/MovieWorker.swift; sourceTree = "<group>"; };
+		E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCloud.swift; path = Services/douban/MovieCloud.swift; sourceTree = "<group>"; };
+		E053AE601DEEB67400709BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Boot.storyboard; sourceTree = "<group>"; };
 		E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobInfoItemView.swift; path = ResumeItem/JobInfoItemView.swift; sourceTree = "<group>"; };
 		E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobInfoItemView.xib; path = ResumeItem/JobInfoItemView.xib; sourceTree = "<group>"; };
 		E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosConfigurator.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosConfigurator.swift; sourceTree = "<group>"; };
@@ -691,6 +697,7 @@
 		E00E503B1DD82A630087A8B6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E0414B3D1DEEA03B0016E0A3 /* douban */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -698,6 +705,7 @@
 		E00E503C1DD82A700087A8B6 /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				E0414B3A1DEE9C270016E0A3 /* douban */,
 				E0414B381DEE8A600016E0A3 /* WorkResult.swift */,
 			);
 			name = Workers;
@@ -795,6 +803,22 @@
 				4BE9787A1DE284EF00777CD9 /* NavigationItemView.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		E0414B3A1DEE9C270016E0A3 /* douban */ = {
+			isa = PBXGroup;
+			children = (
+				E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */,
+			);
+			name = douban;
+			sourceTree = "<group>";
+		};
+		E0414B3D1DEEA03B0016E0A3 /* douban */ = {
+			isa = PBXGroup;
+			children = (
+				E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */,
+			);
+			name = douban;
 			sourceTree = "<group>";
 		};
 		E05DBA291DEBC7A600006416 /* Home */ = {
@@ -1054,6 +1078,7 @@
 				E0E163261DD18A7E006EF708 /* Info.plist */,
 				E07AA2161DE5294A00508EE4 /* Company.storyboard */,
 				4BFC83D21DE6BC3C007D1ED6 /* RecruitMannerBridgingHeader.h */,
+				E053AE5F1DEEB67400709BB7 /* Boot.storyboard */,
 			);
 			path = RecruitManner;
 			sourceTree = "<group>";
@@ -1385,6 +1410,7 @@
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
+				E053AE611DEEB67400709BB7 /* Boot.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1624,12 +1650,14 @@
 				E0D8EE0E1DE2C9E6003827F8 /* PositionListOfHRModels.swift in Sources */,
 				E0FA176C1DE5B3C400C29A85 /* ConcernJobSeekerWorker.swift in Sources */,
 				E0414B391DEE8A600016E0A3 /* WorkResult.swift in Sources */,
+				E0414B3C1DEE9CB00016E0A3 /* MovieWorker.swift in Sources */,
 				E0D8EE4D1DE2E501003827F8 /* PayAttentionCompanysWorker.swift in Sources */,
 				E07AA2471DE5840E00508EE4 /* SingleCompanyTrackInteractor.swift in Sources */,
 				4B0690211DDAF0C000A50CFE /* JobDetailViewController.swift in Sources */,
 				4B06901F1DDAF0C000A50CFE /* JobDetailPresenter.swift in Sources */,
 				E0819D1D1DE7EA0D008D4A19 /* MyFullTimeJobConfigurator.swift in Sources */,
 				E07AA2391DE57D0000508EE4 /* CompanyTrackModels.swift in Sources */,
+				E0414B3F1DEEA0E60016E0A3 /* MovieCloud.swift in Sources */,
 				4B06902D1DDB2E2B00A50CFE /* NearJobPresenter.swift in Sources */,
 				E07AA2491DE5840E00508EE4 /* SingleCompanyTrackPresenter.swift in Sources */,
 				4B06902C1DDB2E2B00A50CFE /* NearJobModels.swift in Sources */,
@@ -1774,6 +1802,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E053AE5F1DEEB67400709BB7 /* Boot.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E053AE601DEEB67400709BB7 /* Base */,
+			);
+			name = Boot.storyboard;
+			sourceTree = "<group>";
+		};
 		E07AA2161DE5294A00508EE4 /* Company.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

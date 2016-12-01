@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,11 +33,11 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="wtG-DJ-ldP" firstAttribute="centerY" secondItem="aWB-v7-h4L" secondAttribute="centerY" constant="-8" id="BoG-Q5-VL5"/>
                         <constraint firstItem="UFi-By-XiS" firstAttribute="top" secondItem="wtG-DJ-ldP" secondAttribute="bottom" constant="8" symbolic="YES" id="Bzj-uc-byc"/>
                         <constraint firstAttribute="width" constant="86" id="N95-D6-avb"/>
                         <constraint firstItem="wtG-DJ-ldP" firstAttribute="centerX" secondItem="aWB-v7-h4L" secondAttribute="centerX" id="Sbm-gc-Fc3"/>
                         <constraint firstAttribute="height" constant="86" id="lSo-dn-nHo"/>
-                        <constraint firstItem="wtG-DJ-ldP" firstAttribute="top" secondItem="aWB-v7-h4L" secondAttribute="topMargin" id="sOY-46-t9f"/>
                         <constraint firstItem="wtG-DJ-ldP" firstAttribute="centerX" secondItem="UFi-By-XiS" secondAttribute="centerX" id="yiG-wi-Z2B"/>
                     </constraints>
                 </view>

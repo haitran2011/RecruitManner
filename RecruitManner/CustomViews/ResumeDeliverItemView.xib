@@ -47,7 +47,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWA-z4-NTG" customClass="RollLabel" customModule="CustomViews" customModuleProvider="target">
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="16" id="j76-QL-kqr"/>
+                        <constraint firstAttribute="height" constant="20" id="j76-QL-kqr"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="text" value="3年WEB前端，Java开发经验，技术宅"/>
@@ -90,7 +90,7 @@
                 <constraint firstItem="nWA-z4-NTG" firstAttribute="leading" secondItem="MWp-y9-xtG" secondAttribute="leading" id="Stw-0o-3NR"/>
                 <constraint firstItem="MWp-y9-xtG" firstAttribute="top" secondItem="d3F-RN-3Dq" secondAttribute="bottom" constant="8" id="VKi-QZ-7dV"/>
                 <constraint firstItem="gpL-fj-kgj" firstAttribute="top" secondItem="nWA-z4-NTG" secondAttribute="bottom" constant="8" id="Wp2-bw-CHF"/>
-                <constraint firstItem="gpL-fj-kgj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XIJ-dH-oU3"/>
+                <constraint firstItem="gpL-fj-kgj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="16" id="XIJ-dH-oU3"/>
                 <constraint firstItem="SNu-5l-TUe" firstAttribute="bottom" secondItem="mu9-EX-ZGU" secondAttribute="bottom" id="cGc-fM-lky"/>
                 <constraint firstItem="3xp-89-ONd" firstAttribute="top" secondItem="gpL-fj-kgj" secondAttribute="bottom" constant="8" id="e5w-IJ-afd"/>
                 <constraint firstItem="jjU-R3-SQg" firstAttribute="top" secondItem="gpL-fj-kgj" secondAttribute="bottom" constant="8" id="fby-lr-uZE"/>

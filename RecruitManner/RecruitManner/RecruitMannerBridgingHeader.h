@@ -8,6 +8,9 @@
 
 #ifndef RecruitMannerBridgingHeader_h
 #define RecruitMannerBridgingHeader_h
+
 #import "DOPDropDownMenu.h"
+
+//#import <ShareSDK/ShareSDK.h>
 
 #endif /* RecruitMannerBridgingHeader_h */

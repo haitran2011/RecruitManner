@@ -100,6 +100,9 @@
 		E0414B3C1DEE9CB00016E0A3 /* MovieWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */; };
 		E0414B3F1DEEA0E60016E0A3 /* MovieCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */; };
 		E053AE611DEEB67400709BB7 /* Boot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E053AE5F1DEEB67400709BB7 /* Boot.storyboard */; };
+		E053AE641DEFC49200709BB7 /* ShareWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053AE631DEFC49200709BB7 /* ShareWorker.swift */; };
+		E053AE681DEFCB2700709BB7 /* mob.png in Resources */ = {isa = PBXBuildFile; fileRef = E053AE671DEFCB2700709BB7 /* mob.png */; };
+		E053AE6B1DEFCC5C00709BB7 /* BootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053AE6A1DEFCC5C00709BB7 /* BootViewController.swift */; };
 		E05AEB611DE86118007FABC2 /* JobInfoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */; };
 		E05AEB631DE8613F007FABC2 /* JobInfoItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */; };
 		E05DBA311DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */; };
@@ -371,6 +374,9 @@
 		E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieWorker.swift; path = Workers/douban/MovieWorker.swift; sourceTree = "<group>"; };
 		E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCloud.swift; path = Services/douban/MovieCloud.swift; sourceTree = "<group>"; };
 		E053AE601DEEB67400709BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Boot.storyboard; sourceTree = "<group>"; };
+		E053AE631DEFC49200709BB7 /* ShareWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareWorker.swift; path = Workers/share/ShareWorker.swift; sourceTree = "<group>"; };
+		E053AE671DEFCB2700709BB7 /* mob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mob.png; sourceTree = "<group>"; };
+		E053AE6A1DEFCC5C00709BB7 /* BootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BootViewController.swift; path = Scenes/Boot/BootViewController.swift; sourceTree = "<group>"; };
 		E05AEB601DE86118007FABC2 /* JobInfoItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JobInfoItemView.swift; path = ResumeItem/JobInfoItemView.swift; sourceTree = "<group>"; };
 		E05AEB621DE8613F007FABC2 /* JobInfoItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JobInfoItemView.xib; path = ResumeItem/JobInfoItemView.xib; sourceTree = "<group>"; };
 		E05DBA2A1DEBC81100006416 /* CompanyHomePageInfosConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyHomePageInfosConfigurator.swift; path = Scenes/Company/Home/HomePageInfos/CompanyHomePageInfosConfigurator.swift; sourceTree = "<group>"; };
@@ -705,6 +711,7 @@
 		E00E503C1DD82A700087A8B6 /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				E053AE621DEFC44300709BB7 /* share */,
 				E0414B3A1DEE9C270016E0A3 /* douban */,
 				E0414B381DEE8A600016E0A3 /* WorkResult.swift */,
 			);
@@ -714,6 +721,7 @@
 		E00E503D1DD82A7C0087A8B6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E053AE691DEFCBC300709BB7 /* Boot */,
 				E07AA21E1DE5440F00508EE4 /* Company */,
 				4BFC83C31DE68787007D1ED6 /* City */,
 				E0F4043A1DDDA6CE00BB0DE1 /* Message */,
@@ -819,6 +827,38 @@
 				E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */,
 			);
 			name = douban;
+			sourceTree = "<group>";
+		};
+		E053AE621DEFC44300709BB7 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				E053AE631DEFC49200709BB7 /* ShareWorker.swift */,
+			);
+			name = share;
+			sourceTree = "<group>";
+		};
+		E053AE651DEFCACD00709BB7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E053AE661DEFCB0700709BB7 /* image */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		E053AE661DEFCB0700709BB7 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				E053AE671DEFCB2700709BB7 /* mob.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		E053AE691DEFCBC300709BB7 /* Boot */ = {
+			isa = PBXGroup;
+			children = (
+				E053AE6A1DEFCC5C00709BB7 /* BootViewController.swift */,
+			);
+			name = Boot;
 			sourceTree = "<group>";
 		};
 		E05DBA291DEBC7A600006416 /* Home */ = {
@@ -1067,6 +1107,7 @@
 		E0E163191DD18A7E006EF708 /* RecruitManner */ = {
 			isa = PBXGroup;
 			children = (
+				E053AE651DEFCACD00709BB7 /* Resource */,
 				E00E503A1DD82A570087A8B6 /* Models */,
 				E00E503B1DD82A630087A8B6 /* Services */,
 				E00E503C1DD82A700087A8B6 /* Workers */,
@@ -1406,6 +1447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E053AE681DEFCB2700709BB7 /* mob.png in Resources */,
 				E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
@@ -1683,6 +1725,7 @@
 				E0FA17791DE5B9AE00C29A85 /* WhoSeeMyPositionRouter.swift in Sources */,
 				E0D8EE391DE2DB2F003827F8 /* MyJobOffersInteractor.swift in Sources */,
 				E0F404451DDDA77600BB0DE1 /* WhoSeenMeModels.swift in Sources */,
+				E053AE6B1DEFCC5C00709BB7 /* BootViewController.swift in Sources */,
 				E00E50481DD82BE80087A8B6 /* OnlineResumeModels.swift in Sources */,
 				E0FA176B1DE5B3C400C29A85 /* ConcernJobSeekerViewController.swift in Sources */,
 				E0FA17781DE5B9AE00C29A85 /* WhoSeeMyPositionPresenter.swift in Sources */,
@@ -1757,6 +1800,7 @@
 				4B0690131DDAEFCE00A50CFE /* HomePageViewController.swift in Sources */,
 				E0FA17751DE5B9AE00C29A85 /* WhoSeeMyPositionConfigurator.swift in Sources */,
 				E0FA17661DE5B3C300C29A85 /* ConcernJobSeekerConfigurator.swift in Sources */,
+				E053AE641DEFC49200709BB7 /* ShareWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

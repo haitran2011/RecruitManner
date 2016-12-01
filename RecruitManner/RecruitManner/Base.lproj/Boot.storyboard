@@ -3,13 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Boot View Controller-->
         <scene sceneID="OhR-dL-hwo">
             <objects>
-                <viewController id="bC1-KD-JOZ" sceneMemberID="viewController">
+                <viewController id="bC1-KD-JOZ" customClass="BootViewController" customModule="RecruitManner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G0l-tW-R2W"/>
                         <viewControllerLayoutGuide type="bottom" id="xrS-Cr-aqX"/>
@@ -24,7 +25,7 @@
                                 </constraints>
                                 <state key="normal" title="企业"/>
                                 <connections>
-                                    <segue destination="BEl-lL-y0W" kind="showDetail" id="xvA-dd-YCn"/>
+                                    <segue destination="BEl-lL-y0W" kind="presentation" modalTransitionStyle="crossDissolve" id="xvA-dd-YCn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO5-Hx-cgw">
@@ -33,7 +34,13 @@
                                 </constraints>
                                 <state key="normal" title="个人"/>
                                 <connections>
-                                    <segue destination="bIM-C6-XWM" kind="showDetail" id="f1K-Jk-Mzi"/>
+                                    <segue destination="bIM-C6-XWM" kind="presentation" modalTransitionStyle="crossDissolve" id="f1K-Jk-Mzi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmA-QU-gWy">
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="didTapShareBtn:" destination="bC1-KD-JOZ" eventType="touchUpInside" id="6f7-et-wSX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,8 +48,11 @@
                         <constraints>
                             <constraint firstItem="Os4-JC-e3y" firstAttribute="centerX" secondItem="XO5-Hx-cgw" secondAttribute="centerX" id="B6x-fy-gBz"/>
                             <constraint firstItem="Os4-JC-e3y" firstAttribute="centerY" secondItem="hfD-9O-olV" secondAttribute="centerY" id="XQD-QR-4hZ"/>
+                            <constraint firstItem="WmA-QU-gWy" firstAttribute="trailing" secondItem="hfD-9O-olV" secondAttribute="trailingMargin" id="g3Q-3v-vuh"/>
                             <constraint firstItem="XO5-Hx-cgw" firstAttribute="top" secondItem="Os4-JC-e3y" secondAttribute="bottom" constant="8" symbolic="YES" id="g6H-kH-VLh"/>
                             <constraint firstItem="Os4-JC-e3y" firstAttribute="leading" secondItem="hfD-9O-olV" secondAttribute="leading" constant="121" id="kmf-N4-4M4"/>
+                            <constraint firstItem="WmA-QU-gWy" firstAttribute="top" secondItem="XO5-Hx-cgw" secondAttribute="bottom" constant="7" id="las-VD-4yX"/>
+                            <constraint firstItem="WmA-QU-gWy" firstAttribute="leading" secondItem="hfD-9O-olV" secondAttribute="leadingMargin" id="nVV-TD-XJG"/>
                         </constraints>
                     </view>
                 </viewController>

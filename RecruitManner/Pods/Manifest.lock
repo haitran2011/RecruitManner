@@ -10,51 +10,30 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
-  - ShareSDK2 (2.12.5):
-    - ShareSDK2/Core (= 2.12.5)
-  - ShareSDK2/Connection/QQ (2.12.5):
-    - ShareSDK2/Extend/QQConnectSDK
-  - ShareSDK2/Connection/QZone (2.12.5):
-    - ShareSDK2/Extend/QQConnectSDK
-  - ShareSDK2/Connection/SinaWeibo (2.12.5):
-    - ShareSDK2/Extend/SinaWeiboSDK
-  - ShareSDK2/Connection/TencentWeibo (2.12.5)
-  - ShareSDK2/Connection/WeChat (2.12.5):
-    - ShareSDK2/Extend/WeChatSDK
-  - ShareSDK2/Core (2.12.5)
-  - ShareSDK2/Extend/QQConnectSDK (2.12.5)
-  - ShareSDK2/Extend/SinaWeiboSDK (2.12.5)
-  - ShareSDK2/Extend/WeChatSDK (2.12.5)
-  - ShareSDK2/UI (2.12.5):
-    - ShareSDK2/UI/Flat (= 2.12.5)
-    - ShareSDK2/UI/iPadDefault (= 2.12.5)
-    - ShareSDK2/UI/iPadSimple (= 2.12.5)
-    - ShareSDK2/UI/iPhoneAppRecommend (= 2.12.5)
-    - ShareSDK2/UI/iPhoneDefault (= 2.12.5)
-    - ShareSDK2/UI/iPhoneSimple (= 2.12.5)
-  - ShareSDK2/UI/Flat (2.12.5)
-  - ShareSDK2/UI/iPadDefault (2.12.5)
-  - ShareSDK2/UI/iPadSimple (2.12.5)
-  - ShareSDK2/UI/iPhoneAppRecommend (2.12.5)
-  - ShareSDK2/UI/iPhoneDefault (2.12.5)
-  - ShareSDK2/UI/iPhoneSimple (2.12.5)
-  - TPKeyboardAvoiding (1.3)
+  - ShareSDK3 (3.5.2):
+    - ShareSDK3/ShareSDK (= 3.5.2)
+  - ShareSDK3/ShareSDK (3.5.2)
+  - ShareSDK3/ShareSDKExtension (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.5.2)
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.5.2)
+  - ShareSDK3/ShareSDKUI (3.5.2)
+  - TPKeyboardAvoiding (1.3.1)
 
 DEPENDENCIES:
   - Alamofire (from `../github/Alamofire`)
   - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
   - HandyJSON (~> 1.2.1)
   - MJRefresh
-  - MOBFoundation (~> 2.2.3)
+  - MOBFoundation
   - RadioButton
   - SDCycleScrollView
-  - ShareSDK2 (~> 2.12.5)
-  - ShareSDK2/Connection/QQ (~> 2.12.5)
-  - ShareSDK2/Connection/QZone (~> 2.12.5)
-  - ShareSDK2/Connection/SinaWeibo (~> 2.12.5)
-  - ShareSDK2/Connection/TencentWeibo (~> 2.12.5)
-  - ShareSDK2/Connection/WeChat (~> 2.12.5)
-  - ShareSDK2/UI (~> 2.12.5)
+  - ShareSDK3
+  - ShareSDK3/ShareSDKExtension
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKUI
   - TPKeyboardAvoiding
 
 EXTERNAL SOURCES:
@@ -77,9 +56,9 @@ SPEC CHECKSUMS:
   RadioButton: 7ef053baf6ff0e7f9e777016c28e9ba4e330edba
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  ShareSDK2: c076a9ea57d9d87650130b8071f2bcf0f169cb94
-  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  ShareSDK3: 08ed714e2bbdcd97ab60f58cb398227341dfc20a
+  TPKeyboardAvoiding: 0d6af20e95e2850f4c621841225b59ec7d8dd852
 
-PODFILE CHECKSUM: c4c4357b7e029b01855df826b52cab7a9c3a2c21
+PODFILE CHECKSUM: e3ece5764df13e246efe6aa4249551cf0aec0857
 
 COCOAPODS: 1.1.1

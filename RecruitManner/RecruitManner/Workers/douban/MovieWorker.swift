@@ -17,13 +17,13 @@ class MovieWorker {
         self.store = store
     }
     
-    func fetchMovicesInfo (start: Int, count: Int, _ completionHandler: @escaping (DoubanApi.Info?) -> Void) {
+    func fetchMovicesInfo (start: Int, count: Int, completion handler: @escaping (DoubanApi.Info?) -> Void) {
         store.fetchMovicesInfo(start: start, count: count) { (info: () throws -> DoubanApi.Info) -> Void in
             do {
                 let info = try info()
-                completionHandler(info)
+                handler(info)
             } catch {
-                completionHandler(nil)
+                handler(nil)
             }
         }
     }
@@ -35,5 +35,5 @@ class MovieWorker {
 protocol MovieDouBanProtocol {
     
     // MARK: CRUD operations - Inner closure
-    func fetchMovicesInfo (start: Int, count: Int, _ completionHandler: @escaping (_ info: () throws -> DoubanApi.Info) -> Void)
+    func fetchMovicesInfo (start: Int, count: Int, completion handler: @escaping (_ info: () throws -> DoubanApi.Info) -> Void)
 }

@@ -4,23 +4,20 @@ platform :ios, '8.0'
 
 target :RecruitManner do
 
-	# 公共库(必须)
-	pod 'MOBFoundation', '~> 2.2.3'
-	# 主模块(必须)
-	pod 'ShareSDK2', '~> 2.12.5'
-	# UI模块(含所有UI样式,可选)
-	pod 'ShareSDK2/UI', '~> 2.12.5'
-	# 新浪微博(可选)
-	pod 'ShareSDK2/Connection/SinaWeibo', '~> 2.12.5'
-	# 微信(可选)
-	pod 'ShareSDK2/Connection/WeChat', '~> 2.12.5'
-	# 腾讯QQ(可选)
-	pod 'ShareSDK2/Connection/QQ', '~> 2.12.5'
-	# QQ空间(可选)
-	pod 'ShareSDK2/Connection/QZone', '~> 2.12.5'
-	# 腾讯微博(可选)
-	pod 'ShareSDK2/Connection/TencentWeibo', '~> 2.12.5'
-    
+# 主模块(必须)
+    pod 'ShareSDK3'
+    pod 'ShareSDK3/ShareSDKExtension'
+# Mob 公共库(必须) 如果同时集成SMSSDK iOS2.0:可看此注意事项：http://bbs.mob.com/thread-20051-1-1.html
+    pod 'MOBFoundation'
+
+# UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+    pod 'ShareSDK3/ShareSDKUI'
+
+# 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
+
     # HTTP + json
     pod 'Alamofire', :path => '../github/Alamofire'
     # pod 'ObjectMapper', '~> 2.2.1'

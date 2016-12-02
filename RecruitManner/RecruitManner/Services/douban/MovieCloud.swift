@@ -10,13 +10,13 @@ import Foundation
 
 public class MovieCloud: MovieDouBanProtocol {
     
-    func fetchMovicesInfo (start: Int, count: Int, _ completionHandler: @escaping (_ info: () throws -> DoubanApi.Info) -> Void) {
+    func fetchMovicesInfo (start: Int, count: Int, completion handler: @escaping (_ info: () throws -> DoubanApi.Info) -> Void) {
         DoubanApi.shared.fetchMovice(start: 0, count: 1) { result in
             result.handleValue { it in
-                completionHandler { it }
+                handler { it }
             }
             result.handleError { it in
-                completionHandler { throw it }
+                handler { throw it }
             }
         }
     }

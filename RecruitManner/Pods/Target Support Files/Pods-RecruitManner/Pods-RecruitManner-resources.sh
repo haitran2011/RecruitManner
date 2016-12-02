@@ -74,28 +74,16 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "ShareSDK2/ShareSDK/Core/Resource.bundle"
-  install_resource "ShareSDK2/ShareSDK/Core/zh-Hans.lproj"
-  install_resource "ShareSDK2/ShareSDK/Core/en.lproj"
-  install_resource "ShareSDK2/ShareSDK/Extend/QQConnectSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "ShareSDK2/ShareSDK/Extend/SinaWeiboSDK/WeiboSDK.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKFlatShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPadDefaultShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPadSimpleShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPhoneDefaultShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPhoneSimpleShareViewUI.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Optional/ShareSDKUI.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "ShareSDK2/ShareSDK/Core/Resource.bundle"
-  install_resource "ShareSDK2/ShareSDK/Core/zh-Hans.lproj"
-  install_resource "ShareSDK2/ShareSDK/Core/en.lproj"
-  install_resource "ShareSDK2/ShareSDK/Extend/QQConnectSDK/TencentOpenApi_IOS_Bundle.bundle"
-  install_resource "ShareSDK2/ShareSDK/Extend/SinaWeiboSDK/WeiboSDK.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKFlatShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPadDefaultShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPadSimpleShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPhoneDefaultShareViewUI.bundle"
-  install_resource "ShareSDK2/ShareSDK/UI/ShareSDKiPhoneSimpleShareViewUI.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/WeiboSDK.bundle"
+  install_resource "ShareSDK3/ShareSDK/Support/Optional/ShareSDKUI.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

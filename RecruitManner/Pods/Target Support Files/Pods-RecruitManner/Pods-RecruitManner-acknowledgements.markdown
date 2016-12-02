@@ -166,9 +166,10 @@ THE SOFTWARE.
 
 
 
-## ShareSDK2
+## ShareSDK3
 
-Copyright © 2012-2015 mob
+Copyright © 2012-2016 mob
+
 
 ## TPKeyboardAvoiding
 

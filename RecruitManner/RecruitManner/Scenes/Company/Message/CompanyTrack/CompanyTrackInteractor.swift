@@ -11,12 +11,13 @@ import Foundation
 
 protocol CompanyTrackInteractorInput
 {
-    func doSomething(request: CompanyTrack.Request)
+    func doFetchCompanyTracks(request: CompanyTrack.Request)
+    var selectedCompany: String? { get set }
 }
 
 protocol CompanyTrackInteractorOutput
 {
-    func presentSomething(response: CompanyTrack.Response)
+    func presentTable(response: CompanyTrack.Response)
 }
 
 
@@ -30,9 +31,11 @@ class CompanyTrackInteractor: CompanyTrackInteractorInput
     var output: CompanyTrackInteractorOutput!
     var worker: CompanyTrackWorker!
     
+    var selectedCompany: String?
+    
     // MARK: Business logic
     
-    func doSomething(request: CompanyTrack.Request)
+    func doFetchCompanyTracks(request: CompanyTrack.Request)
     {
         // NOTE: Create some Worker to do the work
         
@@ -42,6 +45,6 @@ class CompanyTrackInteractor: CompanyTrackInteractorInput
         // NOTE: Pass the result to the Presenter
         
         let response = CompanyTrack.Response()
-        output.presentSomething(response: response)
+        output.presentTable(response: response)
     }
 }

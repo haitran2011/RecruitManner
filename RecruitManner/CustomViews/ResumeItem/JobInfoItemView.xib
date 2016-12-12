@@ -10,7 +10,10 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="TDI-PL-fzU"/>
                 <outlet property="dayLabel" destination="wtG-DJ-ldP" id="tdF-xy-kaC"/>
+                <outlet property="markLabel" destination="b8f-Y4-7nl" id="Kk9-kg-hdD"/>
                 <outlet property="monthLabel" destination="UFi-By-XiS" id="LQy-7u-u0V"/>
+                <outlet property="summaryLabel" destination="thx-gh-oEn" id="D5a-sT-HTd"/>
+                <outlet property="titileLabel" destination="aV7-Uz-a4f" id="WCp-eX-vEq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

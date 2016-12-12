@@ -11,12 +11,20 @@ import UIKit
 
 protocol SingleCompanyTrackPresenterInput {
 
-    func presentSomething(response: SingleCompanyTrack.Response)
+    func presentSlideTabedBar(response: SingleCompanyTrack.Response)
+    
+    func presentCompanyName(response: SingleCompanyTrack.Response)
+    
+    func presentResumeTable(response: SingleCompanyTrack.Response)
 }
 
 protocol SingleCompanyTrackPresenterOutput: class {
 
-    func displaySomething(viewModel: SingleCompanyTrack.ViewModel)
+    func displayCompanyName(viewModel: SingleCompanyTrack.ViewModel)
+    
+    func displaySlideTabedBar(viewModel: SingleCompanyTrack.ViewModel)
+    
+    func displayTable(viewModel: SingleCompanyTrack.ViewModel)
 }
 
 
@@ -31,10 +39,26 @@ class SingleCompanyTrackPresenter: SingleCompanyTrackPresenterInput {
     
     // MARK: Presentation logic
     
-    func presentSomething(response: SingleCompanyTrack.Response) {
+    func presentSlideTabedBar(response: SingleCompanyTrack.Response) {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = SingleCompanyTrack.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = SingleCompanyTrack.virtualViewModelMock()
+        
+        output.displaySlideTabedBar(viewModel: viewModel)
+        
+    }
+    
+    func presentCompanyName(response: SingleCompanyTrack.Response) {
+        
+        var viewModel = SingleCompanyTrack.ViewModel()
+        viewModel.companyName = response.companyName
+        output.displayCompanyName(viewModel: viewModel)
+    }
+    
+    func presentResumeTable(response: SingleCompanyTrack.Response) {
+        
+        var viewModel = SingleCompanyTrack.virtualViewModelMock()
+        viewModel.index = response.index
+        output.displayTable(viewModel: viewModel)
     }
 }

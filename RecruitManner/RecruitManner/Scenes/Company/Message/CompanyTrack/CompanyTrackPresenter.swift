@@ -11,12 +11,12 @@ import UIKit
 
 protocol CompanyTrackPresenterInput
 {
-    func presentSomething(response: CompanyTrack.Response)
+    func presentTable(response: CompanyTrack.Response)
 }
 
 protocol CompanyTrackPresenterOutput: class
 {
-    func displaySomething(viewModel: CompanyTrack.ViewModel)
+    func displayTable(viewModel: CompanyTrack.ViewModel)
 }
 
 
@@ -31,11 +31,11 @@ class CompanyTrackPresenter: CompanyTrackPresenterInput
     
     // MARK: Presentation logic
     
-    func presentSomething(response: CompanyTrack.Response)
+    func presentTable(response: CompanyTrack.Response)
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = CompanyTrack.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = CompanyTrack.virtualViewModelMock()
+        output.displayTable(viewModel: viewModel)
     }
 }

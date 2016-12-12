@@ -40,8 +40,7 @@ public class NavigationItemView: UIView {
         self.cityButtonBlock?(sender)
     }
     
-    @IBInspectable
-    public var delegate: NavigationItemViewDelegate?
+    @IBOutlet public var delegate: NavigationItemViewDelegate?
     var cancelBlock: ((_ sender: UIButton) -> Void)?
     var cityButtonBlock: ((_ sender: UIButton) -> Void)?
     var navigationSearchBarBlock: ((_ searchBar: UISearchBar) -> Bool)?

@@ -10,6 +10,7 @@
 //
 
 import UIKit
+import MJRefresh
 
 protocol MyFullTimeJobViewControllerInput
 {
@@ -43,6 +44,12 @@ class MyFullTimeJobViewController: UITableViewController, MyFullTimeJobViewContr
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            self?.tableView.mj_header.endRefreshing()
+        })
+        self.tableView.tableFooterView = UIView()
+        
         doSomethingOnLoad()
     }
     

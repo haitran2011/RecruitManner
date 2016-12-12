@@ -10,6 +10,11 @@
             <connections>
                 <outlet property="cardView" destination="LyC-pf-qOs" id="5oR-Mf-f0Y"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="hDu-3z-Hcu"/>
+                <outlet property="dateLabel" destination="1Yk-4Z-IDg" id="iad-qh-DIF"/>
+                <outlet property="logoView" destination="Ytg-KA-jhe" id="NZN-rx-Fip"/>
+                <outlet property="markLabel" destination="dDq-Ma-KA3" id="LR4-ty-IwO"/>
+                <outlet property="nameLabel" destination="9ya-kj-3Sm" id="i9p-6U-Y6E"/>
+                <outlet property="postLabel" destination="U0H-fx-Kg7" id="yex-qv-AcO"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

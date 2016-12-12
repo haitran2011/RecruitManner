@@ -13,12 +13,13 @@ import UIKit
 
 protocol ConcernCompanyViewControllerInput
 {
-    func displaySomething(viewModel: ConcernCompany.ViewModel)
+    func displayTable(viewModel: ConcernCompany.ViewModel)
 }
 
 protocol ConcernCompanyViewControllerOutput
 {
     func doSomething(request: ConcernCompany.Request)
+    var selectedCompany: String? { get set }
 }
 
 
@@ -29,6 +30,8 @@ class ConcernCompanyViewController: UITableViewController, ConcernCompanyViewCon
 {
     var output: ConcernCompanyViewControllerOutput!
     var router: ConcernCompanyRouter!
+    
+    var viewModel = ConcernCompany.ViewModel()
     
     // MARK: Object lifecycle
     
@@ -58,11 +61,9 @@ class ConcernCompanyViewController: UITableViewController, ConcernCompanyViewCon
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: ConcernCompany.ViewModel)
-    {
-        // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+    func displayTable(viewModel: ConcernCompany.ViewModel) {
+        self.viewModel = viewModel
+        self.tableView.reloadData()
     }
 }
 
@@ -70,18 +71,26 @@ class ConcernCompanyViewController: UITableViewController, ConcernCompanyViewCon
 extension ConcernCompanyViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "已设置关注的公司人才 (3/3)"
+        return "已设置关注的公司人才 (\(self.viewModel.count ?? 0) / \(self.viewModel.total ?? 0))"
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.viewModel.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellConcernCompanyIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
+        let model = self.viewModel.companys?[indexPath.row]
+        cell.textLabel?.text = model
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        output.selectedCompany = self.viewModel.companys?[indexPath.row]
+        return indexPath
     }
     
 }

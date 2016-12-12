@@ -13,7 +13,7 @@ import UIKit
 
 protocol WhoSeeMyPositionViewControllerInput
 {
-    func displaySomething(viewModel: WhoSeeMyPosition.ViewModel)
+    func displayTable(viewModel: WhoSeeMyPosition.ViewModel)
 }
 
 protocol WhoSeeMyPositionViewControllerOutput
@@ -29,6 +29,8 @@ class WhoSeeMyPositionViewController: UITableViewController, WhoSeeMyPositionVie
 {
     var output: WhoSeeMyPositionViewControllerOutput!
     var router: WhoSeeMyPositionRouter!
+    
+    var viewModel = WhoSeeMyPosition.ViewModel()
     
     // MARK: Object lifecycle
     
@@ -58,11 +60,10 @@ class WhoSeeMyPositionViewController: UITableViewController, WhoSeeMyPositionVie
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: WhoSeeMyPosition.ViewModel)
-    {
+    func displayTable(viewModel: WhoSeeMyPosition.ViewModel) {
         // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+        self.viewModel = viewModel
+        self.tableView.reloadData()
     }
 }
 
@@ -70,12 +71,18 @@ class WhoSeeMyPositionViewController: UITableViewController, WhoSeeMyPositionVie
 extension WhoSeeMyPositionViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.viewModel.items?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellWhoSeeMyPositionIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
+        
+        guard let view = cell as? WhoSeeMyCellView else {
+            return cell
+        }
+        
+        view.viewModel = self.viewModel.items?[indexPath.row]
         
         return cell
     }

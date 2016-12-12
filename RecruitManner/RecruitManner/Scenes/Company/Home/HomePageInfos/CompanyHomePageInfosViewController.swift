@@ -11,15 +11,18 @@
 
 import UIKit
 import CustomViews
+import MJRefresh
+import SDWebImage
 
 protocol CompanyHomePageInfosViewControllerInput
 {
-    func displaySomething(viewModel: CompanyHomePageInfos.ViewModel)
+    func displayTable(viewModel: CompanyHomePageInfos.ViewModel)
+    func displayHeaderRefresh(end: Bool)
 }
 
 protocol CompanyHomePageInfosViewControllerOutput
 {
-    func doSomething(request: CompanyHomePageInfos.Request)
+    func dofetchInfos(request: CompanyHomePageInfos.Request)
 }
 
 
@@ -30,6 +33,10 @@ class CompanyHomePageInfosViewController: UITableViewController, CompanyHomePage
 {
     var output: CompanyHomePageInfosViewControllerOutput!
     var router: CompanyHomePageInfosRouter!
+    
+    @IBOutlet weak var customNavItemView: NavigationItemView!
+    
+    var viewModel = CompanyHomePageInfos.ViewModel()
     
     // MARK: Object lifecycle
     
@@ -44,6 +51,14 @@ class CompanyHomePageInfosViewController: UITableViewController, CompanyHomePage
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        customNavItemView.delegate = self
+        
+        self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            let request = CompanyHomePageInfos.Request()
+            self?.output.dofetchInfos(request: request)
+        })
+        
         doSomethingOnLoad()
     }
     
@@ -54,16 +69,28 @@ class CompanyHomePageInfosViewController: UITableViewController, CompanyHomePage
         // NOTE: Ask the Interactor to do some work
         
         let request = CompanyHomePageInfos.Request()
-        output.doSomething(request: request)
+        output.dofetchInfos(request: request)
     }
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: CompanyHomePageInfos.ViewModel)
+    func displayTable(viewModel: CompanyHomePageInfos.ViewModel)
     {
         // NOTE: Display the result from the Presenter
         
-        // nameTextField.text = viewModel.name
+        self.viewModel = viewModel
+        self.tableView.reloadData()
+    }
+    
+    func displayHeaderRefresh(end: Bool) {
+        end ? self.tableView.mj_header.endRefreshing() : self.tableView.mj_header.beginRefreshing()
+    }
+}
+
+extension CompanyHomePageInfosViewController: NavigationItemViewDelegate {
+    
+    func navigationSearchBarButtonClicked(_ searchBar: UISearchBar) -> Bool {
+        return false
     }
 }
 
@@ -75,7 +102,13 @@ extension CompanyHomePageInfosViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if section == 0 {
+            return self.viewModel.positions?.count ?? 0
+        } else if section == 1 {
+            return self.viewModel.resumes?.count ?? 0
+        }
+        
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -102,9 +135,35 @@ extension CompanyHomePageInfosViewController {
         let Identifier = "CellCompanyHomePagePostIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
-        let view = cell.viewWithTag(1) as? JobInfoItemView
-        if indexPath.row != 0 {
-            view?.isHiddenDate = true
+        guard let model = self.viewModel.positions?[indexPath.row] else {
+            return cell
+        }
+        
+        guard let view = cell.viewWithTag(1) as? JobInfoItemView else {
+            return cell
+        }
+        
+        let greCalendar = Calendar(identifier: .gregorian)
+        var day: Int = 0
+        if let date = model.date {
+            day = greCalendar.component(.day, from: date)
+            let today = greCalendar.component(.day, from: Date())
+            if today != day {
+                view.day = day
+                view.month = greCalendar.component(.month, from: date)
+            } else {
+                view.dayText = "今天"
+                view.monthText = ""
+            }
+        }
+        view.titileText = model.title
+        view.summaryText = model.summary
+        view.markText = model.mark
+        
+        if indexPath.row == 0 {
+            view.isHiddenDate = false
+        } else if let prevModel = self.viewModel.positions?[indexPath.row - 1], let preDate = prevModel.date {
+            view.isHiddenDate = greCalendar.component(.day, from: preDate) == day
         }
         
         return cell
@@ -113,6 +172,28 @@ extension CompanyHomePageInfosViewController {
     private func cellHomeResume(in tableView: UITableView, forRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellCompanyHomePageResumeIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
+        
+        guard let model = self.viewModel.resumes?[indexPath.row] else {
+            return cell
+        }
+        
+        guard let view = cell.viewWithTag(1) as? ResumeItemView else {
+            return cell
+        }
+        
+        view.date = model.date
+        view.nameText = model.name
+        view.markText = model.mark
+        let postString = model.positionTitle ?? ""
+        view.postText = "投递给\"\(postString)\"的简历"
+        
+        if let urlstring = model.imageUrl, let url = URL(string: urlstring) {
+        view.logoView.sd_setImageWithPreviousCachedImage(with: url,
+                                                         placeholderImage: UIImage(named: "social_logo"),
+                                                         options: .continueInBackground,
+                                                         progress: nil,
+                                                         completed: nil)
+        }
         
         return cell
     }

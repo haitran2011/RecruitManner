@@ -99,6 +99,15 @@
 		E0414B391DEE8A600016E0A3 /* WorkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B381DEE8A600016E0A3 /* WorkResult.swift */; };
 		E0414B3C1DEE9CB00016E0A3 /* MovieWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */; };
 		E0414B3F1DEEA0E60016E0A3 /* MovieCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */; };
+		E041E1D81DF9765000ED9950 /* expand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1D71DF9765000ED9950 /* expand.swift */; };
+		E041E1DA1DFA6B5700ED9950 /* job_demand.plist in Resources */ = {isa = PBXBuildFile; fileRef = E041E1D91DFA6B5700ED9950 /* job_demand.plist */; };
+		E041E1E31DFA96E000ED9950 /* MessageListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1DC1DFA96E000ED9950 /* MessageListConfigurator.swift */; };
+		E041E1E41DFA96E000ED9950 /* MessageListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1DD1DFA96E000ED9950 /* MessageListInteractor.swift */; };
+		E041E1E51DFA96E000ED9950 /* MessageListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1DE1DFA96E000ED9950 /* MessageListModels.swift */; };
+		E041E1E61DFA96E000ED9950 /* MessageListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1DF1DFA96E000ED9950 /* MessageListPresenter.swift */; };
+		E041E1E71DFA96E000ED9950 /* MessageListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1E01DFA96E000ED9950 /* MessageListRouter.swift */; };
+		E041E1E81DFA96E000ED9950 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1E11DFA96E000ED9950 /* MessageListViewController.swift */; };
+		E041E1E91DFA96E000ED9950 /* MessageListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E041E1E21DFA96E000ED9950 /* MessageListWorker.swift */; };
 		E053AE611DEEB67400709BB7 /* Boot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E053AE5F1DEEB67400709BB7 /* Boot.storyboard */; };
 		E053AE641DEFC49200709BB7 /* ShareWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053AE631DEFC49200709BB7 /* ShareWorker.swift */; };
 		E053AE681DEFCB2700709BB7 /* mob.png in Resources */ = {isa = PBXBuildFile; fileRef = E053AE671DEFCB2700709BB7 /* mob.png */; };
@@ -198,6 +207,7 @@
 		E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E163231DD18A7E006EF708 /* LaunchScreen.storyboard */; };
 		E0E163301DD18A7E006EF708 /* RecruitMannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1632F1DD18A7E006EF708 /* RecruitMannerTests.swift */; };
 		E0E1633B1DD18A7E006EF708 /* RecruitMannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E1633A1DD18A7E006EF708 /* RecruitMannerUITests.swift */; };
+		E0E5F89A1DFE51D1004159F8 /* WhoSeeMyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E5F8991DFE51D1004159F8 /* WhoSeeMyCellView.swift */; };
 		E0F404431DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043C1DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift */; };
 		E0F404441DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043D1DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift */; };
 		E0F404451DDDA77600BB0DE1 /* WhoSeenMeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4043E1DDDA77600BB0DE1 /* WhoSeenMeModels.swift */; };
@@ -373,6 +383,15 @@
 		E0414B381DEE8A600016E0A3 /* WorkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkResult.swift; path = Workers/WorkResult.swift; sourceTree = "<group>"; };
 		E0414B3B1DEE9CB00016E0A3 /* MovieWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieWorker.swift; path = Workers/douban/MovieWorker.swift; sourceTree = "<group>"; };
 		E0414B3E1DEEA0E60016E0A3 /* MovieCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCloud.swift; path = Services/douban/MovieCloud.swift; sourceTree = "<group>"; };
+		E041E1D71DF9765000ED9950 /* expand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = expand.swift; sourceTree = "<group>"; };
+		E041E1D91DFA6B5700ED9950 /* job_demand.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = job_demand.plist; path = Resource/job_demand.plist; sourceTree = "<group>"; };
+		E041E1DC1DFA96E000ED9950 /* MessageListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListConfigurator.swift; path = Scenes/Company/Message/MessageList/MessageListConfigurator.swift; sourceTree = "<group>"; };
+		E041E1DD1DFA96E000ED9950 /* MessageListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListInteractor.swift; path = Scenes/Company/Message/MessageList/MessageListInteractor.swift; sourceTree = "<group>"; };
+		E041E1DE1DFA96E000ED9950 /* MessageListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListModels.swift; path = Scenes/Company/Message/MessageList/MessageListModels.swift; sourceTree = "<group>"; };
+		E041E1DF1DFA96E000ED9950 /* MessageListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListPresenter.swift; path = Scenes/Company/Message/MessageList/MessageListPresenter.swift; sourceTree = "<group>"; };
+		E041E1E01DFA96E000ED9950 /* MessageListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListRouter.swift; path = Scenes/Company/Message/MessageList/MessageListRouter.swift; sourceTree = "<group>"; };
+		E041E1E11DFA96E000ED9950 /* MessageListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListViewController.swift; path = Scenes/Company/Message/MessageList/MessageListViewController.swift; sourceTree = "<group>"; };
+		E041E1E21DFA96E000ED9950 /* MessageListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageListWorker.swift; path = Scenes/Company/Message/MessageList/MessageListWorker.swift; sourceTree = "<group>"; };
 		E053AE601DEEB67400709BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Boot.storyboard; sourceTree = "<group>"; };
 		E053AE631DEFC49200709BB7 /* ShareWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareWorker.swift; path = Workers/share/ShareWorker.swift; sourceTree = "<group>"; };
 		E053AE671DEFCB2700709BB7 /* mob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mob.png; sourceTree = "<group>"; };
@@ -478,6 +497,7 @@
 		E0E163361DD18A7E006EF708 /* RecruitMannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecruitMannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0E1633A1DD18A7E006EF708 /* RecruitMannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitMannerUITests.swift; sourceTree = "<group>"; };
 		E0E1633C1DD18A7E006EF708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E5F8991DFE51D1004159F8 /* WhoSeeMyCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeeMyCellView.swift; path = Scenes/Company/Message/WhoSeeMyPosition/WhoSeeMyCellView.swift; sourceTree = "<group>"; };
 		E0F4043C1DDDA77600BB0DE1 /* WhoSeenMeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeConfigurator.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeConfigurator.swift; sourceTree = "<group>"; };
 		E0F4043D1DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeInteractor.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeInteractor.swift; sourceTree = "<group>"; };
 		E0F4043E1DDDA77600BB0DE1 /* WhoSeenMeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WhoSeenMeModels.swift; path = Scenes/Message/WoSeenMe/WhoSeenMeModels.swift; sourceTree = "<group>"; };
@@ -829,6 +849,28 @@
 			name = douban;
 			sourceTree = "<group>";
 		};
+		E041E1D61DF9763200ED9950 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				E041E1D71DF9765000ED9950 /* expand.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		E041E1DB1DFA96BA00ED9950 /* MessageList */ = {
+			isa = PBXGroup;
+			children = (
+				E041E1DC1DFA96E000ED9950 /* MessageListConfigurator.swift */,
+				E041E1DD1DFA96E000ED9950 /* MessageListInteractor.swift */,
+				E041E1DE1DFA96E000ED9950 /* MessageListModels.swift */,
+				E041E1DF1DFA96E000ED9950 /* MessageListPresenter.swift */,
+				E041E1E01DFA96E000ED9950 /* MessageListRouter.swift */,
+				E041E1E11DFA96E000ED9950 /* MessageListViewController.swift */,
+				E041E1E21DFA96E000ED9950 /* MessageListWorker.swift */,
+			);
+			name = MessageList;
+			sourceTree = "<group>";
+		};
 		E053AE621DEFC44300709BB7 /* share */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +883,7 @@
 			isa = PBXGroup;
 			children = (
 				E053AE661DEFCB0700709BB7 /* image */,
+				E041E1D91DFA6B5700ED9950 /* job_demand.plist */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -911,6 +954,7 @@
 		E07AA21F1DE544A200508EE4 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				E041E1DB1DFA96BA00ED9950 /* MessageList */,
 				E0FA176D1DE5B97600C29A85 /* WhoSeeMyPosition */,
 				E0FA174E1DE5AE5700C29A85 /* Concern */,
 				E07AA22F1DE57C8A00508EE4 /* CompanyTrack */,
@@ -1107,6 +1151,7 @@
 		E0E163191DD18A7E006EF708 /* RecruitManner */ = {
 			isa = PBXGroup;
 			children = (
+				E041E1D61DF9763200ED9950 /* extension */,
 				E053AE651DEFCACD00709BB7 /* Resource */,
 				E00E503A1DD82A570087A8B6 /* Models */,
 				E00E503B1DD82A630087A8B6 /* Services */,
@@ -1223,6 +1268,7 @@
 				E0FA17721DE5B9AE00C29A85 /* WhoSeeMyPositionRouter.swift */,
 				E0FA17731DE5B9AE00C29A85 /* WhoSeeMyPositionViewController.swift */,
 				E0FA17741DE5B9AE00C29A85 /* WhoSeeMyPositionWorker.swift */,
+				E0E5F8991DFE51D1004159F8 /* WhoSeeMyCellView.swift */,
 			);
 			name = WhoSeeMyPosition;
 			sourceTree = "<group>";
@@ -1362,18 +1408,20 @@
 				TargetAttributes = {
 					E021191F1DD4367E0051A0E3 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E02E634A1DD6CF7900A496C5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					E0E163161DD18A7D006EF708 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = AJTSJV3PVB;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 0;
@@ -1382,11 +1430,13 @@
 					};
 					E0E1632A1DD18A7E006EF708 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E0E163161DD18A7D006EF708;
 					};
 					E0E163351DD18A7E006EF708 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = AJTSJV3PVB;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E0E163161DD18A7D006EF708;
 					};
@@ -1450,6 +1500,7 @@
 				E053AE681DEFCB2700709BB7 /* mob.png in Resources */,
 				E07AA2181DE5294A00508EE4 /* Company.storyboard in Resources */,
 				E0E163251DD18A7E006EF708 /* LaunchScreen.storyboard in Resources */,
+				E041E1DA1DFA6B5700ED9950 /* job_demand.plist in Resources */,
 				E0E163221DD18A7E006EF708 /* Assets.xcassets in Resources */,
 				E0E163201DD18A7E006EF708 /* Main.storyboard in Resources */,
 				E053AE611DEEB67400709BB7 /* Boot.storyboard in Resources */,
@@ -1644,9 +1695,11 @@
 				E0D8EE3D1DE2DB2F003827F8 /* MyJobOffersViewController.swift in Sources */,
 				E07AA2461DE5840E00508EE4 /* SingleCompanyTrackConfigurator.swift in Sources */,
 				4B124DBB1DEC2C14000B6352 /* PreViewresumeViewController.swift in Sources */,
+				E041E1E61DFA96E000ED9950 /* MessageListPresenter.swift in Sources */,
 				4B0E29981DE0361000CE4225 /* JobBySelectedPresenter.swift in Sources */,
 				4BA929901DDEFE62000EADD1 /* JobByCompanyConfigurator.swift in Sources */,
 				4B0E29961DE0361000CE4225 /* JobBySelectedInteractor.swift in Sources */,
+				E041E1E51DFA96E000ED9950 /* MessageListModels.swift in Sources */,
 				4B0E29991DE0361000CE4225 /* JobBySelectedRouter.swift in Sources */,
 				4B06901E1DDAF0C000A50CFE /* JobDetailModels.swift in Sources */,
 				4B0690221DDAF0C000A50CFE /* JobDetailWorker.swift in Sources */,
@@ -1701,6 +1754,7 @@
 				E07AA2391DE57D0000508EE4 /* CompanyTrackModels.swift in Sources */,
 				E0414B3F1DEEA0E60016E0A3 /* MovieCloud.swift in Sources */,
 				4B06902D1DDB2E2B00A50CFE /* NearJobPresenter.swift in Sources */,
+				E0E5F89A1DFE51D1004159F8 /* WhoSeeMyCellView.swift in Sources */,
 				E07AA2491DE5840E00508EE4 /* SingleCompanyTrackPresenter.swift in Sources */,
 				4B06902C1DDB2E2B00A50CFE /* NearJobModels.swift in Sources */,
 				E0819D231DE7EA0D008D4A19 /* MyFullTimeJobWorker.swift in Sources */,
@@ -1713,16 +1767,19 @@
 				4BFC83CB1DE687DF007D1ED6 /* JobCityConfigurator.swift in Sources */,
 				4B0690141DDAEFCE00A50CFE /* HomePageWorker.swift in Sources */,
 				E05DBA361DEBC81100006416 /* CompanyHomePageInfosViewController.swift in Sources */,
+				E041E1D81DF9765000ED9950 /* expand.swift in Sources */,
 				4B06900E1DDAEFCE00A50CFE /* HomePageConfigurator.swift in Sources */,
 				E0819D311DE7F879008D4A19 /* CompanyLabelViewController.swift in Sources */,
 				E05DBA371DEBC81100006416 /* CompanyHomePageInfosWorker.swift in Sources */,
 				E00E50581DD9AEF20087A8B6 /* OccupationalHistoryListModels.swift in Sources */,
 				E0D8EE3E1DE2DB2F003827F8 /* MyJobOffersWorker.swift in Sources */,
 				E07AA2481DE5840E00508EE4 /* SingleCompanyTrackModels.swift in Sources */,
+				E041E1E41DFA96E000ED9950 /* MessageListInteractor.swift in Sources */,
 				E0F404441DDDA77600BB0DE1 /* WhoSeenMeInteractor.swift in Sources */,
 				E0D8EE3B1DE2DB2F003827F8 /* MyJobOffersPresenter.swift in Sources */,
 				E0D8EE2C1DE2D5EF003827F8 /* JobApplicationRecordPresenter.swift in Sources */,
 				E0FA17791DE5B9AE00C29A85 /* WhoSeeMyPositionRouter.swift in Sources */,
+				E041E1E71DFA96E000ED9950 /* MessageListRouter.swift in Sources */,
 				E0D8EE391DE2DB2F003827F8 /* MyJobOffersInteractor.swift in Sources */,
 				E0F404451DDDA77600BB0DE1 /* WhoSeenMeModels.swift in Sources */,
 				E053AE6B1DEFCC5C00709BB7 /* BootViewController.swift in Sources */,
@@ -1766,6 +1823,7 @@
 				E07AA22D1DE544DC00508EE4 /* NewResumesViewController.swift in Sources */,
 				E07AA2381DE57D0000508EE4 /* CompanyTrackInteractor.swift in Sources */,
 				E0E1631B1DD18A7E006EF708 /* AppDelegate.swift in Sources */,
+				E041E1E31DFA96E000ED9950 /* MessageListConfigurator.swift in Sources */,
 				E0819D411DE8081A008D4A19 /* JobSeekerOfNearbyViewController.swift in Sources */,
 				E0FA17581DE5AF8300C29A85 /* ConcernCompanyInteractor.swift in Sources */,
 				E05DBA3C1DEC077E00006416 /* doubanApi.swift in Sources */,
@@ -1774,7 +1832,9 @@
 				E0D8EE0C1DE2C9E6003827F8 /* PositionListOfHRConfigurator.swift in Sources */,
 				E0D8EE291DE2D5EF003827F8 /* JobApplicationRecordConfigurator.swift in Sources */,
 				E0F404471DDDA77600BB0DE1 /* WhoSeenMeRouter.swift in Sources */,
+				E041E1E81DFA96E000ED9950 /* MessageListViewController.swift in Sources */,
 				E00E50591DD9AEF20087A8B6 /* OccupationalHistoryListPresenter.swift in Sources */,
+				E041E1E91DFA96E000ED9950 /* MessageListWorker.swift in Sources */,
 				E05DBA331DEBC81100006416 /* CompanyHomePageInfosModels.swift in Sources */,
 				4BA929921DDEFE62000EADD1 /* JobByCompanyModels.swift in Sources */,
 				E0819D2F1DE7F879008D4A19 /* CompanyLabelPresenter.swift in Sources */,
@@ -1887,8 +1947,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1911,8 +1973,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1933,8 +1997,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1957,8 +2023,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1997,9 +2065,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen ting (X6LHV2Y548)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen ting (X6LHV2Y548)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2048,9 +2118,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen ting (X6LHV2Y548)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen ting (X6LHV2Y548)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -2076,8 +2148,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen ting (X6LHV2Y548)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen ting (X6LHV2Y548)";
 				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2085,6 +2157,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "RecruitApp-Development";
 				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2097,8 +2170,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen ting (X6LHV2Y548)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: chen ting (X6LHV2Y548)";
 				DEVELOPMENT_TEAM = AJTSJV3PVB;
 				INFOPLIST_FILE = RecruitManner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2106,6 +2179,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitManner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "RecruitApp-Development";
 				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2122,6 +2196,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitMannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecruitManner.app/RecruitManner";
 			};
@@ -2137,6 +2212,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiang.RecruitMannerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecruitManner/RecruitMannerBridgingHeader.h;
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecruitManner.app/RecruitManner";
 			};

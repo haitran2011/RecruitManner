@@ -11,15 +11,17 @@
 
 import UIKit
 import CustomViews
+import MJRefresh
+import SDWebImage
 
 protocol JobSeekerOfNearbyViewControllerInput
 {
-    func displaySomething(viewModel: JobSeekerOfNearby.ViewModel)
+    func displayTable(viewModel: JobSeekerOfNearby.ViewModel)
 }
 
 protocol JobSeekerOfNearbyViewControllerOutput
 {
-    func doSomething(request: JobSeekerOfNearby.Request)
+    func doFetchJobSeekers(request: JobSeekerOfNearby.Request)
 }
 
 
@@ -30,6 +32,12 @@ class JobSeekerOfNearbyViewController: UITableViewController, JobSeekerOfNearbyV
 {
     var output: JobSeekerOfNearbyViewControllerOutput!
     var router: JobSeekerOfNearbyRouter!
+    
+    @IBOutlet weak var customNavItemView: NavigationItemView!
+    
+    fileprivate var jobDemand: NSDictionary?
+    
+    var viewModel = JobSeekerOfNearby.ViewModel()
     
     // MARK: Object lifecycle
     
@@ -45,13 +53,23 @@ class JobSeekerOfNearbyViewController: UITableViewController, JobSeekerOfNearbyV
     {
         super.viewDidLoad()
         
-        if let menu = DOPDropDownMenu(origin: CGPoint(x:0,y:0), andHeight: 28) {
-            menu.delegate = self
-            menu.dataSource = self
-            menu.backgroundColor = UIColor.green
-            view.addSubview(menu)
-            menu.selectDefalutIndexPath()
+        if let filePath = Bundle.main.path(forResource: "job_demand", ofType: "plist") {
+            jobDemand = NSDictionary(contentsOfFile: filePath)
+            
+            if let menu = DOPDropDownMenu(origin: CGPoint(x:0,y:0), andHeight: 28) {
+                menu.delegate = self
+                menu.dataSource = self
+                menu.backgroundColor = UIColor.green
+                view.addSubview(menu)
+                menu.selectDefalutIndexPath()
+            }
         }
+        
+        self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
+            self?.tableView.mj_header.endRefreshing()
+        })
+        
+        self.customNavItemView.delegate = self
         
         doSomethingOnLoad()
     }
@@ -63,27 +81,64 @@ class JobSeekerOfNearbyViewController: UITableViewController, JobSeekerOfNearbyV
         // NOTE: Ask the Interactor to do some work
         
         let request = JobSeekerOfNearby.Request()
-        output.doSomething(request: request)
+        output.doFetchJobSeekers(request: request)
     }
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: JobSeekerOfNearby.ViewModel)
-    {
-        // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+    func displayTable(viewModel: JobSeekerOfNearby.ViewModel) {
+        self.viewModel = viewModel
+        self.tableView.reloadData()
+    }
+}
+
+extension JobSeekerOfNearbyViewController: NavigationItemViewDelegate {
+    
+    func navigationSearchBarButtonClicked(_ searchBar: UISearchBar) -> Bool {
+        return false
     }
 }
 
 extension JobSeekerOfNearbyViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return viewModel.jobSeekers?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellJobSeekerOfNearbyIdentifier", for: indexPath)
+        
+        guard let view = cell.viewWithTag(1) as? ResumeDeliverItemView else {
+            return cell
+        }
+        
+        guard let modle = viewModel.jobSeekers?[indexPath.row] else {
+            return cell
+        }
+        
+        view.nameLabel.text = modle.name
+        view.infoLabel.text = modle.info
+        view.markLabel.text = modle.mark
+        view.companyLabel.text = modle.company
+        view.ageLimitLabel.text = modle.ageLimit
+        view.deliveryTimeLabel.text = modle.deliveryTime
+        
+        if let urlstring = modle.logoImageUlr, let url = URL(string: urlstring) {
+            view.logoImageView.sd_setImageWithPreviousCachedImage(with: url,
+                                                                  placeholderImage: UIImage(named: "social_logo"),
+                                                                  options: .continueInBackground,
+                                                                  progress: nil,
+                                                                  completed: nil)
+        }
+        
+        if let usrstr = modle.userImageUlr, let usrUrl = URL(string: usrstr) {
+            view.userImageView.sd_setImageWithPreviousCachedImage(with: usrUrl,
+                                                                  placeholderImage: UIImage(named: "User"),
+                                                                  options: .continueInBackground,
+                                                                  progress: nil,
+                                                                  completed: nil)
+        }
+        
         return cell
     }
 }
@@ -91,22 +146,20 @@ extension JobSeekerOfNearbyViewController {
 extension JobSeekerOfNearbyViewController: DOPDropDownMenuDataSource, DOPDropDownMenuDelegate {
 
     func numberOfColumns(in menu: DOPDropDownMenu!) -> Int {
-        return 3
+        return jobDemand?.count ?? 0
     }
     
     func menu(_ menu: DOPDropDownMenu!, titleForColumn column: Int) -> String! {
-        return ["期望薪资", "最高学历", "工作经验"][column]
+        return (jobDemand?.allKeys[column] as? String) ?? ""
     }
     
     
     func menu(_ menu: DOPDropDownMenu!, numberOfRowsInColumn column: Int) -> Int {
-        return [8, 5, 4][column]
+        return (jobDemand?.allValues[column] as? NSArray)?.count ?? 0
     }
     
     func menu(_ menu: DOPDropDownMenu!, titleForRowAt indexPath: DOPIndexPath!) -> String! {
-        return [["不限", "2k以下", "2k-5k", "5k-10k", "10k-15k", "15k-25k", "25k-50k", "50k以上"],
-         ["不限", "大专及以上", "本科及以上", "硕士及以上", "博士及以上"],
-         ["不限", "3年以下", "3年及以上", "7年及以上"]][indexPath.column][indexPath.row]
+        return ((jobDemand?.allValues[indexPath.column] as? NSArray)?[indexPath.row] as? String) ?? ""
     }
     
     func menu(_ menu: DOPDropDownMenu!, numberOfItemsInRow row: Int, column: Int) -> Int {

@@ -9,13 +9,13 @@
 import UIKit
 
 @IBDesignable
-class RollLabel: UIView {
+public class RollLabel: UIView {
     
     var scrollView: UIScrollView!
     var label: UILabel!
     
     @IBInspectable
-    var text: String? {
+    public var text: String? {
         get {
             return self.label.text
         }
@@ -53,7 +53,7 @@ class RollLabel: UIView {
         self.addSubview(scrollView)
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         scrollView.frame = self.bounds

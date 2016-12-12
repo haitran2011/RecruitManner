@@ -12,6 +12,7 @@ import Foundation
 protocol ConcernCompanyInteractorInput
 {
     func doSomething(request: ConcernCompany.Request)
+    var selectedCompany: String? { get set }
 }
 
 protocol ConcernCompanyInteractorOutput
@@ -31,6 +32,8 @@ class ConcernCompanyInteractor: ConcernCompanyInteractorInput
     var worker: ConcernCompanyWorker!
     
     // MARK: Business logic
+    
+    var selectedCompany: String?
     
     func doSomething(request: ConcernCompany.Request)
     {

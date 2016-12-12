@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  doubanApi.swift
 //  RecruitManner
 //
 //  Created by Jiang Duan on 16/11/28.

@@ -37,8 +37,17 @@ struct CompanyTrack
     }
     
     // -> ViewController
-    struct ViewModel
-    {
+    struct ViewModel {
+        
+        var total: Int?
+        var count: Int?
+        
+        var companys: [String]?
+    }
+    
+    static func virtualViewModelMock() -> ViewModel {
+        let companys = ["深圳市华为有限公司", "TCL有限公司", "Apple有限公司"]
+        return ViewModel(total: 3, count: 3, companys: companys)
     }
     
 }

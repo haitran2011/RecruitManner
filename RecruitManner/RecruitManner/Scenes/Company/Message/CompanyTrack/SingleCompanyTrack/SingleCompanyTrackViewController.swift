@@ -11,15 +11,24 @@
 
 import UIKit
 import DLSlideView
+import AFImageHelper
 
 protocol SingleCompanyTrackViewControllerInput {
-
-    func displaySomething(viewModel: SingleCompanyTrack.ViewModel)
+    
+    func displayCompanyName(viewModel: SingleCompanyTrack.ViewModel)
+    
+    func displaySlideTabedBar(viewModel: SingleCompanyTrack.ViewModel)
+    
+    func displayTable(viewModel: SingleCompanyTrack.ViewModel)
 }
 
 protocol SingleCompanyTrackViewControllerOutput {
 
     func doSomething(request: SingleCompanyTrack.Request)
+    var selectedCompany: String? { get set }
+    
+    var selectedJob: Int { get set }
+    var allJobs: [String]? { get }
 }
 
 
@@ -32,6 +41,8 @@ class SingleCompanyTrackViewController: UIViewController, SingleCompanyTrackView
     var router: SingleCompanyTrackRouter!
     
     @IBOutlet weak var tabedSlideView: DLTabedSlideView!
+    
+    @IBOutlet weak var companyNameLabel: UILabel!
   
     // MARK: Object lifecycle
   
@@ -46,10 +57,31 @@ class SingleCompanyTrackViewController: UIViewController, SingleCompanyTrackView
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        
+        tabedSlideView.baseViewController = self
+        tabedSlideView.tabItemNormalColor = UIColor.secondayText
+        tabedSlideView.tabItemSelectedColor = UIColor.darkPrimary
+        tabedSlideView.tabbarTrackColor = UIColor.darkPrimary
+        tabedSlideView.tabbarBackgroundImage = UIImage(named: "tabbarBk")
+        tabedSlideView.tabbarBottomSpacing = 3.0
+        
         doSomethingOnLoad()
     }
   
     // MARK: Event handling
+    
+    
+    @IBAction func didTap7dayBtn(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func didTap1MomBtn(_ sender: UIButton) {
+
+    }
+    
+    @IBAction func didTap3MomBtn(_ sender: UIButton) {
+
+    }
   
     func doSomethingOnLoad() {
         // NOTE: Ask the Interactor to do some work
@@ -59,40 +91,47 @@ class SingleCompanyTrackViewController: UIViewController, SingleCompanyTrackView
     }
   
     // MARK: Display logic
-  
-    func displaySomething(viewModel: SingleCompanyTrack.ViewModel) {
-        // NOTE: Display the result from the Presenter
+    func displayCompanyName(viewModel: SingleCompanyTrack.ViewModel) {
+        self.companyNameLabel.text = viewModel.companyName
+    }
     
-        // nameTextField.text = viewModel.name
-        tabedSlideView.baseViewController = self
-        tabedSlideView.tabItemNormalColor = UIColor.black
-        tabedSlideView.tabItemSelectedColor = UIColor(red: 0.833, green: 0.052, blue: 0.130, alpha: 1.0)
-        tabedSlideView.tabbarTrackColor = UIColor(red: 0.833, green: 0.052, blue: 0.130, alpha: 1.0)
-        tabedSlideView.tabbarBackgroundImage = UIImage(named: "tabbarBk")
-        tabedSlideView.tabbarBottomSpacing = 3.0
-        
-        let item1 = DLTabedbarItem(title: "Web前端", image: UIImage(named: "goodsNew"), selectedImage: UIImage(named: "goodsNew_d"))
-        let item2 = DLTabedbarItem(title: "HR经理", image: UIImage(named: "goodsHot"), selectedImage: UIImage(named: "goodsHot_d"))
-        let item3 = DLTabedbarItem(title: "销售", image: UIImage(named: "goodsPrice"), selectedImage: UIImage(named: "goodsPrice_d"))
-        tabedSlideView.tabbarItems = [item1!, item2!, item3!]
+    func displaySlideTabedBar(viewModel: SingleCompanyTrack.ViewModel) {
+        let clearImage = UIImage(color: UIColor.clear, size: CGSize(width: 17, height: 17))
+        tabedSlideView.tabbarItems = viewModel.barItems?.flatMap {
+            DLTabedbarItem(title: $0, image: clearImage, selectedImage: clearImage)
+        }
+        tabledControllers = viewModel.barItems?.flatMap { _ in
+            ResumeDeliverTableViewController.storyboardInstance()
+        }
         tabedSlideView.buildTabbar()
-        
         tabedSlideView.selectedIndex = 0
     }
+    
+    func displayTable(viewModel: SingleCompanyTrack.ViewModel) {
+        if let index = viewModel.index,
+            index >= 0,
+            index < tabedSlideView.tabbarItems.count {
+            
+            tabledControllers?[index]?.displayTable(viewModel: viewModel.jobSeekers)
+        }
+    }
+    
+    var tabledControllers: [ResumeDeliverTableViewController?]?
 }
 
 
 extension SingleCompanyTrackViewController: DLTabedSlideViewDelegate {
     
     func numberOfTabs(in sender: DLTabedSlideView!) -> Int {
-        return tabedSlideView.tabbarItems.count
+        return sender.tabbarItems.count
     }
     
     func dlTabedSlideView(_ sender: DLTabedSlideView!, controllerAt index: Int) -> UIViewController! {
-        
-        let ctrl = ResumeDeliverTableViewController.storyboardInstance()
-        return ctrl
-        
+        return tabledControllers![index]
+    }
+    
+    func dlTabedSlideView(_ sender: DLTabedSlideView!, didSelectedAt index: Int) {
+        output.selectedJob = index
     }
 
 }

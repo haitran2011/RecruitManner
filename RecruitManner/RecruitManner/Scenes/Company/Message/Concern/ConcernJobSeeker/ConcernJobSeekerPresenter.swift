@@ -16,7 +16,7 @@ protocol ConcernJobSeekerPresenterInput
 
 protocol ConcernJobSeekerPresenterOutput: class
 {
-    func displaySomething(viewModel: ConcernJobSeeker.ViewModel)
+    func displayTable(viewModel: ConcernJobSeeker.ViewModel)
 }
 
 
@@ -35,7 +35,7 @@ class ConcernJobSeekerPresenter: ConcernJobSeekerPresenterInput
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = ConcernJobSeeker.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = ConcernJobSeeker.virtualViewModelMock()
+        output.displayTable(viewModel: viewModel)
     }
 }

@@ -11,12 +11,12 @@ import Foundation
 
 protocol JobSeekerOfNearbyInteractorInput
 {
-    func doSomething(request: JobSeekerOfNearby.Request)
+    func doFetchJobSeekers(request: JobSeekerOfNearby.Request)
 }
 
 protocol JobSeekerOfNearbyInteractorOutput
 {
-    func presentSomething(response: JobSeekerOfNearby.Response)
+    func presentTable(response: JobSeekerOfNearby.Response)
 }
 
 
@@ -32,7 +32,7 @@ class JobSeekerOfNearbyInteractor: JobSeekerOfNearbyInteractorInput
     
     // MARK: Business logic
     
-    func doSomething(request: JobSeekerOfNearby.Request)
+    func doFetchJobSeekers(request: JobSeekerOfNearby.Request)
     {
         // NOTE: Create some Worker to do the work
         
@@ -42,6 +42,6 @@ class JobSeekerOfNearbyInteractor: JobSeekerOfNearbyInteractorInput
         // NOTE: Pass the result to the Presenter
         
         let response = JobSeekerOfNearby.Response()
-        output.presentSomething(response: response)
+        output.presentTable(response: response)
     }
 }

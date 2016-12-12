@@ -10,6 +10,9 @@
 //
 
 import UIKit
+import CustomViews
+import MJRefresh
+import SDWebImage
 
 protocol NewResumesViewControllerInput
 {
@@ -30,6 +33,8 @@ class NewResumesViewController: UITableViewController, NewResumesViewControllerI
     var output: NewResumesViewControllerOutput!
     var router: NewResumesRouter!
     
+    var viewModel = NewResumes.ViewModel()
+    
     // MARK: Object lifecycle
     
     override func awakeFromNib()
@@ -43,6 +48,11 @@ class NewResumesViewController: UITableViewController, NewResumesViewControllerI
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.tableView.mj_header = MJRefreshNormalHeader() { [weak self] in
+            self?.tableView.mj_header.endRefreshing()
+        }
+        
         doSomethingOnLoad()
     }
     
@@ -62,19 +72,42 @@ class NewResumesViewController: UITableViewController, NewResumesViewControllerI
     {
         // NOTE: Display the result from the Presenter
         
-        // nameTextField.text = viewModel.name
+        self.viewModel = viewModel
+        self.tableView.reloadData()
     }
 }
 
 extension NewResumesViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.viewModel.resumes?.count ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellNewResumesIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
+        
+        guard let model = self.viewModel.resumes?[indexPath.row] else {
+            return cell
+        }
+        
+        guard let view = cell.viewWithTag(1) as? ResumeItemView else {
+            return cell
+        }
+        
+        view.date = model.date
+        view.nameText = model.name
+        view.markText = model.mark
+        let postString = model.positionTitle ?? ""
+        view.postText = "投递给\"\(postString)\"的简历"
+        
+        if let urlstring = model.imageUrl, let url = URL(string: urlstring) {
+            view.logoView.sd_setImageWithPreviousCachedImage(with: url,
+                                                             placeholderImage: UIImage(named: "social_logo"),
+                                                             options: .continueInBackground,
+                                                             progress: nil,
+                                                             completed: nil)
+        }
     
         return cell
     }

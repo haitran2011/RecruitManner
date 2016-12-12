@@ -39,7 +39,10 @@ class RecruitMannerTests: XCTestCase {
         }
         
         waitForExpectations(timeout: 10) { (error) in
-            // ...
+            if let _ = error {
+                XCTFail("\(error)")
+                return
+            }
         }
     }
     
@@ -63,13 +66,17 @@ class RecruitMannerTests: XCTestCase {
         }
         
         waitForExpectations(timeout: 10) { (error) in
-            // ...
+            if let _ = error {
+                XCTFail("\(error)")
+                return
+            }
         }
     }
     
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true, "PASS!")
     }
     
     func testPerformanceExample() {

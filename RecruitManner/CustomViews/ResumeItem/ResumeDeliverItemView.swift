@@ -9,9 +9,18 @@
 import UIKit
 
 @IBDesignable
-class ResumeDeliverItemView: UIView {
+public class ResumeDeliverItemView: UIView {
 
     @IBOutlet var contentView: UIView!
+    
+    @IBOutlet public weak var nameLabel: UILabel!
+    @IBOutlet public weak var userImageView: UIImageView!
+    @IBOutlet public weak var infoLabel: UILabel!
+    @IBOutlet public weak var markLabel: RollLabel!
+    @IBOutlet public weak var companyLabel: UILabel!
+    @IBOutlet public weak var ageLimitLabel: UILabel!
+    @IBOutlet public weak var deliveryTimeLabel: UILabel!
+    @IBOutlet public weak var logoImageView: UIImageView!
     
     override public init(frame: CGRect) {
         super.init(frame: frame)

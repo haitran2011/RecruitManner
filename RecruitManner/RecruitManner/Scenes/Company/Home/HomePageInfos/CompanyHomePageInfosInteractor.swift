@@ -11,12 +11,12 @@ import Foundation
 
 protocol CompanyHomePageInfosInteractorInput
 {
-    func doSomething(request: CompanyHomePageInfos.Request)
+    func dofetchInfos(request: CompanyHomePageInfos.Request)
 }
 
 protocol CompanyHomePageInfosInteractorOutput
 {
-    func presentSomething(response: CompanyHomePageInfos.Response)
+    func presentTable(response: CompanyHomePageInfos.Response)
 }
 
 
@@ -32,7 +32,7 @@ class CompanyHomePageInfosInteractor: CompanyHomePageInfosInteractorInput
     
     // MARK: Business logic
     
-    func doSomething(request: CompanyHomePageInfos.Request)
+    func dofetchInfos(request: CompanyHomePageInfos.Request)
     {
         // NOTE: Create some Worker to do the work
         
@@ -42,6 +42,6 @@ class CompanyHomePageInfosInteractor: CompanyHomePageInfosInteractorInput
         // NOTE: Pass the result to the Presenter
         
         let response = CompanyHomePageInfos.Response()
-        output.presentSomething(response: response)
+        output.presentTable(response: response)
     }
 }

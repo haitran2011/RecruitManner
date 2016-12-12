@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>期望薪资</key>
+	<array>
+		<string>不限</string>
+		<string>2k以下</string>
+		<string>2k-5k</string>
+		<string>5k-10k</string>
+		<string>10k-15k</string>
+		<string>15k-25k</string>
+		<string>25k-50k</string>
+		<string>50k以上</string>
+	</array>
+	<key>最高学历</key>
+	<array>
+		<string>不限</string>
+		<string>大专及以上</string>
+		<string>本科及以上</string>
+		<string>硕士及以上</string>
+		<string>博士及以上</string>
+	</array>
+	<key>工作经验</key>
+	<array>
+		<string>不限</string>
+		<string>3年以下</string>
+		<string>3年及以上</string>
+		<string>7年及以上</string>
+	</array>
+</dict>
+</plist>

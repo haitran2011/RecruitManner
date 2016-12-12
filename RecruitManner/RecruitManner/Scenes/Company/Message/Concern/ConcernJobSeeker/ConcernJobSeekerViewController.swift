@@ -10,15 +10,19 @@
 //
 
 import UIKit
+import CustomViews
 
 protocol ConcernJobSeekerViewControllerInput
 {
-    func displaySomething(viewModel: ConcernJobSeeker.ViewModel)
+    func displayTable(viewModel: ConcernJobSeeker.ViewModel)
+    
 }
 
 protocol ConcernJobSeekerViewControllerOutput
 {
     func doSomething(request: ConcernJobSeeker.Request)
+    
+    var selectedCompany: String? { get set }
 }
 
 
@@ -29,6 +33,8 @@ class ConcernJobSeekerViewController: UITableViewController, ConcernJobSeekerVie
 {
     var output: ConcernJobSeekerViewControllerOutput!
     var router: ConcernJobSeekerRouter!
+    
+    var viewModel = ConcernJobSeeker.ViewModel()
     
     // MARK: Object lifecycle
     
@@ -58,27 +64,56 @@ class ConcernJobSeekerViewController: UITableViewController, ConcernJobSeekerVie
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: ConcernJobSeeker.ViewModel)
-    {
-        // NOTE: Display the result from the Presenter
-        
-        // nameTextField.text = viewModel.name
+    func displayTable(viewModel: ConcernJobSeeker.ViewModel) {
+        self.viewModel = viewModel
+        self.tableView.reloadData()
     }
 }
 
 extension ConcernJobSeekerViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "深圳市阿里巴巴商务有限公司"
+        return self.viewModel.companyName
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return self.viewModel.jobSeekers?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellResumeDeliverIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
+        
+        guard let view = cell.viewWithTag(1) as? ResumeDeliverItemView else {
+            return cell
+        }
+        
+        guard let modle = viewModel.jobSeekers?[indexPath.row] else {
+            return cell
+        }
+        
+        view.nameLabel.text = modle.name
+        view.infoLabel.text = modle.info
+        view.markLabel.text = modle.mark
+        view.companyLabel.text = modle.company
+        view.ageLimitLabel.text = modle.ageLimit
+        view.deliveryTimeLabel.text = modle.deliveryTime
+        
+        if let urlstring = modle.logoImageUlr, let url = URL(string: urlstring) {
+            view.logoImageView.sd_setImageWithPreviousCachedImage(with: url,
+                                                                  placeholderImage: UIImage(named: "social_logo"),
+                                                                  options: .continueInBackground,
+                                                                  progress: nil,
+                                                                  completed: nil)
+        }
+        
+        if let usrstr = modle.userImageUlr, let usrUrl = URL(string: usrstr) {
+            view.userImageView.sd_setImageWithPreviousCachedImage(with: usrUrl,
+                                                                  placeholderImage: UIImage(named: "User"),
+                                                                  options: .continueInBackground,
+                                                                  progress: nil,
+                                                                  completed: nil)
+        }
         
         return cell
     }

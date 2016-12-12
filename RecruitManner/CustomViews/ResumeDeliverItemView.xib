@@ -8,7 +8,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResumeDeliverItemView" customModule="CustomViews" customModuleProvider="target">
             <connections>
+                <outlet property="ageLimitLabel" destination="lQp-cn-N8b" id="8hT-vN-CI7"/>
+                <outlet property="companyLabel" destination="3xp-89-ONd" id="1lh-z5-4Ri"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="tGe-pg-u8Y"/>
+                <outlet property="deliveryTimeLabel" destination="SNu-5l-TUe" id="VdA-J0-Kqz"/>
+                <outlet property="infoLabel" destination="MWp-y9-xtG" id="dky-yd-KaV"/>
+                <outlet property="logoImageView" destination="smd-YJ-hRq" id="Zpq-4G-vRa"/>
+                <outlet property="markLabel" destination="nWA-z4-NTG" id="BYK-AL-Ijg"/>
+                <outlet property="nameLabel" destination="d3F-RN-3Dq" id="FxM-0k-I06"/>
+                <outlet property="userImageView" destination="mu9-EX-ZGU" id="ttB-Jd-bgd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

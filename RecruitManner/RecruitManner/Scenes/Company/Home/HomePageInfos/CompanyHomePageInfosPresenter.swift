@@ -11,12 +11,13 @@ import UIKit
 
 protocol CompanyHomePageInfosPresenterInput
 {
-    func presentSomething(response: CompanyHomePageInfos.Response)
+    func presentTable(response: CompanyHomePageInfos.Response)
 }
 
 protocol CompanyHomePageInfosPresenterOutput: class
 {
-    func displaySomething(viewModel: CompanyHomePageInfos.ViewModel)
+    func displayTable(viewModel: CompanyHomePageInfos.ViewModel)
+    func displayHeaderRefresh(end: Bool)
 }
 
 
@@ -31,11 +32,12 @@ class CompanyHomePageInfosPresenter: CompanyHomePageInfosPresenterInput
     
     // MARK: Presentation logic
     
-    func presentSomething(response: CompanyHomePageInfos.Response)
+    func presentTable(response: CompanyHomePageInfos.Response)
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = CompanyHomePageInfos.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = CompanyHomePageInfos.virtualViewModelMock()
+        output.displayTable(viewModel: viewModel)
+        output.displayHeaderRefresh(end: true)
     }
 }

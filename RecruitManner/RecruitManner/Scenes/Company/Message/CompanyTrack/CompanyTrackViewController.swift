@@ -13,12 +13,13 @@ import UIKit
 
 protocol CompanyTrackViewControllerInput
 {
-    func displaySomething(viewModel: CompanyTrack.ViewModel)
+    func displayTable(viewModel: CompanyTrack.ViewModel)
 }
 
 protocol CompanyTrackViewControllerOutput
 {
-    func doSomething(request: CompanyTrack.Request)
+    func doFetchCompanyTracks(request: CompanyTrack.Request)
+    var selectedCompany: String? { get set }
 }
 
 
@@ -31,6 +32,7 @@ class CompanyTrackViewController: UITableViewController, CompanyTrackViewControl
     var router: CompanyTrackRouter!
     
     // MARK: Object lifecycle
+    var viewModel = CompanyTrack.ViewModel()
     
     override func awakeFromNib()
     {
@@ -53,16 +55,17 @@ class CompanyTrackViewController: UITableViewController, CompanyTrackViewControl
         // NOTE: Ask the Interactor to do some work
         
         let request = CompanyTrack.Request()
-        output.doSomething(request: request)
+        output.doFetchCompanyTracks(request: request)
     }
     
     // MARK: Display logic
     
-    func displaySomething(viewModel: CompanyTrack.ViewModel)
+    func displayTable(viewModel: CompanyTrack.ViewModel)
     {
         // NOTE: Display the result from the Presenter
         
-        // nameTextField.text = viewModel.name
+        self.viewModel = viewModel
+        self.tableView.reloadData()
     }
 }
 
@@ -70,18 +73,26 @@ class CompanyTrackViewController: UITableViewController, CompanyTrackViewControl
 extension CompanyTrackViewController {
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "已设置轨迹(3 / 3)"
+        return "已设置轨迹(\(self.viewModel.count ?? 0) / \(self.viewModel.total ?? 0))"
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return self.viewModel.companys?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Identifier = "CellCompanyTrackIdentifier"
         let cell = tableView.dequeueReusableCell(withIdentifier: Identifier, for: indexPath)
         
+        let model = self.viewModel.companys?[indexPath.row]
+        let view = cell.viewWithTag(1) as? UITextField
+        view?.text = model
+        
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        output.selectedCompany = self.viewModel.companys?[indexPath.row]
+        return indexPath
+    }
 }

@@ -11,12 +11,12 @@ import UIKit
 
 protocol JobSeekerOfNearbyPresenterInput
 {
-    func presentSomething(response: JobSeekerOfNearby.Response)
+    func presentTable(response: JobSeekerOfNearby.Response)
 }
 
 protocol JobSeekerOfNearbyPresenterOutput: class
 {
-    func displaySomething(viewModel: JobSeekerOfNearby.ViewModel)
+    func displayTable(viewModel: JobSeekerOfNearby.ViewModel)
 }
 
 
@@ -31,11 +31,11 @@ class JobSeekerOfNearbyPresenter: JobSeekerOfNearbyPresenterInput
     
     // MARK: Presentation logic
     
-    func presentSomething(response: JobSeekerOfNearby.Response)
+    func presentTable(response: JobSeekerOfNearby.Response)
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = JobSeekerOfNearby.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = JobSeekerOfNearby.virtualViewModelMock()
+        output.displayTable(viewModel: viewModel)
     }
 }

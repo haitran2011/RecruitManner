@@ -35,8 +35,8 @@ target :RecruitManner do
     # 避免键盘遮挡下方输入框
     pod 'TPKeyboardAvoiding'
     
-    # 可滑动Label
-    #pod 'MarqueeLabel/Swift'
+    # 空白页或者出错页封装
+    # pod 'DZNEmptyDataSet'
     
     # 下拉菜单
     # pod 'YZPullDownMenu'
@@ -44,6 +44,9 @@ target :RecruitManner do
     
     # 顶部Tab
     pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
+    
+    # Image 扩展库
+    pod 'AFImageHelper', :path => '../github/ImageHelper-3.2.1'
     
 end
 
@@ -55,5 +58,17 @@ end
 
 
 target :RecruitMannerTests do
+    # 主模块(必须)
+    pod 'ShareSDK3'
+    pod 'ShareSDK3/ShareSDKExtension'
+    # Mob 公共库(必须) 如果同时集成SMSSDK iOS2.0:可看此注意事项：http://bbs.mob.com/thread-20051-1-1.html
+    pod 'MOBFoundation'
     
+    # UI模块(非必须，需要用到ShareSDK提供的分享菜单栏和分享编辑页面需要以下1行)
+    pod 'ShareSDK3/ShareSDKUI'
+    
+    # 平台SDK模块(对照一下平台，需要的加上。如果只需要QQ、微信、新浪微博，只需要以下3行)
+    pod 'ShareSDK3/ShareSDKPlatforms/QQ'
+    pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'
+    pod 'ShareSDK3/ShareSDKPlatforms/WeChat'
 end

@@ -16,7 +16,7 @@ protocol ConcernCompanyPresenterInput
 
 protocol ConcernCompanyPresenterOutput: class
 {
-    func displaySomething(viewModel: ConcernCompany.ViewModel)
+    func displayTable(viewModel: ConcernCompany.ViewModel)
 }
 
 
@@ -35,7 +35,7 @@ class ConcernCompanyPresenter: ConcernCompanyPresenterInput
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = ConcernCompany.ViewModel()
-        output.displaySomething(viewModel: viewModel)
+        let viewModel = ConcernCompany.virtualViewModelMock()
+        output.displayTable(viewModel: viewModel)
     }
 }

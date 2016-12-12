@@ -35,7 +35,7 @@ class NewResumesPresenter: NewResumesPresenterInput
     {
         // NOTE: Format the response from the Interactor and pass the result back to the View Controller
         
-        let viewModel = NewResumes.ViewModel()
+        let viewModel = NewResumes.virtualViewModelMock()
         output.displaySomething(viewModel: viewModel)
     }
 }
